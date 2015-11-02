@@ -9,7 +9,12 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>21600</saved-with-version>
-    <used-plugins />
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
     <used-behaviors />
     <used-effects />
     <configurations>
@@ -35,15 +40,44 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="Split" sid="1212866340000549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7794640497347877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LeftDestText" sid="7680553230127137">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LeftSourceText" sid="2283645899347296">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RightDestText" sid="7374412237375549">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RightSourceText" sid="40167668775353">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Keyboard" sid="378934436508722">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="LeftSourceArray" sid="2854907970623456">
+            <plugin id="Arr" />
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Main.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
