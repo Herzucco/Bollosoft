@@ -4,7 +4,9 @@ var GreugProtoPannel = require('../layouts/greugProtoPannel');
 function layoutsHandler(dayConfig){
   var layouts = [];
 
+  layouts.push(new DialogPannel());
   layouts.push(new GreugProtoPannel());
+  
   game.layouts = layouts;
 }
 
