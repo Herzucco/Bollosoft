@@ -1,0 +1,44 @@
+{"frames": {
+
+"face/anim/1.png":
+{
+	"frame": {"x":205,"y":774,"w":89,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":0,"w":89,"h":100},
+	"sourceSize": {"w":100,"h":100}
+},
+"face/anim/2.png":
+{
+	"frame": {"x":1,"y":774,"w":100,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100}
+},
+"face/anim/3.png":
+{
+	"frame": {"x":103,"y":774,"w":100,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100}
+},
+"waifu.png":
+{
+	"frame": {"x":1,"y":1,"w":738,"h":771},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":29,"w":738,"h":771},
+	"sourceSize": {"w":800,"h":800}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "testFace.png",
+	"format": "RGBA8888",
+	"size": {"w":740,"h":875},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:75a3ee72f523d13de4efe998351bbd6b:4313fe816cc6242a0b0b34ce9e3343ed:d26b4a8783c630fca170109e608970ea$"
+}
+}
