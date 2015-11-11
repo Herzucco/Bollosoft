@@ -5,7 +5,7 @@ function create(){
 	game.scale.maxHeight = 1080;
 	game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 	game.scale.offset = 0;
-	game.debug.inputInfo(16,16);
+	//game.debug.inputInfo(16,16);
 
 	loadLayouts();
 }

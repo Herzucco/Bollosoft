@@ -29,6 +29,7 @@
     "prop-search": "^1.1.8",
     "read-file": "^0.2.0",
     "source-map-support": "^0.2.10",
+    "string": "^3.3.1",
     "transducers.js": "^0.2.3",
     "webpack": "^1.12.2",
     "yaml-loader": "^0.1.0"
