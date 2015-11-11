@@ -1,6 +1,6 @@
 function texts(game) {
     var texts = {
-      'Prince Of Tunis' : require('json!dialogbundle!../text/yaml/test.yml'),
+      'Prince Of Tunis' : require('json!dialogbundle!../../assets/text/yaml/test.yml'),
     };
 
     game.texts = texts;

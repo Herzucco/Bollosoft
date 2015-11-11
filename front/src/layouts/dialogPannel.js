@@ -1,7 +1,11 @@
 var Layout = require('./layout');
+var Dialog = require('../dialogs/Dialog');
 
 function DialogPannel(){
   Layout.call(this);
+
+  this.dialog = new Dialog();
+  this.dialog.load(window.game.texts['Prince Of Tunis']);
 }
 
 DialogPannel.prototype = Object.create(Layout.prototype);
@@ -9,7 +13,8 @@ DialogPannel.prototype.constructor = DialogPannel;
 
 DialogPannel.prototype.update = function DialogPannelUpdate(game){
   Layout.prototype.update.call(this, game);
-  console.log("dialog pannel");
+
+  this.dialog.update();
 }
 
 module.exports = DialogPannel;

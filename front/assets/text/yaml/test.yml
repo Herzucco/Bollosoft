@@ -1,0 +1,13 @@
+---
+text:
+  - talker: pnj$0
+    file:
+      fr: ../chunks/test.txt
+      en: ../chunks/test.txt
+characters:
+  pnj$0:
+    name: Bolloré
+    rythm: 0.1
+    font: patapa
+    fontSize: 25
+    bg-color: rgb(100, 100, 0)
