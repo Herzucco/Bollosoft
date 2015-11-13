@@ -1,29 +1,28 @@
-var baseBmpTextPosition = [0, 0];
+var Bubble = require('./Bubble');
+var baseBmpTextPosition = [1300, 400];
 
-function Dialog(language){
+function Dialog(language, position, maxSentences, spacing){
   this.language = language || 'fr';
+  this.position = position || {x: 990, y:200};
+  this.maxSentences = maxSentences || 3;
+  this.spacing = spacing || 30;
 
   this.sentences = [];
-  this.currentSentence = 0;
-
-  this.currentText = "";
-  this.currentTextIndex = 0;
+  this.currentSentence = -1;
 
   this.characters = {};
-  this.currentCharacter = {};
 
-  this.progressRythm = 0;
+  this.bubbles = [];
 
-  this.bmpText = null;
+  this.skippable = true;
+  this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.UP);
 }
 
 Dialog.prototype.load = function LoadDialog(text){
-  console.log(text);
-
   this.computeDialog(text);
   this.characters = text.characters;
 
-  this.reset();
+  this.next(1);
 }
 
 Dialog.prototype.computeDialog = function ComputeDialog(text){
@@ -32,43 +31,46 @@ Dialog.prototype.computeDialog = function ComputeDialog(text){
   }
 }
 
-Dialog.prototype.reset = function ResetDialog(){
-  this.currentCharacter = this.characters[this.sentences[this.currentSentence].talker];
-  this.currentTextIndex = 0;
+Dialog.prototype.createBubble = function CreateBubbleDialog(){
+  var bubble = new Bubble(game, baseBmpTextPosition[0], baseBmpTextPosition[1],
+                    this.sentences[this.currentSentence], this.characters,
+                    this.language);
+  this.bubbles.push(bubble);
 
-  this.bmpText = window.game.add.bitmapText(baseBmpTextPosition[0],
-       baseBmpTextPosition[1], this.currentCharacter.font, "",
-       this.currentCharacter.fontSize);
+  window.game.add.existing(bubble);
+  bubble.start();
 }
 
-Dialog.prototype.forward = function ForwardDialog(){
-  this.currentSentence++;
-  this.reset();
-}
+Dialog.prototype.next = function ForwardDialog(delta){
+  this.currentSentence += delta
 
-Dialog.prototype.backward = function BackwardDialog(){
-  this.currentSentence--;
-  this.reset();
+  this.createBubble();
 }
 
 Dialog.prototype.getSentence = function GetSentenceDialog(){
   return this.sentences[this.currentSentence];
 }
 
-Dialog.prototype.display = function DisplayDialog(){
-
+Dialog.prototype.update = function UpdateDialog(){
+  this.waitInput();
 }
 
-Dialog.prototype.update = function UpdateDialog(){
-  this.progressRythm += 1/60;
+Dialog.prototype.waitInput = function WaitInputDialog(){
+  if((this.spaceKey.isDown || window.game.input.activePointer.leftButton.isDown) && this.skippable){
+    var bubble = this.bubbles[this.bubbles.length - 1];
 
-  if(this.progressRythm >= this.currentCharacter.rythm && this.getSentence()[this.language][this.currentTextIndex] !== undefined){
-    this.progressRythm = 0;
-    this.currentText += this.getSentence()[this.language][this.currentTextIndex];
+    this.skippable = false;
 
-    this.currentTextIndex++;
+    if(bubble.isOver){
+      bubble.destroy();
+      this.next(1);
+    }else{
+      bubble.skip();
+    }
+  }
 
-    this.bmpText.text = this.currentText;
+  if(this.spaceKey.isUp && window.game.input.activePointer.leftButton.isUp){
+    this.skippable = true;
   }
 }
 

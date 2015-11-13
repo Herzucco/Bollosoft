@@ -7,7 +7,8 @@ text:
 characters:
   pnj$0:
     name: Bolloré
-    rythm: 0.1
+    rythm: 0.025
     font: patapa
     fontSize: 25
     bg-color: rgb(100, 100, 0)
+    bubble: testFace
