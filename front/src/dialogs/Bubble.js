@@ -3,9 +3,17 @@ function Bubble (game, x, y, sentence, characters, language) {
   Phaser.Sprite.call(this, window.game, x, y, characters[sentence.talker].bubble);
 
   this.sentence = sentence || {};
-  this.character =  characters[sentence.talker] || {};
-  this.language = language || 'fr';
 
+  this.character =  characters[sentence.talker] || {};
+  this.character = JSON.parse(JSON.stringify(this.character));
+
+  for(var i in sentence.style){
+    this.character[i] = sentence.style[i];
+  }
+
+  console.log(this.character);
+
+  this.language = language || 'fr';
   this.set();
 };
 

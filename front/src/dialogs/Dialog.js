@@ -42,7 +42,7 @@ Dialog.prototype.createBubble = function CreateBubbleDialog(){
 }
 
 Dialog.prototype.next = function ForwardDialog(delta){
-  this.currentSentence += delta
+  this.currentSentence += delta;
 
   this.createBubble();
 }

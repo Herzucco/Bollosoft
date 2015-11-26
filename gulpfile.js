@@ -22,7 +22,7 @@ var deepmerge = DeepMerge(function(target, source, key) {
 var defaultConfig = {
     module: {
         loaders: [
-            {test: /\.js$/, exclude: /node_modules/, loaders: ['babel'] },
+            { test: /\.js$/, exclude: /node_modules/, loaders: ['babel'] },
             { test: /\.css$/, loader: 'style!css' },
             { test: /\.png$/, loader: "file-loader" },
             { test: /\.glsl$/, loader: 'shader' },

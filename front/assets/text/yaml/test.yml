@@ -10,5 +10,23 @@ characters:
     rythm: 0.025
     font: patapa
     fontSize: 25
-    bg-color: rgb(100, 100, 0)
     bubble: testFace
+  pnj$1:
+    name: Guillemot
+    rythm: 0.025
+    font: patapa
+    fontSize: 25
+    bubble: testFace
+triggers:
+  - id: 1
+    settings:
+      rythm: 1
+      font: patapa
+detail:
+  picture: PrinceOfTunis
+
+days:
+  - One:
+    - PrinceOfTunis
+    - Bails
+    - Bouille

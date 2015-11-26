@@ -14,7 +14,6 @@ GreugProtoPannel.prototype.constructor = GreugProtoPannel;
 
 GreugProtoPannel.prototype.update = function GreugProtoPannelUpdate(game){
 	Layout.prototype.update.call(this, game);
-	console.log("greug pannel");
 }
 
 module.exports = GreugProtoPannel;
