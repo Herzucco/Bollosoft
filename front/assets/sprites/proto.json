@@ -1,0 +1,60 @@
+{"frames": {
+
+"Windows-8-Surface-Vector-File.png":
+{
+	"frame": {"x":1,"y":1,"w":614,"h":378},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":614,"h":378},
+	"sourceSize": {"w":614,"h":378}
+},
+"devShadow.png":
+{
+	"frame": {"x":617,"y":1,"w":246,"h":406},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":406},
+	"sourceSize": {"w":246,"h":406}
+},
+"no.png":
+{
+	"frame": {"x":1,"y":381,"w":496,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":496,"h":274},
+	"sourceSize": {"w":496,"h":274}
+},
+"randomFace.png":
+{
+	"frame": {"x":499,"y":409,"w":246,"h":266},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":266},
+	"sourceSize": {"w":246,"h":266}
+},
+"truc.png":
+{
+	"frame": {"x":499,"y":381,"w":10,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+	"sourceSize": {"w":10,"h":10}
+},
+"yes.png":
+{
+	"frame": {"x":1,"y":657,"w":496,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":496,"h":274},
+	"sourceSize": {"w":496,"h":274}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "proto.png",
+	"format": "RGBA8888",
+	"size": {"w":864,"h":932},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:adca9e57bd0bec2a1d6d1fac6d5e8696:7fe743e40e227fba7cfb4f40fd9c857c:49ee880c0e1bd19baa92c10731c8d437$"
+}
+}
