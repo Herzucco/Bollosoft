@@ -4,8 +4,10 @@ var Dialog = require('../dialogs/Dialog');
 function DialogPannel(){
   Layout.call(this);
 
-  this.dialog = new Dialog();
+  this.dialog = new Dialog(this.group);
   this.dialog.load(window.game.texts['Prince Of Tunis']);
+
+  this.enable();
 }
 
 DialogPannel.prototype = Object.create(Layout.prototype);

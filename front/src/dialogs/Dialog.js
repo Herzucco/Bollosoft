@@ -1,7 +1,8 @@
 var Bubble = require('./Bubble');
 var baseBmpTextPosition = [1300, 400];
 
-function Dialog(language, position, maxSentences, spacing){
+function Dialog(group, language, position, maxSentences, spacing){
+  this.group = group || window.game;
   this.language = language || 'fr';
   this.position = position || {x: 990, y:200};
   this.maxSentences = maxSentences || 3;
@@ -32,12 +33,12 @@ Dialog.prototype.computeDialog = function ComputeDialog(text){
 }
 
 Dialog.prototype.createBubble = function CreateBubbleDialog(){
-  var bubble = new Bubble(game, baseBmpTextPosition[0], baseBmpTextPosition[1],
+  var bubble = new Bubble(this.group, baseBmpTextPosition[0], baseBmpTextPosition[1],
                     this.sentences[this.currentSentence], this.characters,
                     this.language);
   this.bubbles.push(bubble);
 
-  window.game.add.existing(bubble);
+  this.group.add(bubble);
   bubble.start();
 }
 
@@ -62,7 +63,10 @@ Dialog.prototype.waitInput = function WaitInputDialog(){
     this.skippable = false;
 
     if(bubble.isOver){
-      bubble.destroy();
+      for(var i = 0; i < this.bubbles.length; i++){
+        this.bubbles[i].up();
+      }
+      
       this.next(1);
     }else{
       bubble.skip();
