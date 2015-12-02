@@ -16,7 +16,9 @@ function Dialog(group, language, position, maxSentences, spacing){
   this.bubbles = [];
 
   this.skippable = true;
-  this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.UP);
+  this.canInput = true;
+  this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+
 }
 
 Dialog.prototype.load = function LoadDialog(text){
@@ -43,9 +45,14 @@ Dialog.prototype.createBubble = function CreateBubbleDialog(){
 }
 
 Dialog.prototype.next = function ForwardDialog(delta){
-  this.currentSentence += delta;
+  if(this.currentSentence + delta < this.sentences.length){
+    this.currentSentence += delta;
 
-  this.createBubble();
+    this.createBubble();
+  }else{
+    this.canInput = false;
+    window.game.events.emit('choiceStart');
+  }
 }
 
 Dialog.prototype.getSentence = function GetSentenceDialog(){
@@ -53,20 +60,24 @@ Dialog.prototype.getSentence = function GetSentenceDialog(){
 }
 
 Dialog.prototype.update = function UpdateDialog(){
-  this.waitInput();
+  if(this.canInput){
+    this.waitInput();
+  }
 }
 
 Dialog.prototype.waitInput = function WaitInputDialog(){
-  if((this.spaceKey.isDown || window.game.input.activePointer.leftButton.isDown) && this.skippable){
+  if(this.spaceKey.isDown && this.skippable){
     var bubble = this.bubbles[this.bubbles.length - 1];
 
     this.skippable = false;
 
     if(bubble.isOver){
-      for(var i = 0; i < this.bubbles.length; i++){
-        this.bubbles[i].up();
+      if(this.currentSentence + 1 < this.sentences.length){
+        for(var i = 0; i < this.bubbles.length; i++){
+          this.bubbles[i].up();
+        }
       }
-      
+
       this.next(1);
     }else{
       bubble.skip();
