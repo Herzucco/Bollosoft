@@ -1,10 +1,9 @@
 var Bubble = require('./Bubble');
-var baseBmpTextPosition = [1300, 400];
+var baseBmpTextPosition = [1400, 400];
 
 function Dialog(group, language, position, maxSentences, spacing){
   this.group = group || window.game;
   this.language = language || 'fr';
-  this.position = position || {x: 990, y:200};
   this.maxSentences = maxSentences || 3;
   this.spacing = spacing || 30;
 
@@ -37,8 +36,8 @@ Dialog.prototype.computeDialog = function ComputeDialog(text){
   this.settings = text.settings;
 }
 
-Dialog.prototype.createBubble = function CreateBubbleDialog(){
-  var bubble = new Bubble(this.group, baseBmpTextPosition[0], baseBmpTextPosition[1],
+Dialog.prototype.createBubble = function CreateBubbleDialog(delta){
+  var bubble = new Bubble(this.group, baseBmpTextPosition[0] + delta, baseBmpTextPosition[1],
                     this.sentences[this.currentSentence], this.characters,
                     this.language);
   this.bubbles.push(bubble);
@@ -52,7 +51,13 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
     this.currentSentence += delta;
 
     if(sentenceComputing){
-      this.createBubble();
+      var talker = this.characters[this.sentences[this.currentSentence].talker];
+      var offset = 100;
+      if(talker.name !== 'Bolloré' && talker.name !== 'Guillemot'){
+        this.createBubble(-offset);
+      }else{
+        this.createBubble(offset);
+      }
     }
 
   }else{

@@ -32,10 +32,10 @@ Bubble.prototype.set = function setBubble(){
 
   this.currentUpTime = 0;
   this.upTime = 0.5;
-  this.upSpeed = 4;
+  this.upSpeed = 5.3;
 
-  this.xPadding = 30;
-  this.yPadding = 50;
+  this.xPadding = -110;
+  this.yPadding = -40;
 
   this.currentText = "";
   this.currentTextIndex = 0;
@@ -46,6 +46,7 @@ Bubble.prototype.set = function setBubble(){
 
   this.progressRythm = 0;
   this.anchor.set(0.5, 0.5);
+  this.scale.setTo(2, 2);
 }
 
 Bubble.prototype.start = function startBubble(){
@@ -62,8 +63,8 @@ Bubble.prototype.start = function startBubble(){
 }
 
 Bubble.prototype.update = function UpdateBubble() {
-  this.bmpText.x = Math.floor(this.x - this.width / 2 + this.xPadding);
-  this.bmpText.y = Math.floor(this.y - this.height / 2 + this.yPadding);
+  this.bmpText.x = Math.floor(this.x - this.width / 4 + this.xPadding);
+  this.bmpText.y = Math.floor(this.y + this.yPadding);
 
   if(this.mode === 'text'){
     this.textMode();
