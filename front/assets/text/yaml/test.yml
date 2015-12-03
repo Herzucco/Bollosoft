@@ -22,8 +22,9 @@ triggers:
     settings:
       rythm: 1
       font: patapa
-detail:
+settings:
   picture: PrinceOfTunis
+  presentator: Moulard
 
 days:
   - One:
