@@ -1,10 +1,9 @@
 var Bubble = require('./Bubble');
-var baseBmpTextPosition = [1300, 400];
+var baseBmpTextPosition = [1400, 400];
 
 function Dialog(group, language, position, maxSentences, spacing){
   this.group = group || window.game;
   this.language = language || 'fr';
-  this.position = position || {x: 990, y:200};
   this.maxSentences = maxSentences || 3;
   this.spacing = spacing || 30;
 
@@ -12,6 +11,7 @@ function Dialog(group, language, position, maxSentences, spacing){
   this.currentSentence = -1;
 
   this.characters = {};
+  this.settings = {};
 
   this.bubbles = [];
 
@@ -23,19 +23,21 @@ function Dialog(group, language, position, maxSentences, spacing){
 
 Dialog.prototype.load = function LoadDialog(text){
   this.computeDialog(text);
-  this.characters = text.characters;
 
-  this.next(1);
+  this.next(1, true);
 }
 
 Dialog.prototype.computeDialog = function ComputeDialog(text){
   for(var i = 0; i < text.text.length; i++){
     this.sentences.push(text.text[i]);
   }
+
+  this.characters = text.characters;
+  this.settings = text.settings;
 }
 
-Dialog.prototype.createBubble = function CreateBubbleDialog(){
-  var bubble = new Bubble(this.group, baseBmpTextPosition[0], baseBmpTextPosition[1],
+Dialog.prototype.createBubble = function CreateBubbleDialog(delta){
+  var bubble = new Bubble(this.group, baseBmpTextPosition[0] + delta, baseBmpTextPosition[1],
                     this.sentences[this.currentSentence], this.characters,
                     this.language);
   this.bubbles.push(bubble);
@@ -44,14 +46,39 @@ Dialog.prototype.createBubble = function CreateBubbleDialog(){
   bubble.start();
 }
 
-Dialog.prototype.next = function ForwardDialog(delta){
+Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
   if(this.currentSentence + delta < this.sentences.length){
     this.currentSentence += delta;
 
-    this.createBubble();
+    if(sentenceComputing){
+      var talker = this.characters[this.sentences[this.currentSentence].talker];
+      var offset = 100;
+      if(talker.name !== 'Bolloré' && talker.name !== 'Guillemot'){
+        this.createBubble(-offset);
+      }else{
+        this.createBubble(offset);
+      }
+    }
+
   }else{
     this.canInput = false;
     window.game.events.emit('choiceStart');
+  }
+}
+
+Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
+  switch(sentence[this.language]){
+    case '$$$' :
+      window.game.events.emit('slide', this.settings.picture);
+      return false;
+    break;
+    case '@@@' :
+      window.game.events.emit('presentator', this.settings.presentator);
+      return false;
+    break;
+    default :
+      return true;
+    break;
   }
 }
 
@@ -72,13 +99,18 @@ Dialog.prototype.waitInput = function WaitInputDialog(){
     this.skippable = false;
 
     if(bubble.isOver){
+      var sentenceComputing;
+
       if(this.currentSentence + 1 < this.sentences.length){
-        for(var i = 0; i < this.bubbles.length; i++){
-          this.bubbles[i].up();
+        sentenceComputing = this.computeSentence(this.sentences[this.currentSentence + 1]);
+        if(sentenceComputing){
+          for(var i = 0; i < this.bubbles.length; i++){
+            this.bubbles[i].up();
+          }
         }
       }
 
-      this.next(1);
+      this.next(1, sentenceComputing);
     }else{
       bubble.skip();
     }

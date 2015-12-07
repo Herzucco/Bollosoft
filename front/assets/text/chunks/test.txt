@@ -3,13 +3,16 @@
 C'est l'histoire de babtou
 
 ***
-[pnj$0]
-Il aime les bails
+@@@
+
+***
+[pnj$1]
+Il aime les bails.  Nous aimons la nourriture. Il aime la vie. Nous aimons la mort. Nous aimons les raisin. Il aime les seins.
 
 ***
 [pnj$0]
 {1}
-Mais surtout les bails fragiles
+Mais surtout les bails fragiles.
 
 ***
 [pnj$1]

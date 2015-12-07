@@ -10,20 +10,21 @@ characters:
     rythm: 0.025
     font: patapa
     fontSize: 25
-    bubble: testFace
+    bubble: BlueBubble
   pnj$1:
-    name: Guillemot
+    name: Babtou
     rythm: 0.025
     font: patapa
     fontSize: 25
-    bubble: testFace
+    bubble: PurpleBubble
 triggers:
   - id: 1
     settings:
       rythm: 1
       font: patapa
-detail:
+settings:
   picture: PrinceOfTunis
+  presentator: Moulard
 
 days:
   - One:
