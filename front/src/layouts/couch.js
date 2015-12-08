@@ -5,7 +5,7 @@ function Couch(){
   Layout.call(this);
   this.enable();
 
-  roomBackground = game.add.sprite(960, 0, 'roomBackground');
+  roomBackground = game.add.sprite(0, 0, 'roomBackground');
   roomBackground.sendToBack();
 }
 

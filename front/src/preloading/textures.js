@@ -3,7 +3,8 @@ function textures(game) {
 
     game.load.image('BlueBubble', 'assets/images/proto/BlueBubble.png');
     game.load.image('PurpleBubble', 'assets/images/proto/PurpleBubble.png');
-    game.load.image('roomBackground', 'assets/images/background/test.jpg');
+    game.load.image('protoBackground', 'assets/images/background/test.jpg');
+    game.load.image('roomBackground', 'assets/images/background/test2.png');
 }
 
 module.exports = textures;
