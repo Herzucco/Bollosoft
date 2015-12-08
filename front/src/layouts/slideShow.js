@@ -15,11 +15,13 @@ function SlideShow(){
 	this.group.add(devShadow);
 
 	var that = this;
-	window.game.events.on('choiceEnd', function(choice){
-    	that.final(choice);
+	window.game.events.on('slide', function(slideStart){
+    	that.slide(slideStart);
 	});
 
-	//slideBack = game.add.sprite(0, 200, 'proto', 'proto/PurpleBubble.png');
+	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
+	slideBack.width = 0;
+	slideBack.height = 0;
 }
 
 SlideShow.prototype = Object.create(Layout.prototype);
@@ -29,8 +31,11 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 }
 
 
-SlideShow.prototype.final = function SlideShowFinal(choice){
+SlideShow.prototype.slide = function SlideStarting(slideStart){
 	devAnim.start();
+	slideBack.loadTexture('protoBackground', 0);
+	slideBack.width = 833;
+	slideBack.height = 624;
 }
 
 module.exports = SlideShow;
