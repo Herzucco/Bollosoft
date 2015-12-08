@@ -16,6 +16,7 @@ function Answer(){
   this.leftKey = window.game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
   this.rightKey = window.game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
   this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+  this.enterKey = window.game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
 
   this.draw();
 }
@@ -34,13 +35,13 @@ Answer.prototype.update = function AnswerUpdate(game){
       this.yesTxt.addColor('#ffffff', 0);
       this.noTxt.addColor('#C04A67', 0);
       this.choice = false;
-    }else if(this.spaceKey.isDown){
+    }else if(this.spaceKey.isDown || this.enterKey.isDown){
       window.game.events.emit('choiceEnd', this.choice);
       this.disable();
     }
   }else{
     this.currentWaitingTime += 1/60;
-    if(this.spaceKey.isUp = true && this.currentWaitingTime > this.waitingTime){
+    if(this.spaceKey.isUp = true && this.enterKey.isUp && this.currentWaitingTime > this.waitingTime){
       this.waitInputs = true;
     }
   }

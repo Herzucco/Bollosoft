@@ -2,19 +2,19 @@
 text:
   - talker: narrator
     file:
-      fr: ../chunks/scene1.txt
-      en: ../chunks/scene1.txt
+      fr: ../chunks/scene1/scene1.txt
+      en: ../chunks/scene1/scene1.txt
 choice:
   yes:
     - talker: narrator
       file:
-        fr: ../chunks/scene1.txt
-        en: ../chunks/scene1.txt
+        fr: ../chunks/scene1/scene1_yes.txt
+        en: ../chunks/scene1/scene1_yes.txt
   no:
     - talker: narrator
       file:
-        fr: ../chunks/scene1.txt
-        en: ../chunks/scene1.txt
+        fr: ../chunks/scene1/scene1_no.txt
+        en: ../chunks/scene1/scene1_no.txt
 characters:
   narrator:
     name: Narrateur
@@ -64,9 +64,10 @@ triggers:
 settings:
   picture: PrinceOfTunis
   presentator: Moulard
-
-days:
-  - One:
-    - PrinceOfTunis
-    - Bails
-    - Bouille
+values:
+  yes:
+    metacritic: 10
+    bolloRate: 0.5
+  no:
+    metacritic: -5
+    bolloRate: -1

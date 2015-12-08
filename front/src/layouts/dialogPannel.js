@@ -3,13 +3,18 @@ var Dialog = require('../dialogs/Dialog');
 
 function DialogPannel(){
   Layout.call(this);
+  this.sceneIndex = 0;
 
   this.dialog = new Dialog(this.group);
-  this.dialog.load(window.game.texts['Prince Of Tunis']);
+  window.game.score = window.game.texts[this.sceneIndex].values;
+  this.dialog.load(window.game.texts[this.sceneIndex]);
 
   var that = this;
   window.game.events.on('choiceEnd', function(choice){
     that.final(choice);
+  });
+  window.game.events.on('newDay', function(){
+    that.next();
   });
 
   this.enable();
@@ -29,7 +34,14 @@ DialogPannel.prototype.final = function DialogPannelFinal(choice){
 }
 
 DialogPannel.prototype.next = function DialogPannelNext(){
-  this.dialog.loadChoice(choice);
+  this.sceneIndex++;
+
+  if(this.sceneIndex < window.game.texts.length){
+    window.game.score = window.game.texts[this.sceneIndex].values;
+    this.dialog.load(window.game.texts[this.sceneIndex]);
+  }else{
+    console.log('THE END OF EVA');
+  }
 }
 
 module.exports = DialogPannel;

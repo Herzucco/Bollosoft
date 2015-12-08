@@ -12,7 +12,28 @@ function EndDay(){
   this.group.add(this.metaTxt);
   this.group.add(this.bolloTxt);
 
-  //this.enable();
+  this.waitInputs = false;
+  this.currentWaitingTime = 0;
+  this.waitingTime = 0.5;
+
+  var that = this;
+  window.game.events.on('choiceEnd', function(choice){
+    var values;
+    if(choice){
+      values = window.game.score['yes'];
+    }else{
+      values = window.game.score['no'];
+    }
+
+    that.metacritic += values.metacritic;
+    that.bolloRate += values.bolloRate;
+  });
+  window.game.events.on('endDay', function(){
+    that.enable();
+  });
+
+  this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+  this.enterKey = window.game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
 }
 
 EndDay.prototype = Object.create(Layout.prototype);
@@ -22,6 +43,19 @@ EndDay.prototype.update = function EndDayUpdate(game){
 
   this.metaTxt.text = "Metacritic : " + this.metacritic;
   this.bolloTxt.text = "Actions de Bollobails : " + this.bolloRate;
+
+  if(this.waitInputs){
+    if(this.spaceKey.isDown || this.enterKey.isDown){
+      window.game.events.emit('newDay');
+
+      this.disable();
+    }
+  }else{
+    this.currentWaitingTime += 1/60;
+    if(this.spaceKey.isUp = true && this.enterKey.isUp && this.currentWaitingTime > this.waitingTime){
+      this.waitInputs = true;
+    }
+  }
 }
 
 module.exports = EndDay;

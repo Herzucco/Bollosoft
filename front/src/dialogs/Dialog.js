@@ -23,6 +23,7 @@ function Dialog(group, language, position, maxSentences, spacing){
 
 Dialog.prototype.load = function LoadDialog(source){
   this.source = source;
+  this.choiceMode = false;
 
   this.computeDialog(source.text, source.characters, source.settings);
 
@@ -32,6 +33,7 @@ Dialog.prototype.load = function LoadDialog(source){
 Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
   this.currentSentence = -1;
   this.canInput = true;
+  this.choiceMode = true;
 
   if(choice){
     this.computeDialog(this.source.choice['yes'], this.source.characters, this.source.settings);
@@ -86,9 +88,12 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
       }
     }
 
-  }else{
+  }else if(!this.choiceMode){
     this.canInput = false;
     window.game.events.emit('choiceStart');
+  }else{
+    this.canInput = false;
+    window.game.events.emit('endDay');
   }
 }
 
