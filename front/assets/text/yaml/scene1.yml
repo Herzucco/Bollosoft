@@ -60,7 +60,7 @@ triggers:
   - id: 5
     settings:
       rythm: 0.045
-      fontSize: 18
+      fontSize: 28
 settings:
   picture: PrinceOfTunis
   presentator: Moulard

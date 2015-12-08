@@ -19,7 +19,6 @@ function Dialog(group, language, position, maxSentences, spacing){
   this.skippable = true;
   this.canInput = true;
   this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-
 }
 
 Dialog.prototype.load = function LoadDialog(source){
@@ -52,10 +51,10 @@ Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settin
   this.settings = settings;
 }
 
-Dialog.prototype.createBubble = function CreateBubbleDialog(delta){
+Dialog.prototype.createBubble = function CreateBubbleDialog(delta, position){
   var bubble = new Bubble(this.group, baseBmpTextPosition[0] + delta, baseBmpTextPosition[1],
                     this.sentences[this.currentSentence], this.characters,
-                    this.language, delta);
+                    this.language, position);
 
   this.bubbles.push(bubble);
 
@@ -69,19 +68,21 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
 
     if(sentenceComputing){
       var talker = this.characters[this.sentences[this.currentSentence].talker];
-      var offset = 170;
+      var offset = 162;
 
       if(talker === undefined){
         console.error("Error this talker is not defined : " + this.sentences[this.currentSentence].talker);
       }
 
       if(talker.name === 'Narrateur'){
-        this.createBubble(0);
+        this.createBubble(-offset*3.1 , 'center');
       }
-      else if(talker.name !== 'Bolloré' && talker.name !== 'Guillemot'){
-        this.createBubble(-offset);
+      else if(talker.name === 'Bolloré'){
+        this.createBubble(-offset, 'left');
+      }else if(talker.name === 'Guillemot'){
+        this.createBubble(offset, 'right');
       }else{
-        this.createBubble(offset);
+        this.createBubble(-offset*7.25, 'center')
       }
     }
 

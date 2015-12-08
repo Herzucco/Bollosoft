@@ -1,5 +1,5 @@
 //  Here is a custom game object
-function Bubble (group, x, y, sentence, characters, language, delta) {
+function Bubble (group, x, y, sentence, characters, language, label) {
   Phaser.Sprite.call(this, window.game, x, y, characters[sentence.talker].bubble);
 
   this.group = group;
@@ -14,13 +14,7 @@ function Bubble (group, x, y, sentence, characters, language, delta) {
     this.character[i] = sentence.style[i];
   }
 
-  if(delta > 0){
-    this.label = 'right';
-  }else if (delta < 0){
-    this.label = 'left';
-  }else{
-    this.label = 'center';
-  }
+  this.label = label;
 
   this.language = language || 'fr';
   this.set();
@@ -54,7 +48,7 @@ Bubble.prototype.set = function setBubble(){
 
   this.progressRythm = 0;
   this.anchor.set(0.5, 0.5);
-  this.scale.setTo(1, 0.5);
+  this.scale.setTo(0.80, 0.5);
 }
 
 Bubble.prototype.start = function startBubble(){
@@ -74,7 +68,7 @@ Bubble.prototype.start = function startBubble(){
   this.group.add(this.labelText);
   this.group.add(this.bmpText);
 
-  this.bmpText.maxWidth = 510;
+  this.bmpText.maxWidth = 490;
   this.mode = 'scaling';
 
   this.labelText.alpha = 0;
@@ -99,7 +93,7 @@ Bubble.prototype.update = function UpdateBubble() {
 
 Bubble.prototype.updateLabel = function UpdateLabelBubble() {
   this.labelBubble.y = this.y;
-  var offset = this.width / (this.scale.x * 2) - this.labelBubble.width / 2;
+  var offset = this.width / 2 - this.labelBubble.width / 2;
 
   if(this.label === 'left'){
     offset *= -1;
