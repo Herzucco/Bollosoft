@@ -22,6 +22,8 @@ function Dialog(group, language, position, maxSentences, spacing){
 }
 
 Dialog.prototype.load = function LoadDialog(source){
+  this.bubbles.length = 0;
+
   this.source = source;
   this.choiceMode = false;
 
@@ -31,8 +33,6 @@ Dialog.prototype.load = function LoadDialog(source){
 }
 
 Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
-  this.currentSentence = -1;
-  this.canInput = true;
   this.choiceMode = true;
 
   if(choice){
@@ -44,6 +44,8 @@ Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
 
 Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settings){
   this.sentences.length = 0;
+  this.currentSentence = -1;
+  this.canInput = true;
 
   for(var i = 0; i < text.length; i++){
     this.sentences.push(text[i]);
@@ -78,13 +80,12 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
 
       if(talker.name === 'Narrateur'){
         this.createBubble(-offset*3.1 , 'center');
-      }
-      else if(talker.name === 'Bolloré'){
+      }else if(talker.name === 'Bolloré'){
         this.createBubble(-offset, 'left');
       }else if(talker.name === 'Guillemot'){
         this.createBubble(offset, 'right');
       }else{
-        this.createBubble(-offset*7.25, 'center')
+        this.createBubble(-offset*7.25, 'center');
       }
     }
 
@@ -94,6 +95,9 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
   }else{
     this.canInput = false;
     window.game.events.emit('endDay');
+    this.group.forEach(function(item) {
+      item.kill();
+    }, this);
   }
 }
 

@@ -37,6 +37,8 @@ Answer.prototype.update = function AnswerUpdate(game){
       this.choice = false;
     }else if(this.spaceKey.isDown || this.enterKey.isDown){
       window.game.events.emit('choiceEnd', this.choice);
+      this.currentWaitingTime = 0;
+      this.waitInputs = false;
       this.disable();
     }
   }else{
