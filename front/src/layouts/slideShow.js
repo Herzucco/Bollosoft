@@ -1,4 +1,6 @@
 var Layout = require('./layout');
+var leftBackground;
+var canap;
 var devShadow;
 var devAnim;
 var slideBack;
@@ -6,6 +8,10 @@ var slideBack;
 function SlideShow(){
 	Layout.call(this);
 	this.enable();
+
+	leftBackground = game.add.sprite(0, 0, 'leftBackground');
+	leftBackground.sendToBack();
+	canap = game.add.sprite(0, 800, 'canap');
 
 	devShadow = game.add.sprite(-250, 500, 'proto', 'proto/devShadow.png');
 	devAnim = game.add.tween(devShadow);
@@ -36,7 +42,7 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 
 
 SlideShow.prototype.slide = function SlideStarting(slideStart){
-	slideBack.loadTexture('protoBackground', 0);
+	slideBack.loadTexture('testFace', 0);
 	slideBack.width = 833;
 	slideBack.height = 624;
 	slideBack.z = 0;
