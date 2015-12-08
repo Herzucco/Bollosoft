@@ -39,7 +39,8 @@ Dialog.prototype.computeDialog = function ComputeDialog(text){
 Dialog.prototype.createBubble = function CreateBubbleDialog(delta){
   var bubble = new Bubble(this.group, baseBmpTextPosition[0] + delta, baseBmpTextPosition[1],
                     this.sentences[this.currentSentence], this.characters,
-                    this.language);
+                    this.language, delta);
+
   this.bubbles.push(bubble);
 
   this.group.add(bubble);
@@ -52,8 +53,16 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
 
     if(sentenceComputing){
       var talker = this.characters[this.sentences[this.currentSentence].talker];
-      var offset = 100;
-      if(talker.name !== 'Bolloré' && talker.name !== 'Guillemot'){
+      var offset = 170;
+
+      if(talker === undefined){
+        console.error("Error this talker is not defined : " + this.sentences[this.currentSentence].talker);
+      }
+
+      if(talker.name === 'Narrateur'){
+        this.createBubble(0);
+      }
+      else if(talker.name !== 'Bolloré' && talker.name !== 'Guillemot'){
         this.createBubble(-offset);
       }else{
         this.createBubble(offset);
@@ -111,7 +120,7 @@ Dialog.prototype.waitInput = function WaitInputDialog(){
       }
 
       this.next(1, sentenceComputing);
-    }else{
+    }else if(bubble.mode !== 'scaling'){
       bubble.skip();
     }
   }
