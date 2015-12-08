@@ -9,7 +9,7 @@ function DialogPannel(){
 
   var that = this;
   window.game.events.on('choiceEnd', function(choice){
-    that.next(choice);
+    that.final(choice);
   });
 
   this.enable();
@@ -24,8 +24,12 @@ DialogPannel.prototype.update = function DialogPannelUpdate(game){
   this.dialog.update();
 }
 
-DialogPannel.prototype.next = function DialogPannelNext(choice){
-  console.log('new dialog -- choice : ' + choice);
+DialogPannel.prototype.final = function DialogPannelFinal(choice){
+  this.dialog.loadChoice(choice);
+}
+
+DialogPannel.prototype.next = function DialogPannelNext(){
+  this.dialog.loadChoice(choice);
 }
 
 module.exports = DialogPannel;
