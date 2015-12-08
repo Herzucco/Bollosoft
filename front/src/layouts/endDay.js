@@ -47,7 +47,8 @@ EndDay.prototype.update = function EndDayUpdate(game){
   if(this.waitInputs){
     if(this.spaceKey.isDown || this.enterKey.isDown){
       window.game.events.emit('newDay');
-
+      this.currentWaitingTime = 0;
+      this.waitInputs = false;
       this.disable();
     }
   }else{
