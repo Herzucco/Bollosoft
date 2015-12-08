@@ -4,6 +4,17 @@ text:
     file:
       fr: ../chunks/scene1.txt
       en: ../chunks/scene1.txt
+choice:
+  yes:
+    - talker: narrator
+      file:
+        fr: ../chunks/scene1.txt
+        en: ../chunks/scene1.txt
+  no:
+    - talker: narrator
+      file:
+        fr: ../chunks/scene1.txt
+        en: ../chunks/scene1.txt
 characters:
   narrator:
     name: Narrateur
@@ -33,14 +44,23 @@ triggers:
   - id: 1
     settings:
       rythm: 1
+      fontSize: 100
   - id: 2
     settings:
       rythm: 0
       fontSize: 60
   - id: 3
     settings:
-      rythm: 0.01
+      rythm: 0.025
       fontSize: 30
+  - id: 4
+    settings:
+      rythm: 0.01
+      fontSize: 40
+  - id: 5
+    settings:
+      rythm: 0.045
+      fontSize: 18
 settings:
   picture: PrinceOfTunis
   presentator: Moulard

@@ -1,5 +1,5 @@
 var Bubble = require('./Bubble');
-var baseBmpTextPosition = [1400, 400];
+var baseBmpTextPosition = [1450, 400];
 
 function Dialog(group, language, position, maxSentences, spacing){
   this.group = group || window.game;
@@ -7,6 +7,7 @@ function Dialog(group, language, position, maxSentences, spacing){
   this.maxSentences = maxSentences || 3;
   this.spacing = spacing || 30;
 
+  this.source = null;
   this.sentences = [];
   this.currentSentence = -1;
 
@@ -21,19 +22,34 @@ function Dialog(group, language, position, maxSentences, spacing){
 
 }
 
-Dialog.prototype.load = function LoadDialog(text){
-  this.computeDialog(text);
+Dialog.prototype.load = function LoadDialog(source){
+  this.source = source;
+
+  this.computeDialog(source.text, source.characters, source.settings);
 
   this.next(1, true);
 }
 
-Dialog.prototype.computeDialog = function ComputeDialog(text){
-  for(var i = 0; i < text.text.length; i++){
-    this.sentences.push(text.text[i]);
+Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
+  this.currentSentence = -1;
+  this.canInput = true;
+
+  if(choice){
+    this.computeDialog(this.source.choice['yes'], this.source.characters, this.source.settings);
+  }else {
+    this.computeDialog(this.source.choice['no'], this.source.characters, this.source.settings);
+  }
+}
+
+Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settings){
+  this.sentences.length = 0;
+
+  for(var i = 0; i < text.length; i++){
+    this.sentences.push(text[i]);
   }
 
-  this.characters = text.characters;
-  this.settings = text.settings;
+  this.characters = characters;
+  this.settings = settings;
 }
 
 Dialog.prototype.createBubble = function CreateBubbleDialog(delta){
