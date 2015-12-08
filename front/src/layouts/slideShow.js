@@ -7,21 +7,25 @@ function SlideShow(){
 	Layout.call(this);
 	this.enable();
 
-	game.stage.backgroundColor = "#595858";
-	devShadow = game.add.sprite(-250, 200, 'proto', 'proto/devShadow.png');
+	devShadow = game.add.sprite(-250, 500, 'proto', 'proto/devShadow.png');
 	devAnim = game.add.tween(devShadow);
-	devAnim.to({x:400}, 200, Phaser.Easing.Linear.None);
-	
 	this.group.add(devShadow);
 
 	var that = this;
 	window.game.events.on('slide', function(slideStart){
     	that.slide(slideStart);
 	});
+	window.game.events.on('presentator', function(presStart){
+    	that.startPres(presStart);
+	});
+	window.game.events.on('choiceEnd', function(presEnd){
+    	that.endPres(presEnd);
+	});
 
 	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
 	slideBack.width = 0;
 	slideBack.height = 0;
+	this.group.add(slideBack);
 }
 
 SlideShow.prototype = Object.create(Layout.prototype);
@@ -32,10 +36,25 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 
 
 SlideShow.prototype.slide = function SlideStarting(slideStart){
-	devAnim.start();
 	slideBack.loadTexture('protoBackground', 0);
 	slideBack.width = 833;
 	slideBack.height = 624;
+	slideBack.z = 0;
+	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
+}
+
+SlideShow.prototype.startPres = function PresentatorComing(presStart){
+	devAnim.to({x:50}, 200, Phaser.Easing.Linear.None);
+	devAnim.start();
+	devShadow.z = 1;
+	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
+}
+
+SlideShow.prototype.endPres = function PresentationEnding(presEnd){
+	devAnim.to({x:-250}, 200, Phaser.Easing.Linear.None);
+	devAnim.start();
+	slideBack.width = 0;
+	slideBack.height = 0;
 }
 
 module.exports = SlideShow;
