@@ -24,7 +24,7 @@ function SlideShow(){
 	window.game.events.on('presentator', function(presStart){
     	that.startPres(presStart);
 	});
-	window.game.events.on('choiceEnd', function(presEnd){
+	window.game.events.on('endDay', function(presEnd){
     	that.endPres(presEnd);
 	});
 
