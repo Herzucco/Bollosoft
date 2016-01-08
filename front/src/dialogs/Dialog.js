@@ -52,6 +52,10 @@ Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settin
   }
 
   this.characters = characters;
+  for(var i in this.characters){
+    this.characters['phaserSound'] = game.add.audio(this.characters[i].sound);
+  }
+  
   this.settings = settings;
 }
 

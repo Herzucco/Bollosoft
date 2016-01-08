@@ -120,7 +120,7 @@ Bubble.prototype.textMode = function TextModeBubble(){
   if(this.progressRythm >= this.character.rythm && this.sentence[this.language][this.currentTextIndex] !== undefined){
     this.progressRythm = 0;
     this.currentText += this.sentence[this.language][this.currentTextIndex];
-
+    this.character['phaserSound'].play();
     this.currentTextIndex++;
 
     this.bmpText.text = this.currentText;
