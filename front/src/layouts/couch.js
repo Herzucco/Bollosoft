@@ -6,6 +6,7 @@ var stopDuration = 0;
 var stopChrono = 0;
 var peopleStoping;
 var animRhythm = 0;
+var cantStop = false;
 
 function Couch(){
   	Layout.call(this);
@@ -49,19 +50,18 @@ Couch.prototype.update = function CouchUpdate(game){
 	stopChrono += 1/60;
 	if (stopChrono >= stopDuration)
 	{
-		if (peopleStoping != null)
+		if ((peopleStoping != null)&&(cantStop == false))
 		{
-			peopleStoping.animations.play('talkingAnim', mapRange([0, 1], [10, 4], 0), true);
+			peopleStoping.animations.play('talkingAnim', mapRange([0, 1], [10, 4], animRhythm), true);
 		}
 	}
-	//console.log(stopChrono);
 }
 
 Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
-	//console.log("wesh " + peopleTalking.character.rythm);
 	//if (peopleTalking.noAnim == false)
 	//{
-		animRhythm = peopleTalking.rythm;
+		cantStop = false;
+		animRhythm = peopleTalking.character.rythm;
 		if (peopleTalking.name == "Bolloré")
 		{
 			bollo.animations.play('talkingAnim', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
@@ -75,6 +75,8 @@ Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
 }
 
 Couch.prototype.endTalk = function EndTalkAnim(peopleShutUp){
+	cantStop = true;
+	peopleStoping = null;
 	if (peopleShutUp.name == "Bolloré")
 	{
 		bollo.animations.play('idleAnim', 5, true);
@@ -98,7 +100,6 @@ Couch.prototype.pauseTalk = function PauseTalkAnim(peopleStop){
 	}
 	if (peopleStop.name == "Guillemot")
 	{
-		console.log("wesh " + stopChrono + " & " + peopleStop.duration);
 		peopleStoping = guigui;
 		guigui.animations.stop(null, true);
 	}

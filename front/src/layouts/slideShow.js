@@ -51,8 +51,7 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 SlideShow.prototype.slide = function SlideStarting(slideStart){
 	slideSound.play();
 	projectorSound.play();
-
-	slideBack.loadTexture('testFace', 0);
+	slideBack.loadTexture(slideStart, 0);
 	slideBack.width = 833;
 	slideBack.height = 624;
 	slideBack.z = 0;
