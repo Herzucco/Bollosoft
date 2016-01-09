@@ -17,6 +17,8 @@ function textures(game) {
     game.load.image('bgreen', 'assets/images/bgreen.png');
     game.load.image('bbrown', 'assets/images/bbrown.png');
     game.load.image('bpurple', 'assets/images/bpurple.png');
+
+    game.load.image('Hanouna', 'assets/images/slides/slide1.png');
 }
 
 module.exports = textures;

@@ -18,29 +18,29 @@ choice:
 characters:
   narrator:
     name: Narrateur
-    rythm: 0.035
-    font: basic
-    fontSize: 25
+    rythm: 0.03
+    font: times
+    fontSize: 30
     bubble: bbrown
     sound: narrator_voice
   guillemot:
     name: Guillemot
-    rythm: 0.035
-    font: basic
+    rythm: 0.03
+    font: comic
     fontSize: 25
     bubble: bpurple
     sound: guillemot_voice
   bollore:
     name: Bolloré
-    rythm: 0.035
-    font: basic
+    rythm: 0.03
+    font: stencil
     fontSize: 25
     bubble: bblue
     sound: bollore_voice_calm
   moulard:
     name: Robert Moulard
-    rythm: 0.035
-    font: basic
+    rythm: 0.03
+    font: smm
     fontSize: 25
     bubble: bgreen
     sound: moulard_voice
@@ -67,7 +67,7 @@ triggers:
       rythm: 0.045
       fontSize: 28
 settings:
-  picture: PrinceOfTunis
+  picture: Hanouna
   presentator: Moulard
 values:
   yes:
