@@ -41,7 +41,8 @@ Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
 	console.log("wesh " + peopleTalking.character.rythm);
 	if (peopleTalking.name == "Bolloré")
 	{
-		guigui.animations.play('talkingAnim', 6, true);
+		bollo.animations.play('talkingAnim', 6, true);
+		bollo.x = 1100;
 	}
 	if (peopleTalking.name == "Guillemot")
 	{
@@ -52,7 +53,8 @@ Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
 Couch.prototype.endTalk = function EndTalkAnim(peopleShutUp){
 	if (peopleShutUp.name == "Bolloré")
 	{
-		guigui.animations.play('idleAnim', 6, true);
+		bollo.animations.play('idleAnim', 6, true);
+		bollo.x = 1200;
 	}
 	if (peopleShutUp.name == "Guillemot")
 	{
