@@ -11,11 +11,11 @@ function SlideShow(){
 	Layout.call(this);
 	this.enable();
 
-	leftBackground = game.add.sprite(0, 0, 'leftBackground');
+	leftBackground = game.add.sprite(0, 200, 'leftBackground');
 	leftBackground.sendToBack();
 	canap = game.add.sprite(0, 800, 'canap');
 
-	devShadow = game.add.sprite(-250, 500, 'proto', 'proto/devShadow.png');
+	devShadow = game.add.sprite(-250, 700, 'proto', 'proto/devShadow.png');
 	devAnim = game.add.tween(devShadow);
 	this.group.add(devShadow);
 
@@ -30,7 +30,7 @@ function SlideShow(){
     	that.endPres(presEnd);
 	});
 
-	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
+	slideBack = game.add.sprite(44, 250, 'proto', 'protoGreug/1.png');
 	slideBack.width = 0;
 	slideBack.height = 0;
 
