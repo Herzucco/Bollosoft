@@ -146,6 +146,11 @@ Bubble.prototype.textMode = function TextModeBubble(){
         this.sentence[this.language][this.currentTextIndex] === '!' ||
         this.sentence[this.language][this.currentTextIndex] === '?' ||
         this.sentence[this.language][this.currentTextIndex] === '...'){
+        window.game.events.emit('pauseTalking', {
+          name : this.character.name,
+          character: this.character,
+          duration: 0.5 + this.character.rythm
+        });
        this.progressRythm = -0.5;
      }
 
