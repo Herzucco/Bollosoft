@@ -1,7 +1,6 @@
 function texts(game) {
     var texts = [
       require('json!dialogbundle!../../assets/text/yaml/scene1.yml'),
-      require('json!dialogbundle!../../assets/text/yaml/scene1.yml'),
     ];
 
     game.texts = texts;

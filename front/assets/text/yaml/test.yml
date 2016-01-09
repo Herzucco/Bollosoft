@@ -25,9 +25,3 @@ triggers:
 settings:
   picture: PrinceOfTunis
   presentator: Moulard
-
-days:
-  - One:
-    - PrinceOfTunis
-    - Bails
-    - Bouille

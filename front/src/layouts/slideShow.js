@@ -4,6 +4,8 @@ var canap;
 var devShadow;
 var devAnim;
 var slideBack;
+var slideSound;
+var projectorSound;
 
 function SlideShow(){
 	Layout.call(this);
@@ -31,6 +33,11 @@ function SlideShow(){
 	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
 	slideBack.width = 0;
 	slideBack.height = 0;
+
+	slideSound = window.game.add.audio('slide');
+	projectorSound = window.game.add.audio('projecteur');
+	projectorSound.loop = true;
+	
 	this.group.add(slideBack);
 }
 
@@ -42,6 +49,9 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 
 
 SlideShow.prototype.slide = function SlideStarting(slideStart){
+	slideSound.play();
+	projectorSound.play();
+
 	slideBack.loadTexture('testFace', 0);
 	slideBack.width = 833;
 	slideBack.height = 624;
@@ -61,6 +71,8 @@ SlideShow.prototype.endPres = function PresentationEnding(presEnd){
 	devAnim.start();
 	slideBack.width = 0;
 	slideBack.height = 0;
+
+	projectorSound.stop();
 }
 
 module.exports = SlideShow;

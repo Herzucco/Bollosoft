@@ -52,10 +52,7 @@ Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settin
   }
 
   this.characters = characters;
-  for(var i in this.characters){
-    this.characters['phaserSound'] = game.add.audio(this.characters[i].sound);
-  }
-  
+
   this.settings = settings;
 }
 
@@ -131,27 +128,31 @@ Dialog.prototype.update = function UpdateDialog(){
   }
 }
 
-Dialog.prototype.waitInput = function WaitInputDialog(){
-  if(this.spaceKey.isDown && this.skippable){
-    var bubble = this.bubbles[this.bubbles.length - 1];
+Dialog.prototype.newBubble = function NextBubbleDialog(){
+  var sentenceComputing;
 
+  if(this.currentSentence + 1 < this.sentences.length){
+    sentenceComputing = this.computeSentence(this.sentences[this.currentSentence + 1]);
+    if(sentenceComputing){
+      for(var i = 0; i < this.bubbles.length; i++){
+        this.bubbles[i].up();
+      }
+    }
+  }
+
+  this.next(1, sentenceComputing);
+}
+
+Dialog.prototype.waitInput = function WaitInputDialog(){
+  var bubble = this.bubbles[this.bubbles.length - 1];
+
+  if((this.spaceKey.isDown && this.skippable) || bubble.force){
     this.skippable = false;
 
     if(bubble.isOver){
-      var sentenceComputing;
-
-      if(this.currentSentence + 1 < this.sentences.length){
-        sentenceComputing = this.computeSentence(this.sentences[this.currentSentence + 1]);
-        if(sentenceComputing){
-          for(var i = 0; i < this.bubbles.length; i++){
-            this.bubbles[i].up();
-          }
-        }
-      }
-
-      this.next(1, sentenceComputing);
+      this.newBubble();
     }else if(bubble.mode !== 'scaling'){
-      bubble.skip();
+      bubble.skip(true);
     }
   }
 

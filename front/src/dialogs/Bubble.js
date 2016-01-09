@@ -14,6 +14,7 @@ function Bubble (group, x, y, sentence, characters, language, label) {
     this.character[i] = sentence.style[i];
   }
 
+  this.character['phaserSound'] = window.game.add.audio(this.character.sound);
   this.label = label;
 
   this.language = language || 'fr';
@@ -25,6 +26,7 @@ Bubble.prototype.constructor = Bubble;
 
 Bubble.prototype.set = function setBubble(){
   this.isOver = false;
+  this.force = false;
 
   this.preCurrentFadeTime = 0;
   this.preFadeTime = 0.5;
@@ -74,6 +76,11 @@ Bubble.prototype.start = function startBubble(){
   this.labelText.alpha = 0;
   this.labelBubble.alpha = 0;
   this.alpha = 0;
+
+  window.game.events.emit('startTalking', {
+    name : this.character.name,
+    character: this.character
+  });
 }
 
 Bubble.prototype.update = function UpdateBubble() {
@@ -88,6 +95,18 @@ Bubble.prototype.update = function UpdateBubble() {
     this.fadeMode();
   }else if(this.mode === 'up'){
     this.upAnimation();
+  }
+
+}
+
+Bubble.prototype.checkCut = function CheckCutBubble(nextLetter){
+  if(this.currentText[this.currentText.length-1] === '£'){
+    this.skip(false);
+
+    this.currentText = this.currentText.slice(0, -1);
+    this.bmpText.text = this.currentText;
+
+    this.force = true;
   }
 }
 
@@ -120,13 +139,32 @@ Bubble.prototype.textMode = function TextModeBubble(){
   if(this.progressRythm >= this.character.rythm && this.sentence[this.language][this.currentTextIndex] !== undefined){
     this.progressRythm = 0;
     this.currentText += this.sentence[this.language][this.currentTextIndex];
-    this.character['phaserSound'].play();
+    if(this.sentence[this.language][this.currentTextIndex] !== ' ' &&
+       this.sentence[this.language][this.currentTextIndex] !== ',' &&
+       this.sentence[this.language][this.currentTextIndex] !== '!' &&
+       this.sentence[this.language][this.currentTextIndex] !== '?' &&
+       this.sentence[this.language][this.currentTextIndex] !== '...'){
+         this.character.phaserSound.play();
+       }
+     if(this.sentence[this.language][this.currentTextIndex] === ',' ||
+        this.sentence[this.language][this.currentTextIndex] === '.' ||
+        this.sentence[this.language][this.currentTextIndex] === '!' ||
+        this.sentence[this.language][this.currentTextIndex] === '?' ||
+        this.sentence[this.language][this.currentTextIndex] === '...'){
+       this.progressRythm = -0.5;
+     }
+
     this.currentTextIndex++;
 
     this.bmpText.text = this.currentText;
+    this.checkCut();
   }else if(this.sentence[this.language][this.currentTextIndex] === undefined){
     this.isOver = true;
     this.mode = 'wait';
+    window.game.events.emit('endTalking', {
+      name : this.character.name,
+      character: this.character
+    });
   }
 }
 
@@ -165,13 +203,17 @@ Bubble.prototype.fadeMode = function fadeModeDialog(){
   }
 }
 
-Bubble.prototype.skip = function SkipBubble(){
+Bubble.prototype.skip = function SkipBubble(checkCut){
   this.isOver = true;
   this.alpha = 1;
   this.currentText = this.sentence[this.language];
 
   this.bmpText.text = this.currentText;
   this.mode = 'wait';
+
+  if(checkCut){
+    this.checkCut();
+  }
 }
 
 module.exports = Bubble;
