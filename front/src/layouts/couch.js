@@ -31,6 +31,10 @@ function Couch(){
 	});
 }
 
+var mapRange = function(from, to, s) {
+  return to[0] + (s - from[0]) * (to[1] - to[0]) / (from[1] - from[0]);
+};
+
 Couch.prototype = Object.create(Layout.prototype);
 Couch.prototype.constructor = Couch;
 Couch.prototype.update = function CouchUpdate(game){
@@ -39,20 +43,25 @@ Couch.prototype.update = function CouchUpdate(game){
 
 Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
 	console.log("wesh " + peopleTalking.character.rythm);
-	if (peopleTalking.name == "Bolloré")
-	{
-		guigui.animations.play('talkingAnim', 6, true);
-	}
-	if (peopleTalking.name == "Guillemot")
-	{
-		guigui.animations.play('talkingAnim', 6, true);
-	}
+	//if (peopleTalking.noAnim == false)
+	//{
+		if (peopleTalking.name == "Bolloré")
+		{
+			bollo.animations.play('talkingAnim', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
+			bollo.x = 1100;
+		}
+		if (peopleTalking.name == "Guillemot")
+		{
+			guigui.animations.play('talkingAnim', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
+		}
+	//}
 }
 
 Couch.prototype.endTalk = function EndTalkAnim(peopleShutUp){
 	if (peopleShutUp.name == "Bolloré")
 	{
-		guigui.animations.play('idleAnim', 6, true);
+		bollo.animations.play('idleAnim', 6, true);
+		bollo.x = 1200;
 	}
 	if (peopleShutUp.name == "Guillemot")
 	{
