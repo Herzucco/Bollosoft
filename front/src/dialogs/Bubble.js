@@ -211,6 +211,11 @@ Bubble.prototype.skip = function SkipBubble(checkCut){
   this.bmpText.text = this.currentText;
   this.mode = 'wait';
 
+  window.game.events.emit('endTalking', {
+    name : this.character.name,
+    character: this.character
+  });
+  
   if(checkCut){
     this.checkCut();
   }
