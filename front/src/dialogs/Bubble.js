@@ -58,13 +58,14 @@ Bubble.prototype.start = function startBubble(){
 
   this.labelBubble = new Phaser.Sprite(window.game, 0, 0, this.character.bubble);
   this.labelBubble.anchor.set(0.5, 0.5);
-  this.labelBubble.scale.setTo(0.5, 0.25);
+  this.labelBubble.scale.setTo(0.5, 0.14);
 
   this.labelText = window.game.add.bitmapText(0, 0, 'basic', this.character.name, 27);
   this.labelText.anchor.set(0.5, 0.5);
 
   this.bmpText = window.game.add.bitmapText(0, 0, this.character.font, "", this.character.fontSize);
   this.bmpText.anchor.set(0.5, 0.5);
+  this.bmpText.alpha = 1;
 
   this.group.add(this.labelBubble);
   this.group.add(this.labelText);
@@ -189,7 +190,7 @@ Bubble.prototype.fadeMode = function fadeModeDialog(){
   if(this.preFadeTime <= this.preCurrentFadeTime){
     this.currentFadeTime += 1/60;
 
-    if(this.alpha < 1){
+    if(this.alpha < 0.6){
       this.labelBubble.alpha += this.fadeSpeed;
       this.labelText.alpha += this.fadeSpeed;
       this.alpha += this.fadeSpeed;
@@ -210,7 +211,7 @@ Bubble.prototype.fadeMode = function fadeModeDialog(){
 
 Bubble.prototype.skip = function SkipBubble(checkCut){
   this.isOver = true;
-  this.alpha = 1;
+  this.alpha = 0.6;
   this.currentText = this.sentence[this.language];
 
   this.bmpText.text = this.currentText;
