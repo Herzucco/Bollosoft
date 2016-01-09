@@ -76,11 +76,6 @@ Bubble.prototype.start = function startBubble(){
   this.labelText.alpha = 0;
   this.labelBubble.alpha = 0;
   this.alpha = 0;
-
-  window.game.events.emit('startTalking', {
-    name : this.character.name,
-    character: this.character
-  });
 }
 
 Bubble.prototype.update = function UpdateBubble() {
@@ -199,6 +194,11 @@ Bubble.prototype.fadeMode = function fadeModeDialog(){
       this.currentFadeTime = 0;
       this.preCurrentFadeTime = 0;
       this.mode = 'text';
+
+      window.game.events.emit('startTalking', {
+        name : this.character.name,
+        character: this.character
+      });
     }
   }
 }
@@ -215,7 +215,7 @@ Bubble.prototype.skip = function SkipBubble(checkCut){
     name : this.character.name,
     character: this.character
   });
-  
+
   if(checkCut){
     this.checkCut();
   }
