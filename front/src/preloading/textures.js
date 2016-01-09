@@ -11,6 +11,7 @@ function textures(game) {
 
     game.load.atlasJSONHash('bolloSprite', 'assets/sprites/bollo.png', 'assets/sprites/bollo.json');
     game.load.atlasJSONHash('guiguiSprite', 'assets/sprites/guigui.png', 'assets/sprites/guigui.json');
+    game.load.atlasJSONHash('devsSprite', 'assets/sprites/devs.png', 'assets/sprites/devs.json');
 
     game.load.image('bblack', 'assets/images/bblack.png');
     game.load.image('bblue', 'assets/images/bblue.png');

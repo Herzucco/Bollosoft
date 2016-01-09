@@ -1,4 +1,5 @@
 var Layout = require('./layout');
+var slideShow = require('./slideShow');
 var rightBackground;
 var bollo;
 var guigui;
@@ -67,9 +68,13 @@ Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
 			bollo.animations.play('talkingAnim', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
 			bollo.x = 1100;
 		}
-		if (peopleTalking.name == "Guillemot")
+		else if (peopleTalking.name == "Guillemot")
 		{
 			guigui.animations.play('talkingAnim', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
+		}
+		else if (peopleTalking.name == "Robert Moulard")
+		{
+			slideShow.DevShadow.animations.play('moulard', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
 		}
 	//}
 }
@@ -82,9 +87,13 @@ Couch.prototype.endTalk = function EndTalkAnim(peopleShutUp){
 		bollo.animations.play('idleAnim', 5, true);
 		bollo.x = 1200;
 	}
-	if (peopleShutUp.name == "Guillemot")
+	else if (peopleShutUp.name == "Guillemot")
 	{
 		guigui.animations.play('idleAnim', 5, true);
+	}
+	else if (peopleShutUp.name == "Robert Moulard")
+	{
+		slideShow.DevShadow.animations.stop(null, true);
 	}
 }
 
@@ -98,10 +107,15 @@ Couch.prototype.pauseTalk = function PauseTalkAnim(peopleStop){
 		peopleStoping = bollo;
 		bollo.animations.stop(null, true);
 	}
-	if (peopleStop.name == "Guillemot")
+	else if (peopleStop.name == "Guillemot")
 	{
 		peopleStoping = guigui;
 		guigui.animations.stop(null, true);
+	}
+	else if (peopleStop.name == "Robert Moulard")
+	{
+		peopleStoping = slideShow.DevShadow;
+		slideShow.DevShadow.animations.stop(null, true);
 	}
 }
 

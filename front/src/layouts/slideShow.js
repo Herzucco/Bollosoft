@@ -11,13 +11,22 @@ function SlideShow(){
 	Layout.call(this);
 	this.enable();
 
-	leftBackground = game.add.sprite(0, 200, 'leftBackground');
+	leftBackground = game.add.sprite(0, 0, 'leftBackground');
 	leftBackground.sendToBack();
 	canap = game.add.sprite(0, 800, 'canap');
 
-	devShadow = game.add.sprite(-250, 700, 'proto', 'proto/devShadow.png');
+	devShadow = game.add.sprite(-500, 500, 'devsSprite');
+	devShadow.animations.add('black', Phaser.Animation.generateFrameNames('black', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('breton', Phaser.Animation.generateFrameNames('breton', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('iwata', Phaser.Animation.generateFrameNames('iwata', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('kojima', Phaser.Animation.generateFrameNames('kojima', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('moulard', Phaser.Animation.generateFrameNames('moulard', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('étudiante', Phaser.Animation.generateFrameNames('étudiante', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.play('black', 5, true);
+	devShadow.animations.stop(null, true);
 	devAnim = game.add.tween(devShadow);
 	this.group.add(devShadow);
+	module.exports.DevShadow = devShadow;
 
 	var that = this;
 	window.game.events.on('slide', function(slideStart){
@@ -30,7 +39,7 @@ function SlideShow(){
     	that.endPres(presEnd);
 	});
 
-	slideBack = game.add.sprite(44, 250, 'proto', 'protoGreug/1.png');
+	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
 	slideBack.width = 0;
 	slideBack.height = 0;
 
@@ -59,14 +68,44 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 }
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
-	devAnim.to({x:50}, 200, Phaser.Easing.Linear.None);
+	if (presStart == "Black")
+	{
+		devShadow.animations.play('black', 5, true);
+		devShadow.animations.stop(null, true);
+	}
+	else if (presStart == "Breton")
+	{
+		devShadow.animations.play('breton', 5, true);
+		devShadow.animations.stop(null, true);
+	}
+	else if (presStart == "Iwata")
+	{
+		devShadow.animations.play('iwata', 5, true);
+		devShadow.animations.stop(null, true);
+	}
+	else if (presStart == "Kojima")
+	{
+		devShadow.animations.play('kojima', 5, true);
+		devShadow.animations.stop(null, true);
+	}
+	else if (presStart == "Moulard")
+	{
+		devShadow.animations.play('moulard', 5, true);
+		devShadow.animations.stop(null, true);
+	}
+	else if (presStart == "Etudiante")
+	{
+		devShadow.animations.play('étudiante', 5, true);
+		devShadow.animations.stop(null, true);
+	}
+	devAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 	devShadow.z = 1;
 	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
 }
 
 SlideShow.prototype.endPres = function PresentationEnding(presEnd){
-	devAnim.to({x:-250}, 200, Phaser.Easing.Linear.None);
+	devAnim.to({x:-500}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 	slideBack.width = 0;
 	slideBack.height = 0;
