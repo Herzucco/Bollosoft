@@ -18,6 +18,10 @@ function Answer(){
   this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
   this.enterKey = window.game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
 
+  this.yesSound = window.game.add.audio('yes');
+  this.noSound = window.game.add.audio('no');
+  this.cursor = window.game.add.audio('cursor');
+
   this.draw();
 }
 
@@ -31,15 +35,22 @@ Answer.prototype.update = function AnswerUpdate(game){
       this.yesTxt.addColor('#C04A67', 0);
       this.noTxt.addColor('#ffffff', 0);
       this.choice = true;
+      this.cursor.play();
     }else if(this.rightKey.isDown){
       this.yesTxt.addColor('#ffffff', 0);
       this.noTxt.addColor('#C04A67', 0);
       this.choice = false;
+      this.cursor.play();
     }else if(this.spaceKey.isDown || this.enterKey.isDown){
       window.game.events.emit('choiceEnd', this.choice);
       this.currentWaitingTime = 0;
       this.waitInputs = false;
       this.disable();
+      if(this.choice){
+        this.yesSound.play();
+      }else{
+        this.noSound.play();
+      }
     }
   }else{
     this.currentWaitingTime += 1/60;

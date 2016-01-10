@@ -6,6 +6,7 @@ var devAnim;
 var slideBack;
 var slideSound;
 var projectorSound;
+var doorSound;
 
 function SlideShow(){
 	Layout.call(this);
@@ -44,9 +45,10 @@ function SlideShow(){
 	slideBack.height = 0;
 
 	slideSound = window.game.add.audio('slide');
+	doorSound = window.game.add.audio('door');
 	projectorSound = window.game.add.audio('projecteur');
 	projectorSound.loop = true;
-	
+
 	this.group.add(slideBack);
 }
 
@@ -68,6 +70,7 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 }
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
+	doorSound.play();
 	if (presStart == "Black")
 	{
 		devShadow.animations.play('black', 5, true);

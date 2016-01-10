@@ -40,6 +40,8 @@ Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
   }else {
     this.computeDialog(this.source.choice['no'], this.source.characters, this.source.settings);
   }
+
+  this.waitInput(true);
 }
 
 Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settings){
@@ -124,7 +126,7 @@ Dialog.prototype.getSentence = function GetSentenceDialog(){
 
 Dialog.prototype.update = function UpdateDialog(){
   if(this.canInput){
-    this.waitInput();
+    this.waitInput(false);
   }
 }
 
@@ -143,10 +145,10 @@ Dialog.prototype.newBubble = function NextBubbleDialog(){
   this.next(1, sentenceComputing);
 }
 
-Dialog.prototype.waitInput = function WaitInputDialog(){
+Dialog.prototype.waitInput = function WaitInputDialog(force){
   var bubble = this.bubbles[this.bubbles.length - 1];
 
-  if((this.spaceKey.isDown && this.skippable) || bubble.force){
+  if((this.spaceKey.isDown && this.skippable) || bubble.force || force){
     this.skippable = false;
 
     if(bubble.isOver){
