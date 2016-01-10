@@ -1,0 +1,39 @@
+***
+[narrator]
+{1}
+...£
+
+***
+[narrator]
+{3}
+Très bien, vous n'avez qu'à quitter le jeu.£
+
+***
+[narrator]
+{3}
+Nous continuons sans vous.£
+
+***
+!~~~
+
+***
+[guillemot]
+{1}
+Mais ?... Et le score Meta-£
+
+***
+[bollore]
+{2}
+GUILLEMOT !£
+
+***
+[bollore]
+Ne m'enervez pas. Sinon !£
+
+***
+[bollore]
+Je me verrais dans l'obligation d'augmenter ma présence financière au sein d'Ubisoft.
+
+***
+[bollore]
+Bien, commençons !

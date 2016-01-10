@@ -2,19 +2,19 @@
 text:
   - talker: narrator
     file:
-      fr: ../chunks/scene1/scene1.txt
-      en: ../chunks/scene1/scene1.txt
+      fr: ../chunks/scene1/scene2.txt
+      en: ../chunks/scene1/scene2.txt
 choice:
   yes:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene1_yes.txt
-        en: ../chunks/scene1/scene1_yes.txt
+        fr: ../chunks/scene1/scene2_yes.txt
+        en: ../chunks/scene1/scene2_yes.txt
   no:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene1_no.txt
-        en: ../chunks/scene1/scene1_no.txt
+        fr: ../chunks/scene1/scene2_no.txt
+        en: ../chunks/scene1/scene2_no.txt
 characters:
   narrator:
     name: Narrateur
@@ -37,13 +37,13 @@ characters:
     fontSize: 25
     bubble: bblue
     sound: bollore_voice_calm
-  moulard:
-    name: Patrick Décimé
-    rythm: 0.03
-    font: arial
+  kojima:
+    name: Kojima
+    rythm: 0.04
+    font: dekiru
     fontSize: 25
-    bubble: bgreen
-    sound: moulard_voice
+    bubble: bblue
+    sound: kojima_voice
 triggers:
   - id: 1
     settings:
@@ -67,12 +67,12 @@ triggers:
       rythm: 0.025
       fontSize: 28
 settings:
-  picture: Hanouna
-  presentator: Moulard
+  picture: PT
+  presentator: Kojima
 values:
   yes:
-    metacritic: 10
-    bolloRate: 0.5
+    metacritic: 0
+    bolloRate: 0
   no:
-    metacritic: -5
-    bolloRate: -1
+    metacritic: 0
+    bolloRate: 0

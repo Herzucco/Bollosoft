@@ -1,0 +1,131 @@
+***
+@@@
+
+***
+[narrator]
+Cawi, auteur du bestseller "The Phantom Pain".
+
+***
+[narrator]
+Le livre raconte sa propre vie d'enfant-soldat.
+
+***
+[narrator]
+Jusqu'au jour où une mine antipersonnel le priva d'une de ses deux jambes.
+
+***
+[narrator]
+Puis la chance qu'il a eu d'être adopté par un couple d'occidentaux.
+
+***
+[narrator]
+Il a ainsi rejoint l'Europe où il a grandit dans un milieu aisé.
+
+***
+[cawi]
+Bonjour, messieurs.£
+
+***
+[cawi]
+J'ai été contacté par Ubisoft personnellement dans le but d'adapter mon livre en jeu vidéo.£
+
+***
+[cawi]
+Je pense que c'est une bonne idée pour que mon message touche un plus large public.£
+
+***
+[cawi]
+Pour sensibiliser aux réalités de notre monde.£
+
+***
+[cawi]
+Je crois que l'équipe d'Ubisoft a préparé une image de présentation pour moi.£
+
+***
+$$$
+
+***
+[narrator]
+Cawi semble mal à l'aise face à la slide de présentation.
+
+***
+[bollore]
+Un enfant-soldat ?£
+
+***
+[bollore]
+N'est-ce pas un curieux sujet de jeu vidéo ?£
+
+***
+[guillemot]
+Vous ne comprenez rien à l'industrie actuelle, Bolloré.£
+
+***
+[guillemot]
+Cawi a été repéré par la Commission de la Caution Indé.
+
+***
+[guillemot]
+Celle-ci s'occupe de repérer des projets de jeux vidéo difficiles.£
+
+***
+[guillemot]
+Qui ne seront sans doute pas rentables mais qui ont le mérite de donner à Ubisoft une meilleure image.£
+
+***
+[guillemot]
+Ce sont des offrandes à notre dieu à tous, Metacritic.£
+
+***
+[bollore]
+Curieuses méthodes...
+
+***
+[guillemot]
+On a fait passer la pilule en communiquant sur Soldats Inconnus, Child of Light, Grow Home, etc.£
+
+***
+[bollore]
+La diversion est une technique classique mais non pas moins efficace.£
+
+***
+[bollore]
+Mais, ne pensez-vous pas que les enfants-soldats soient un sujet trop difficile ?£
+
+***
+[bollore]
+Pourquoi pas un jeu sur le 11 Septembre, tant qu'on y est, quittes à chercher le buzz ?
+
+***
+[guillemot]
+Voyons Bolloré, notre démarche serait bien trop flagrante !£
+
+***
+[guillemot]
+Cette année nous nous sommes fait devancés par EA, avec Unravel et son créateur tremblotant et fragile.£
+
+***
+[guillemot]
+{5}
+Imaginez !£
+
+***
+[guillemot]
+{3}
+Un estropié ancien enfant-soldat, sur la scène de l'E3 ?£
+
+***
+[guillemot]
+{4}
+BAM !£
+
+***
+[guillemot]
+On va les ridiculiser !
+
+***
+[guillemot]
+Bref, laissons maintenant les actionnaires décider.
+
+***
+~~~

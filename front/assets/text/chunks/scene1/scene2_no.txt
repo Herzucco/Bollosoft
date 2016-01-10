@@ -1,0 +1,19 @@
+***
+!~~~
+
+***
+[bollore]
+{2}
+Je le savais !
+
+***
+[bollore]
+2 * Hanouna > Kojima
+
+***
+[narrator]
+Kojima semble déçu.
+
+***
+[kojima]
+Kojima est déçu.

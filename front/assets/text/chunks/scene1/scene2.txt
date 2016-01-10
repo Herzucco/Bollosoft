@@ -1,0 +1,165 @@
+***
+@@@
+
+***
+[kojima]
+Kojima Hideo se tient devant Bolloré et Guillemot.
+
+***
+[guillemot]
+Comment ? Hideo Kojima, ici ?£
+
+***
+[guillemot]
+C'est une opportunité en or !£
+
+***
+[bollore]
+Qui est-ce ?£
+
+***
+[guillemot]
+Kojima-san est le créateur renommé de la série Metal Gear Solid.£
+
+***
+[guillemot]
+Une des séries de jeux vidéo les plus acclamés selon St-Metacritic.£
+
+***
+[guillemot]
+Et les plus vendus selon St-VGChartz.
+
+***
+[kojima]
+Kojima est venu vous présenter un projet dont le nom est T.P.£
+
+***
+[kojima]
+C'est un survival-horror à la premi§re personne.£
+
+***
+[kojima]
+Voici un résumé de son scénario.£
+
+***
+$$$
+
+***
+[guillemot]
+{1}
+...
+
+***
+[guillemot]
+Vous voulez parler de P.T. ?£
+
+***
+[guillemot]
+Le futur Silent Hills avorté par Konami ?£
+
+***
+[kojima]
+...£
+
+***
+[narrator]
+Kojima replace ses lunettes sur son nez.
+
+***
+[kojima]
+Il s'agit d�une demande un peu particulière.£
+
+***
+[kojima]
+Kojima souhaite...£
+
+***
+[kojima]
+que vous sauviez le projet avorté des mâchoires de ses ravisseurs.£
+
+***
+[guillemot]
+{4}
+PARDON ?£
+
+***
+[guillemot]
+Vous voulez dire rachetez la licence Silent Hill auprès de Konami ?
+
+***
+[bollore]
+Ce serait une véritable déclaration de guerre.£
+
+***
+[bollore]
+C'est bien trop risqué d'un point de vue diplomatique.
+
+***
+[guillemot]
+Permettez-moi, Kojima-san, de vous faire une contre-proposition.£
+
+***
+[guillemot]
+Venez à Ubisoft afin de redonner ses lettres de noblesse...£
+
+***
+[guillemot]
+{3}
+À Splinter Cell.
+
+***
+[narrator]
+Kojima replace ses lunettes sur son nez.
+
+***
+[kojima]
+Cela n'intéresse pas Kojima.£
+
+***
+[guillemot]
+Kojima-san, je vous en prie, acceptez de rejoindre Ubisoft.£
+
+***
+[guillemot]
+Nous sommes prêt à vous offrir...£
+
+***
+[guillemot]
+{3}
+500 millions de dollars.£
+
+***
+[bollore]
+{4}
+500 millions !£
+
+***
+[bollore]
+C'est 2 fois le prix que j'ai payé pour garder Hanouna.£
+
+***
+[guillemot]
+Kojima vaut bien 2 Hanouna...£
+
+***
+[guillemot]
+Quel est votre prix, Kojima-san ?£
+
+***
+[bollore]
+En Hanouna si possible.
+
+***
+[Kojima]
+Kojima vaut Kojima.
+
+***
+[guillemot]
+Assez discuté, ce sont aux actionnaires de décider de toute façon.£
+
+***
+[guillemot]
+Actionnaires, doit-on se payer Kojima au prix de 2 Hanouna ?
+
+***
+~~~
