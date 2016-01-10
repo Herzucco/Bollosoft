@@ -1,6 +1,6 @@
-***
+﻿***
 [narrator]
-Robert Moulard est le responsable de la licence perdue Prince of Persia.
+Patrick Décimé est le responsable de la licence perdue Prince of Persia.
 
 ***
 @@@
@@ -15,7 +15,7 @@ Bonjour messieurs !
 
 ***
 [guillemot]
-Ah, Moulard ! Vous êtes toujours employé ici, vous ?
+Ah, Patrick Décimé ! Vous êtes toujours employé ici, vous ?
 
 ***
 [moulard]
@@ -29,8 +29,7 @@ Permettez-moi de vous présenter la nouvelle mouture de notre série légendaire
 
 ***
 [moulard]
-Notre collaboration avec Mr Bolloré va nous permettre de ramener la licence sur
- le devant de la scène.£
+Notre collaboration avec M. Bolloré va nous permettre de ramener la licence sur le devant de la scène.£
 
 ***
 [moulard]
@@ -42,16 +41,15 @@ $$$
 ***
 [guillemot]
 {2}
-COMMENT !?
+COMMENT ?
 
 ***
 [moulard]
-Nous avons pensé utiliser la figure populaire de Cyril Hanouna.£
+Nous avons pensé qu'utiliser la figure populaire de Cyril Hanouna,£
 
 ***
 [moulard]
-Ainsi que la bande de #TPMP pourrait nous permettre de faire connaître la licence
- auprès d’un nouveau public.
+ainsi que la bande de #TPMP, pourrait nous permettre de faire connaître la licence auprès d’un nouveau public.
 
 ***
 [bollore]
@@ -98,7 +96,7 @@ N’avez-vous donc pas l’envie de voir la culture française rayonner ?£
 ***
 [bollore]
 Quoiqu’il en soit, nous sommes déjà entrés en pourparlers avec le présentateur
-américain Jimmy Fallon.
+américain Jimmy Fallon.£
 
 ***
 [bollore]
@@ -111,16 +109,6 @@ fleuron indépendant.£
 
 ***
 [guillemot]
-Les actionnaires qui détiennent les 80 autres % d’Ubisoft sauront en tenir compte.£
+Les actionnaires qui détiennent les 80 autres % d’Ubisoft sauront en tenir compte.
 
-***
-[narrator]
-Vous incarnez l’avis des actionnaires détenant 80% d’Ubisoft.
-
-***
-[narrator]
-Vous avez droit de vie et de mort sur chaque projet.
-
-***
-[narrator]
-Que décidez-vous ?
+~~~

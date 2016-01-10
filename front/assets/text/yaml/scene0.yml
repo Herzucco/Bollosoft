@@ -37,18 +37,11 @@ characters:
     fontSize: 25
     bubble: bblue
     sound: bollore_voice_calm
-  moulard:
-    name: Patrick Décimé
-    rythm: 0.03
-    font: arial
-    fontSize: 25
-    bubble: bgreen
-    sound: moulard_voice
 triggers:
   - id: 1
     settings:
-      rythm: 1
-      fontSize: 100
+      rythm: 0.05
+      fontSize: 20
   - id: 2
     settings:
       rythm: 0
@@ -71,8 +64,8 @@ settings:
   presentator: Moulard
 values:
   yes:
-    metacritic: 10
-    bolloRate: 0.5
+    metacritic: 0
+    bolloRate: 0
   no:
-    metacritic: -5
-    bolloRate: -1
+    metacritic: 0
+    bolloRate: 0

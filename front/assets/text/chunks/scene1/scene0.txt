@@ -1,0 +1,86 @@
+***
+[narrator]
+Salon d’Yves Guillemot, cofondateur et PDG d’Ubisoft. 
+
+***
+[narrator]
+Celui-ci reçoit chez lui les équipes sélectionnées pour un développement de jeu en 2016.
+
+***
+[guillemot]
+Bonjour à tous, merci d’avoir répondu à notre appel à projets. 
+
+***
+[guillemot]
+Vous allez passer chacun votre tour pour présenter votre concept de jeu,£
+
+***
+[guillemot]
+ et je déciderai si votre projet mérite d’être développé au sein de nos studios. 
+
+¡¡¡
+
+***
+[guillemot]
+Mon seul critère, voir dans votre projet la possibilité d’obtenir la plus haute distinction :£
+
+***
+[guillemot]
+{4}
+une note Metacritic SUPERIEUR A 90.
+
+***
+[guillemot]
+Ubisoft, en tant que fleuron français du jeu vidéo, se doi-£
+
+***
+[bollore]
+{2}
+GUILLEMOT ! 
+ 
+***
+[bollore]
+Mon nom est Vincent Bolloré, petit prince du cash-flow et nouvel actionnaire majoritaire d’Ubisoft.£
+
+***
+[bollore]
+Je me permets donc de venir assister à ces présentations.£
+
+***
+[bollore]
+Afin de m'assurer que les petits soldats d'Ubisoft suivent les directives de Vivendi.
+
+***
+[guillemot]
+{1}
+... d'accord.
+
+~~~
+
+***
+[narrator]
+Guillemot semble très énervé par l'irruption de Bolloré.£
+
+***
+[narrator]
+Mais il semble aussi apeuré par la puissance financière de son rival.
+
+***
+[narrator]
+Bolloré, malgré tous ces efforts, ne possède en réalité que 11,52% d’Ubisoft.£
+
+***
+[narrator]
+Yves Guillemot possède un peu moins de 9%.£
+
+***
+[narrator]
+Vous incarnez l’avis des actionnaires détenant 80% d’Ubisoft. 
+
+***
+[narrator]
+Vous avez droit de vie et de mort sur chaque projet.£
+
+***
+[narrator]
+Êtes-vous prêt à prendre tant de responsabilités ?
