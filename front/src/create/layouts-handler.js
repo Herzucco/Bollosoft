@@ -9,8 +9,8 @@ function layoutsHandler(dayConfig){
 
   layouts.push(new SlideShow());
   layouts.push(new Couch());
-  layouts.push(new DialogPannel());
   layouts.push(new Answer());
+  layouts.push(new DialogPannel());
   layouts.push(new EndDay());
 
   game.layouts = layouts;

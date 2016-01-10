@@ -29,7 +29,7 @@ Dialog.prototype.load = function LoadDialog(source){
 
   this.computeDialog(source.text, source.characters, source.settings);
 
-  this.next(1, true);
+  this.newBubble();
 }
 
 Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
@@ -114,6 +114,18 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
       window.game.events.emit('presentator', this.settings.presentator.toLowerCase());
       return false;
     break;
+    case '~~~' :
+      window.game.events.emit('startOpacityCalq');
+      return false;
+    break;
+    case '!~~~' :
+      window.game.events.emit('endOpacityCalq');
+      return false;
+    break;
+    case '¡¡¡' :
+      window.game.events.emit('bolloFall');
+      return false;
+    break;
     default :
       return true;
     break;
@@ -152,18 +164,22 @@ Dialog.prototype.newBubble = function NewBubbleDialog(){
 Dialog.prototype.waitInput = function WaitInputDialog(force){
   var bubble = this.bubbles[this.bubbles.length - 1];
 
-  if((this.spaceKey.isDown && this.skippable) || bubble.force || force){
-    this.skippable = false;
+  if(bubble !== undefined){
+    if((this.spaceKey.isDown && this.skippable) || bubble.force || force){
+      this.skippable = false;
 
-    if(bubble.isOver){
-      this.newBubble();
-    }else if(bubble.mode !== 'scaling'){
-      bubble.skip(true);
+      if(bubble.isOver){
+        this.newBubble();
+      }else if(bubble.mode !== 'scaling'){
+        bubble.skip(true);
+      }
     }
-  }
 
-  if(this.spaceKey.isUp && window.game.input.activePointer.leftButton.isUp){
-    this.skippable = true;
+    if(this.spaceKey.isUp && window.game.input.activePointer.leftButton.isUp){
+      this.skippable = true;
+    }
+  }else{
+    this.newBubble();
   }
 }
 

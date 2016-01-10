@@ -38,13 +38,16 @@ Bubble.prototype.set = function setBubble(){
   this.upTime = 0.5;
   this.upSpeed = 6;
 
+  this.currentWaitTime = 0;
+  this.waitTime = 0.5;
+  this.waitSignal = false;
+
   this.currentText = "";
   this.currentTextIndex = 0;
 
   this.bmpText = null;
   this.labelBubble = null;
   this.labelText = null;
-
 
   this.mode = 'scaling';
 
@@ -64,7 +67,7 @@ Bubble.prototype.start = function startBubble(){
   this.labelText.anchor.set(0.5, 0.5);
 
   this.bmpText = window.game.add.bitmapText(0, 0, this.character.font, "", this.character.fontSize);
-  this.bmpText.anchor.set(0.5, 0.5);
+  this.bmpText.anchor.set(0, 0.5);
   this.bmpText.alpha = 1;
 
   this.group.add(this.labelBubble);
@@ -80,7 +83,10 @@ Bubble.prototype.start = function startBubble(){
 }
 
 Bubble.prototype.update = function UpdateBubble() {
-  this.bmpText.x = this.x;
+  if(this.mode !== 'end' && this.mode !== 'wait'){
+    this.bmpText.x = this.x - this.width / 2 + 20;
+  }
+
   this.bmpText.y = this.y;
 
   this.updateLabel();
@@ -91,6 +97,8 @@ Bubble.prototype.update = function UpdateBubble() {
     this.fadeMode();
   }else if(this.mode === 'up'){
     this.upAnimation();
+  }else if(this.mode === 'wait'){
+    this.waitAnimation();
   }
 
 }
@@ -177,8 +185,30 @@ Bubble.prototype.upAnimation = function UpAnimationBubble(){
 
   if(this.upTime <= this.currentUpTime){
     this.currentUpTime = 0;
-    this.mode = 'wait';
+    this.mode = 'end';
+    if(this.currentText[this.currentText.length -1] === '_'){
+      this.currentText = this.currentText.slice(0, -2);
+      this.bmpText.text = this.currentText;
+    }
   }
+}
+
+Bubble.prototype.waitAnimation = function WaitAnimationBubble(){
+  if(this.waitSignal){
+    this.currentWaitTime -= 1/60;
+    if(this.currentWaitTime <= 0){
+      this.currentText = this.currentText.slice(0, -2);
+      this.waitSignal = false;
+    }
+  }else{
+    this.currentWaitTime += 1/60;
+    if(this.currentWaitTime >= this.waitTime){
+      this.currentText += " _";
+      this.waitSignal = true;
+    }
+  }
+
+  this.bmpText.text = this.currentText;
 }
 
 Bubble.prototype.up = function UpBubble(){

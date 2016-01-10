@@ -18,6 +18,7 @@ function textures(game) {
     game.load.image('bgreen', 'assets/images/bgreen.png');
     game.load.image('bbrown', 'assets/images/bbrown.png');
     game.load.image('bpurple', 'assets/images/bpurple.png');
+    game.load.image('opacityCalq', 'assets/images/prod/rectangleblanc.png');
 
     game.load.image('moulard', 'assets/images/prod/moulard/moulard1.png');
     game.load.image('black', 'assets/images/prod/black/black1.png');
