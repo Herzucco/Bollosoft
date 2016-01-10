@@ -8,6 +8,7 @@ function textures(game) {
     game.load.image('leftBackground', 'assets/images/prod/écran_gauche/fond.png');
     game.load.image('rightBackground', 'assets/images/prod/fond_ecran_droite.png');
     game.load.image('canap', 'assets/images/prod/écran_gauche/canap.png');
+    game.load.image('iwataTexture', 'assets/images/prod/iwata.png');
 
     game.load.atlasJSONHash('bolloSprite', 'assets/sprites/bollo.png', 'assets/sprites/bollo.json');
     game.load.atlasJSONHash('guiguiSprite', 'assets/sprites/guigui.png', 'assets/sprites/guigui.json');
@@ -19,6 +20,8 @@ function textures(game) {
     game.load.image('bbrown', 'assets/images/bbrown.png');
     game.load.image('bpurple', 'assets/images/bpurple.png');
     game.load.image('opacityCalq', 'assets/images/prod/rectangleblanc.png');
+    game.load.image('oui', 'assets/images/ui/ok.png');
+    game.load.image('non', 'assets/images/ui/non.png');
 
     game.load.image('moulard', 'assets/images/prod/moulard/moulard1.png');
     game.load.image('black', 'assets/images/prod/black/black1.png');
