@@ -122,6 +122,10 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
       window.game.events.emit('endOpacityCalq');
       return false;
     break;
+    case '¡¡¡' :
+      window.game.events.emit('bolloFall');
+      return false;
+    break;
     default :
       return true;
     break;
