@@ -8,6 +8,7 @@ function textures(game) {
     game.load.image('leftBackground', 'assets/images/prod/écran_gauche/fond.png');
     game.load.image('rightBackground', 'assets/images/prod/fond_ecran_droite.png');
     game.load.image('canap', 'assets/images/prod/écran_gauche/canap.png');
+    game.load.image('iwataTexture', 'assets/images/prod/iwata.png');
 
     game.load.atlasJSONHash('bolloSprite', 'assets/sprites/bollo.png', 'assets/sprites/bollo.json');
     game.load.atlasJSONHash('guiguiSprite', 'assets/sprites/guigui.png', 'assets/sprites/guigui.json');

@@ -7,6 +7,8 @@ var slideBack;
 var slideSound;
 var projectorSound;
 var doorSound;
+var filter;
+var iwataShader;
 
 function SlideShow(){
 	Layout.call(this);
@@ -52,6 +54,55 @@ function SlideShow(){
 	projectorSound.loop = true;
 
 	this.group.add(slideBack);
+
+    //  Shader by Kali (https://www.shadertoy.com/view/4dfGDM)
+    //  Image patched by Richard Davey
+	var fragmentSrc = [
+
+        "precision mediump float;",
+
+        "uniform float     time;",
+        "uniform vec2      resolution;",
+        "uniform sampler2D iChannel0;",
+
+        "void main( void ) {",
+
+            "vec2 uv = gl_FragCoord.xy / resolution.xy;",
+
+            "// Flip-a-roo.",
+            "uv.y *= -1.0;",
+
+            "// Represents the v/y coord(0 to 1) that will not sway.",
+            "float fixedBasePosY = 0.0;",
+
+            "// Configs for you to get the sway just right.",
+            "float speed = 3.0;",
+            "float verticleDensity = 6.0;",
+            "float swayIntensity = 0.2;",
+
+            "// Putting it all together.",
+            "float offsetX = sin(uv.y * verticleDensity + time * speed) * swayIntensity;",
+
+            "// Offsettin the u/x coord.",
+            "uv.x += offsetX * (uv.y - fixedBasePosY);",
+
+            "gl_FragColor = texture2D(iChannel0, uv);",
+
+        "}"
+    ];
+
+    //  Texture must be power-of-two sized or the filter will break
+    iwataShader = game.add.sprite(0, 0, 'iwataTexture');
+    iwataShader.alpha = 0;
+
+    var customUniforms = {
+        iChannel0: { type: 'sampler2D', value: iwataShader.texture, textureData: { repeat: true } }
+    };
+
+    filter = new Phaser.Filter(game, customUniforms, fragmentSrc);
+    filter.setResolution(1024, 1024);
+
+    iwataShader.filters = [ filter ];
 }
 
 SlideShow.prototype = Object.create(Layout.prototype);
@@ -61,6 +112,7 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 	if(this.shadow != undefined && this.shadow.alpha > 0){
 		this.shadow.alpha -= 0.02;
 	}
+	filter.update();
 }
 
 
@@ -81,8 +133,8 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 	devShadow.animations.stop(null, true);
 
 	this.shadow = game.add.sprite(-500, 500, presStart);
-  this.shadow.tint = 0x000000;
-  this.shadow.alpha = 1;
+  	this.shadow.tint = 0x000000;
+  	this.shadow.alpha = 1;
 
 	var shadowAnim = game.add.tween(this.shadow);
 	shadowAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
