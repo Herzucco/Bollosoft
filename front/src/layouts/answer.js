@@ -41,13 +41,15 @@ Answer.prototype.update = function AnswerUpdate(game){
 
   if(this.waitInputs){
     if(this.leftKey.isDown){
-      this.yesTxt.addColor('#C04A67', 0);
-      this.noTxt.addColor('#ffffff', 0);
+      this.group.moveDown(this.noTxt);
+      this.group.moveUp(this.yesTxt);
+      this.group.moveUp(this.yesTxt);
       this.choice = true;
       this.cursor.play();
     }else if(this.rightKey.isDown){
-      this.yesTxt.addColor('#ffffff', 0);
-      this.noTxt.addColor('#C04A67', 0);
+      this.group.moveDown(this.yesTxt);
+      this.group.moveUp(this.noTxt);
+      this.group.moveUp(this.noTxt);
       this.choice = false;
       this.cursor.play();
     }else if(this.spaceKey.isDown || this.enterKey.isDown){
@@ -80,16 +82,12 @@ Answer.prototype.draw = function AnswerDraw(game){
   this.opacityCalq.alpha = 0.7;
   this.opacityCalq.visible = false;
   
-  this.yesTxt = window.game.add.text(window.game.world.centerX - centerOffset, window.game.world.centerY, "Accepter",
-                { font: "65px Times New Roman", fill: "#C04A67", align: "center", stroke : '#000000' });
-  this.yesTxt.anchor.setTo(0.5, 0.5);
-
-  this.noTxt = window.game.add.text(window.game.world.centerX + centerOffset, window.game.world.centerY, "Refuser",
-                { font: "65px Times New Roman", fill: "#ffffff", align: "center", stroke : '#000000' });
-  this.noTxt.anchor.setTo(0.5, 0.5);
-
-  this.group.add(this.yesTxt);
+  this.yesTxt = window.game.add.sprite(window.game.world.centerX - centerOffset -319, window.game.world.centerY, 'oui');
+  this.noTxt = window.game.add.sprite(window.game.world.centerX + centerOffset, window.game.world.centerY, 'non');
+  
   this.group.add(this.noTxt);
+  this.group.add(this.opacityCalq);
+  this.group.add(this.yesTxt);
 }
 
 module.exports = Answer;
