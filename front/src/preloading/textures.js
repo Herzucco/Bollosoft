@@ -28,6 +28,8 @@ function textures(game) {
     game.load.image('etudiante', 'assets/images/prod/étudiante/étudiante1.png');
 
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
+    game.load.image('PT', 'assets/images/slides/slide2.png');
+    game.load.image('CoD', 'assets/images/slides/slide3.png');
 }
 
 module.exports = textures;

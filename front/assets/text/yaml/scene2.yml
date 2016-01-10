@@ -41,7 +41,7 @@ characters:
     name: Kojima
     rythm: 0.04
     font: dekiru
-    fontSize: 25
+    fontSize: 35
     bubble: bblue
     sound: kojima_voice
 triggers:
@@ -49,6 +49,7 @@ triggers:
     settings:
       rythm: 1
       fontSize: 100
+      noAnim: true
   - id: 2
     settings:
       rythm: 0

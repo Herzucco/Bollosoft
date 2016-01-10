@@ -7,6 +7,7 @@ var guigui;
 var stopDuration = 0;
 var stopChrono = 0;
 var peopleStoping;
+var currentAnimName;
 var animRhythm = 0;
 var cantStop = false;
 
@@ -42,7 +43,7 @@ function Couch(){
     	that.pauseTalk(peopleStop);
 	});
   window.game.events.on('bolloFall', function(peopleStop){
-    bolloMove.to({y:600}, 9000, Phaser.Easing.Linear.None);
+    bolloMove.to({y:600}, 9500, Phaser.Easing.Linear.None);
     bolloMove.start();
 	});
 }
@@ -60,13 +61,14 @@ Couch.prototype.update = function CouchUpdate(game){
 	{
 		if ((peopleStoping != null)&&(cantStop == false))
 		{
-			peopleStoping.animations.play('talkingAnim', mapRange([0, 1], [10, 4], animRhythm), true);
+			peopleStoping.animations.play(currentAnimName, mapRange([0, 1], [10, 4], animRhythm), true);
 		}
 	}
 }
 
 Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
-	if (!peopleTalking.noAnim)
+  console.log(peopleTalking);
+	if (!peopleTalking.character.noAnim)
 	{
 		cantStop = false;
 		animRhythm = peopleTalking.character.rythm;
@@ -79,7 +81,7 @@ Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
 		{
 			guigui.animations.play('talkingAnim', mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
 		}
-		else
+		else if(peopleTalking.name !== 'Narrateur')
 		{
 			slideShow.DevShadow.animations.play(slideShow.DevShadow.animations.currentAnim.name, mapRange([0, 1], [10, 4], peopleTalking.character.rythm), true);
 		}
@@ -98,7 +100,7 @@ Couch.prototype.endTalk = function EndTalkAnim(peopleShutUp){
 	{
 		guigui.animations.play('idleAnim', 5, true);
 	}
-	else if (peopleShutUp.name == "Robert Moulard")
+	else if(peopleShutUp.name !== 'Narrateur')
 	{
 		slideShow.DevShadow.animations.stop(null, true);
 	}
@@ -111,16 +113,19 @@ Couch.prototype.pauseTalk = function PauseTalkAnim(peopleStop){
 
 	if (peopleStop.name == "Bolloré")
 	{
+    currentAnimName = 'talkingAnim';
 		peopleStoping = bollo;
 		bollo.animations.stop(null, true);
 	}
 	else if (peopleStop.name == "Guillemot")
 	{
+    currentAnimName = 'talkingAnim';
 		peopleStoping = guigui;
 		guigui.animations.stop(null, true);
 	}
-	else if (peopleStop.name == "Robert Moulard")
+	else if(peopleStop.name !== 'Narrateur')
 	{
+    currentAnimName = slideShow.DevShadow.animations.currentAnim.name;
 		peopleStoping = slideShow.DevShadow;
 		slideShow.DevShadow.animations.stop(null, true);
 	}

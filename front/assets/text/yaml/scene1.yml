@@ -49,6 +49,7 @@ triggers:
     settings:
       rythm: 1
       fontSize: 100
+      noAnim: true
   - id: 2
     settings:
       rythm: 0

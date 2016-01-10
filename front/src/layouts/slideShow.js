@@ -75,11 +75,15 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 }
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
+	console.log('test');
+
 	doorSound.play();
 
 	devShadow.animations.play(presStart, 5, true);
-	devShadow.animations.stop(null, true);
-
+	setTimeout(function(){
+		devShadow.animations.stop(null, true);
+	}, 1/60);
+	
 	this.shadow = game.add.sprite(-500, 500, presStart);
   this.shadow.tint = 0x000000;
   this.shadow.alpha = 1;
@@ -96,6 +100,8 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 }
 
 SlideShow.prototype.endPres = function PresentationEnding(presEnd){
+	shadowAnim.to({x:-500}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.start();
 	devAnim.to({x:-500}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 	slideBack.width = 0;
