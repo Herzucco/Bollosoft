@@ -16,6 +16,7 @@ function bitmaps(game) {
     game.load.bitmapFont('mtcorsiva', 'assets/fonts/mtcorsiva/font.png', 'assets/fonts/mtcorsiva/font.xml');
     game.load.bitmapFont('papyrus', 'assets/fonts/papyrus/font.png', 'assets/fonts/papyrus/font.xml');
     game.load.bitmapFont('stencil', 'assets/fonts/stencil/font.png', 'assets/fonts/stencil/font.xml');
+    game.load.bitmapFont('segoemarker', 'assets/fonts/segoemarker/font.png', 'assets/fonts/segoemarker/font.xml');
 }
 
 module.exports = bitmaps;
