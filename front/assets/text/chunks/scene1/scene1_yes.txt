@@ -1,13 +1,14 @@
+***
 !~~~
 
 ***
 [guillemot]
-COMMENT ?£
+COMMENT ?Â£
 
 ***
 [guillemot]
-J’aurais dû revendre cette maudite licence à EA pour mieux la ridiculiser avec Assassin’s Creed…
+J'aurais dÃ» revendre cette maudite licence Ã  EA pour mieux la ridiculiser avec Assassin's Creed !Â£
 
 ***
 [narrator]
-Guillemot se souviendra de ça.
+Guillemot se souviendra de Ã§a.

@@ -1,29 +1,29 @@
+***
 @@@
 
 ***
 [kojima]
-Kojima Hideo se tient devant Bolloré et Guillemot.
+Kojima Hideo se tient devant BollorÃ© et Guillemot.
 
 ***
 [guillemot]
-Comment ? Hideo Kojima, ici ?£
+Comment ? Hideo Kojima, ici ?Â£
 
 ***
 [guillemot]
-C’est une opportunité en or !
+C'est une opportunitÃ© en or !Â£
 
 ***
 [bollore]
-Qui est-ce ?
+Qui est-ce ?Â£
 
 ***
 [guillemot]
-Kojima-san est le créateur renommé de la série Metal Gear Solid.£
+Kojima-san est le crÃ©ateur renommÃ© de la sÃ©rie Metal Gear Solid.Â£
 
 ***
 [guillemot]
-Une des séries de jeux vidéo les plus acclamés selon St-Metacritic.£
-
+Une des sÃ©ries de jeux vidÃ©o les plus acclamÃ©s selon St-Metacritic.Â£
 
 ***
 [guillemot]
@@ -31,122 +31,123 @@ Et les plus vendus selon St-VGChartz.
 
 ***
 [kojima]
-Kojima est venu vous présenter un projet dont le nom est T.P.£
- 
-***
-[kojima]
-C’est un survival-horror à la première personne.£
+Kojima est venu vous prÃ©senter un projet dont le nom est T.P.Â£
 
 ***
 [kojima]
-Voici un aperçu de son scénario.£
+C'est un survival-horror Ã  la premiÂ§re personne.Â£
 
+***
+[kojima]
+Voici un rÃ©sumÃ© de son scÃ©nario.Â£
+
+***
 $$$
 
 ***
 [guillemot]
 {1}
-...£
+...
 
 ***
 [guillemot]
-Vous voulez parler de P.T. ?£
+Vous voulez parler de P.T. ?Â£
 
 ***
 [guillemot]
-Le futur Silent Hills avorté par Konami ?
+Le futur Silent Hills avortÃ© par Konami ?Â£
 
 ***
 [kojima]
-…£
+...Â£
 
 ***
 [narrator]
-Kojima replace ses lunettes sur son nez.£
+Kojima replace ses lunettes sur son nez.
 
 ***
 [kojima]
-Il s’agit d’une demande un peu particulière.£
+Il s'agit dï¿½une demande un peu particuliÃ¨re.Â£
 
 ***
 [kojima]
-Kojima souhaite…£
+Kojima souhaite...Â£
 
 ***
 [kojima]
-que vous sauviez le projet avorté des bras de ses ravisseurs. 
+que vous sauviez le projet avortÃ© des mÃ¢choires de ses ravisseurs.Â£
 
 ***
 [guillemot]
 {4}
-PARDON ?£
+PARDON ?Â£
 
 ***
 [guillemot]
-Vous voulez dire rachetez la licence Silent Hill auprès de Konami ?
+Vous voulez dire rachetez la licence Silent Hill auprÃ¨s de Konami ?
 
 ***
 [bollore]
-Ce serait une véritable déclaration de guerre.£
+Ce serait une vÃ©ritable dÃ©claration de guerre.Â£
 
 ***
 [bollore]
-C'est bien trop risqué d'un point de vue diplomatique.
+C'est bien trop risquÃ© d'un point de vue diplomatique.
 
 ***
 [guillemot]
-Permettez-moi, Kojima-san, de vous faire une autre proposition.£
+Permettez-moi, Kojima-san, de vous faire une contre-proposition.Â£
 
 ***
 [guillemot]
-Venez à Ubisoft et redonner ses lettres de noblesse…£
-***
+Venez Ã  Ubisoft afin de redonner ses lettres de noblesse...Â£
 
+***
 [guillemot]
 {3}
-à Splinter Cell.
+Ã€ Splinter Cell.
 
 ***
 [narrator]
-Kojima replace ses lunettes sur son nez.£
+Kojima replace ses lunettes sur son nez.
 
 ***
 [kojima]
-Cela n’intéresse pas Kojima.
+Cela n'intÃ©resse pas Kojima.Â£
 
 ***
 [guillemot]
-Kojima-san, je vous en prie, acceptez de rejoindre Ubisoft.£
+Kojima-san, je vous en prie, acceptez de rejoindre Ubisoft.Â£
 
 ***
 [guillemot]
-Nous sommes prêt à vous offrir...£
+Nous sommes prÃªt Ã  vous offrir...Â£
 
 ***
 [guillemot]
 {3}
-500 millions de dollars.
+500 millions de dollars.Â£
 
 ***
 [bollore]
 {4}
-500 millions !
+500 millions !Â£
 
 ***
 [bollore]
-C’est 2 fois le prix que j’ai payé pour garder Hanouna.
+C'est 2 fois le prix que j'ai payÃ© pour garder Hanouna.Â£
 
 ***
 [guillemot]
-Kojima vaut bien 2 Hanouna…£
+Kojima vaut bien 2 Hanouna...Â£
 
 ***
 [guillemot]
-Quel est votre prix, Kojima-san ?
+Quel est votre prix, Kojima-san ?Â£
 
 ***
 [bollore]
-(en unité Hanouna)
+En Hanouna si possible.
 
 ***
 [Kojima]
@@ -154,10 +155,11 @@ Kojima vaut Kojima.
 
 ***
 [guillemot]
-Assez discuté, laissons les actionnaires répondre à la question : 
+Assez discutÃ©, ce sont aux actionnaires de dÃ©cider de toute faÃ§on.Â£
 
 ***
 [guillemot]
-doit-on se payer Kojima au prix de 2 Hanouna ?
+Actionnaires, doit-on se payer Kojima au prix de 2 Hanouna ?
 
+***
 ~~~

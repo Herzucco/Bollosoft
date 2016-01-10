@@ -1,12 +1,13 @@
+***
 !~~~
 
 ***
 [kojima]
-Je vous remercie de votre confiance.
+Je vous remercie de votre confiance.Â£
 
 ***
 [kojima]
-J’ai hâte que nous commencions notre collaboration.£
+J'ai hÃ¢te que nous commencions notre collaboration.Â£
 
 ***
 [kojima]
@@ -15,16 +16,16 @@ Pour faire revivre Silent Hills.
 ***
 [guillemot]
 {2}
-…£
+Haha...Â£
 
 ***
 [guillemot]
-Ravi de vous avoir parmi nous.
+Ravi de vous avoir parmi nous.Â£
 
 ***
 [narrator]
-Yves Guillemot envoya un message à son équipe administrative.£
+Yves Guillemot envoie un message Ã  son Ã©quipe administrative.Â£
 
 ***
-[narrator]
-“Déterrez les dossiers concernant Splinter Cell.”
+[guillemot]
+"DÃ©terrez les dossiers concernant Splinter Cell."

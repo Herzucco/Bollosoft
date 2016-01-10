@@ -1,13 +1,14 @@
+***
 !~~~
 
 ***
 [bollore]
 {2}
-COMMENT ?£
+COMMENT ?Â£
 
 ***
 [bollore]
-Savez-vous seulement combien j'ai dépensé pour garder Hanouna à mes côtés ?
+Savez-vous seulement combien j'ai dÃ©pensÃ© pour garder Hanouna Ã  mes cÃ´tÃ©s ?
 
 ***
 [bollore]
@@ -16,8 +17,8 @@ Savez-vous seulement combien j'ai dépensé pour garder Hanouna à mes côtés ?
 
 ***
 [guillemot]
-Ce que nous aurait sans doute coûté la création de ce jeu et sa campagne marketing…
+Ce que nous aurait sans doute coÃ»tÃ© la crÃ©ation de ce jeu et sa campagne marketing...Â£
 
 ***
 [narrator]
-Bolloré se souviendra de ça.
+BollorÃ© se souviendra de Ã§a.

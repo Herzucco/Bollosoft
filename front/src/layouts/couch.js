@@ -33,6 +33,7 @@ function Couch(){
 	var that = this;
 	window.game.events.on('startTalking', function(peopleTalking){
     	that.startTalk(peopleTalking);
+
 	});
 	window.game.events.on('endTalking', function(peopleShutUp){
     	that.endTalk(peopleShutUp);
@@ -41,7 +42,7 @@ function Couch(){
     	that.pauseTalk(peopleStop);
 	});
   window.game.events.on('bolloFall', function(peopleStop){
-    bolloMove.to({y:600}, 4000, Phaser.Easing.Linear.None);
+    bolloMove.to({y:600}, 9000, Phaser.Easing.Linear.None);
     bolloMove.start();
 	});
 }

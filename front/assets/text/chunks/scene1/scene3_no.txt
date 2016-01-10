@@ -1,9 +1,10 @@
+***
 !~~~
 
 ***
 [guillemot]
-On a peut-être voulu aller trop loin sur ce coup.£
+On a peut-Ãªtre voulu aller trop loin sur ce coup.Â£
 
 ***
 [guillemot]
-Demandez à la commission de la caution indé de trouver un nouveau projet, plus consensuel.
+Demandez Ã  la commission de la caution indÃ© de trouver un nouveau projet, plus consensuel.

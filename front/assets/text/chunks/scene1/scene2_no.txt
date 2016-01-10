@@ -1,3 +1,4 @@
+***
 !~~~
 
 ***
@@ -7,12 +8,12 @@ Je le savais !
 
 ***
 [bollore]
-2*Hanouna > Kojima
+2 * Hanouna > Kojima
 
 ***
 [narrator]
-Kojima semble dιηu.
+Kojima semble dΓ©Γ§u.
 
 ***
 [kojima]
-Kojima est dιηu.
+Kojima est dΓ©Γ§u.

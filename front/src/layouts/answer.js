@@ -55,7 +55,6 @@ Answer.prototype.update = function AnswerUpdate(game){
       this.currentWaitingTime = 0;
       this.waitInputs = false;
       this.disable();
-      this.opacityCalq.visible = false;
       if(this.choice){
         this.yesSound.play();
       }else{
@@ -79,7 +78,7 @@ Answer.prototype.draw = function AnswerDraw(game){
   this.opacityCalq.tint = 0x000000;
   this.opacityCalq.alpha = 0.7;
   this.opacityCalq.visible = false;
-  
+
   this.yesTxt = window.game.add.text(window.game.world.centerX - centerOffset, window.game.world.centerY, "Accepter",
                 { font: "65px Times New Roman", fill: "#C04A67", align: "center", stroke : '#000000' });
   this.yesTxt.anchor.setTo(0.5, 0.5);

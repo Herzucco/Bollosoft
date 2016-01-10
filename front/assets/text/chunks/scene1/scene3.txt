@@ -1,121 +1,123 @@
+***
 @@@
 
 ***
 [narrator]
-Ce jeune homme est Cawi, auteur du bestseller “The Phantom Pain”.
+Cawi, auteur du bestseller "The Phantom Pain".
 
 ***
 [narrator]
-Le livre raconte sa propre vie d’enfant-soldat.
+Le livre raconte sa propre vie d'enfant-soldat.
 
 ***
 [narrator]
-Jusqu’au jour où une mine antipersonnel le priva d’une de ses deux jambes.
+Jusqu'au jour oÃ¹ une mine antipersonnel le priva d'une de ses deux jambes.
 
 ***
 [narrator]
-Puis la chance qu’il a eu d’être adopté par un couple d’occidentaux.
+Puis la chance qu'il a eu d'Ãªtre adoptÃ© par un couple d'occidentaux.
 
 ***
 [narrator]
-Il a ainsi rejoint l’Europe où il a grandit dans un milieu aisé.
+Il a ainsi rejoint l'Europe oÃ¹ il a grandit dans un milieu aisÃ©.
 
 ***
 [cawi]
-Bonjour, messieurs.£
+Bonjour, messieurs.Â£
 
 ***
 [cawi]
-J’ai été contacté par Ubisoft personnellement dans le but d’adapter mon livre en jeu vidéo.
+J'ai Ã©tÃ© contactÃ© par Ubisoft personnellement dans le but d'adapter mon livre en jeu vidÃ©o.Â£
 
 ***
 [cawi]
-Je pense que c’est une bonne idée pour toucher un large public.£
+Je pense que c'est une bonne idÃ©e pour que mon message touche un plus large public.Â£
 
 ***
 [cawi]
-Et le sensibiliser aux réalités de notre monde.
+Pour sensibiliser aux rÃ©alitÃ©s de notre monde.Â£
 
 ***
 [cawi]
-Je crois que l’équipe d’Ubisoft a préparé une image de présentation pour moi.£
+Je crois que l'Ã©quipe d'Ubisoft a prÃ©parÃ© une image de prÃ©sentation pour moi.Â£
 
+***
 $$$
 
 ***
 [narrator]
-Cawi semble mal à l’aise face à la slide de présentation.
+Cawi semble mal Ã  l'aise face Ã  la slide de prÃ©sentation.
 
 ***
 [bollore]
-Un enfant-soldat ?
+Un enfant-soldat ?Â£
 
 ***
 [bollore]
-N’est-ce pas un curieux sujet de jeu vidéo ?
+N'est-ce pas un curieux sujet de jeu vidÃ©o ?Â£
 
 ***
 [guillemot]
-Vous ne comprenez rien à l’industrie actuelle, Bolloré.£
+Vous ne comprenez rien Ã  l'industrie actuelle, BollorÃ©.Â£
 
 ***
 [guillemot]
-Cawi a été repéré par la Commission de la Caution Indé.
+Cawi a Ã©tÃ© repÃ©rÃ© par la Commission de la Caution IndÃ©.
 
 ***
 [guillemot]
-Celle-ci s’occupe de repérer des projets de jeux vidéo difficiles.£
+Celle-ci s'occupe de repÃ©rer des projets de jeux vidÃ©o difficiles.Â£
 
 ***
 [guillemot]
-Qui ne seront sans doute pas rentables mais qui ont le mérite de donner à Ubisoft une meilleure image.
+Qui ne seront sans doute pas rentables mais qui ont le mÃ©rite de donner Ã  Ubisoft une meilleure image.Â£
 
 ***
 [guillemot]
-Ce sont des offrandes à notre dieu à tous, Metacritic.
- 
-***
-[bollore]
-Curieuses méthodes...
-
-***
-[guillemot]
-On a fait passer la pilule en communiquant sur Soldats Inconnus, Child of Light, Grow Home, etc.
+Ce sont des offrandes Ã  notre dieu Ã  tous, Metacritic.Â£
 
 ***
 [bollore]
-La diversion est une technique classique mais non pas moins efficace.£
-
-***
-[bollore]
-Mais, ne pensez-vous pas que les enfants-soldats soient un sujet trop difficile ?£
-
-***
-[bollore]
-Pourquoi pas un jeu sur le 11 Septembre, tant qu’on y est ?
+Curieuses mÃ©thodes...
 
 ***
 [guillemot]
-Voyons Bolloré, notre démarche serait flagrante !£
+On a fait passer la pilule en communiquant sur Soldats Inconnus, Child of Light, Grow Home, etc.Â£
+
+***
+[bollore]
+La diversion est une technique classique mais non pas moins efficace.Â£
+
+***
+[bollore]
+Mais, ne pensez-vous pas que les enfants-soldats soient un sujet trop difficile ?Â£
+
+***
+[bollore]
+Pourquoi pas un jeu sur le 11 Septembre, tant qu'on y est, quittes Ã  chercher le buzz ?
 
 ***
 [guillemot]
-Cette année nous nous sommes fait devancés par EA, avec Unravel et son créateur tremblotant et fragile.
+Voyons BollorÃ©, notre dÃ©marche serait bien trop flagrante !Â£
+
+***
+[guillemot]
+Cette annÃ©e nous nous sommes fait devancÃ©s par EA, avec Unravel et son crÃ©ateur tremblotant et fragile.Â£
 
 ***
 [guillemot]
 {5}
-Imaginez !£
+Imaginez !Â£
 
 ***
 [guillemot]
 {3}
-Un estropié ancien enfant-soldat, sur la scène de l’E3 ?£
+Un estropiÃ© ancien enfant-soldat, sur la scÃ¨ne de l'E3 ?Â£
 
 ***
 [guillemot]
 {4}
-BAM !£
+BAM !Â£
 
 ***
 [guillemot]
@@ -123,6 +125,7 @@ On va les ridiculiser !
 
 ***
 [guillemot]
-Bref, laissons maintenant les actionnaires décider. £
+Bref, laissons maintenant les actionnaires dÃ©cider.
 
+***
 ~~~
