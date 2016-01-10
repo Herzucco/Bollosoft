@@ -83,7 +83,6 @@ Answer.prototype.draw = function AnswerDraw(game){
 
   this.yesTxt = window.game.add.sprite(window.game.world.centerX - centerOffset -319, window.game.world.centerY, 'oui');
   this.noTxt = window.game.add.sprite(window.game.world.centerX + centerOffset, window.game.world.centerY, 'non');
-  this.group.add(this.yesTxt);
   this.group.add(this.noTxt);
   this.group.add(this.opacityCalq);
   this.group.add(this.yesTxt);
