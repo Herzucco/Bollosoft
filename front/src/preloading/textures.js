@@ -19,6 +19,13 @@ function textures(game) {
     game.load.image('bbrown', 'assets/images/bbrown.png');
     game.load.image('bpurple', 'assets/images/bpurple.png');
 
+    game.load.image('moulard', 'assets/images/prod/moulard/moulard1.png');
+    game.load.image('black', 'assets/images/prod/black/black1.png');
+    game.load.image('breton', 'assets/images/prod/breton/breton1.png');
+    game.load.image('iwata', 'assets/images/prod/iwata/iwata1.png');
+    game.load.image('kojima', 'assets/images/prod/kojima/kojima1.png');
+    game.load.image('etudiante', 'assets/images/prod/étudiante/étudiante1.png');
+
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
 }
 

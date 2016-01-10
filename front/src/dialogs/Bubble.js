@@ -60,7 +60,7 @@ Bubble.prototype.start = function startBubble(){
   this.labelBubble.anchor.set(0.5, 0.5);
   this.labelBubble.scale.setTo(0.5, 0.14);
 
-  this.labelText = window.game.add.bitmapText(0, 0, 'basic', this.character.name, 27);
+  this.labelText = window.game.add.bitmapText(0, 0, this.character.font, this.character.name, 27);
   this.labelText.anchor.set(0.5, 0.5);
 
   this.bmpText = window.game.add.bitmapText(0, 0, this.character.font, "", this.character.fontSize);
@@ -139,14 +139,15 @@ Bubble.prototype.textMode = function TextModeBubble(){
        this.sentence[this.language][this.currentTextIndex] !== ',' &&
        this.sentence[this.language][this.currentTextIndex] !== '!' &&
        this.sentence[this.language][this.currentTextIndex] !== '?' &&
-       this.sentence[this.language][this.currentTextIndex] !== '...'){
+       this.sentence[this.language][this.currentTextIndex] !== '…' &&
+       this.sentence[this.language][this.currentTextIndex] !== '£'){
          this.character.phaserSound.play();
        }
      if(this.sentence[this.language][this.currentTextIndex] === ',' ||
         this.sentence[this.language][this.currentTextIndex] === '.' ||
         this.sentence[this.language][this.currentTextIndex] === '!' ||
         this.sentence[this.language][this.currentTextIndex] === '?' ||
-        this.sentence[this.language][this.currentTextIndex] === '...'){
+        this.sentence[this.language][this.currentTextIndex] === '…'){
         window.game.events.emit('pauseTalking', {
           name : this.character.name,
           character: this.character,

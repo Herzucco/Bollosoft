@@ -25,16 +25,16 @@ Ah, Moulard ! Vous êtes toujours employé ici, vous ?
 ***
 [moulard]
 Permettez-moi de vous présenter la nouvelle mouture de notre série légendaire,
- Prince of Persia.
+ Prince of Persia.£
 
 ***
 [moulard]
 Notre collaboration avec Mr Bolloré va nous permettre de ramener la licence sur
- le devant de la scène.
+ le devant de la scène.£
 
 ***
 [moulard]
-Voici la nouvelle mouture du prince de perse, PRINCE OF TV !
+Voici la nouvelle mouture du prince de perse, PRINCE OF TV !£
 
 ***
 $$$
@@ -46,7 +46,7 @@ COMMENT !?
 
 ***
 [moulard]
-Nous avons pensé utiliser la figure populaire de Cyril Hanouna.
+Nous avons pensé utiliser la figure populaire de Cyril Hanouna.£
 
 ***
 [moulard]
@@ -55,27 +55,27 @@ Ainsi que la bande de #TPMP pourrait nous permettre de faire connaître la licen
 
 ***
 [bollore]
-Il y a quelques jours j’ai fait circuler une missive auprès des développeurs.
+Il y a quelques jours j’ai fait circuler une missive auprès des développeurs.£
 
 ***
 [bollore]
 {5}
-Afin de leur expliquer le nouvel objectif d’Ubisoft.
+Afin de leur expliquer le nouvel objectif d’Ubisoft.£
 
 ***
 [bollore]
 {3}
-Réaliser des jeux vidéo mettant en avant la grandeur de l’EMPIRE BOLLORE.
+Réaliser des jeux vidéo mettant en avant la grandeur de l’EMPIRE BOLLORE.£
 
 ***
 [bollore]
 {4}
-En usant de la force médiatique des licences Ubisoft !
+En usant de la force médiatique des licences Ubisoft !£
 
 ***
 [bollore]
 {2}
-Une tactique imparable !!
+Une tactique imparable !£
 
 ***
 [guillemot]
@@ -84,11 +84,11 @@ Mais… Avez-vous pensé à l’impact de ce choix sur nos ventes à l’interna
 ***
 [bollore]
 {2}
-GUILLEMOT !
+GUILLEMOT !£
 
 ***
 [bollore]
-N’avez-vous donc pas l’envie de voir la culture française rayonner ?
+N’avez-vous donc pas l’envie de voir la culture française rayonner ?£
 
 ***
 [guillemot]
@@ -97,19 +97,30 @@ N’avez-vous donc pas l’envie de voir la culture française rayonner ?
 
 ***
 [bollore]
-Quoiqu’il en soit, nous sommes déjà entré en pourparlers avec le présentateur
-américain Jimmy Fallon pour qu’il prête sa voix au némésis du prince.
+Quoiqu’il en soit, nous sommes déjà entrés en pourparlers avec le présentateur
+américain Jimmy Fallon.
+
+***
+[bollore]
+Pour qu’il prête sa voix au némésis du prince.
 
 ***
 [guillemot]
 Grr… Cette idée me semble toujours être un danger pour notre image de
-fleuron indépendant.
+fleuron indépendant.£
 
 ***
 [guillemot]
-Les actionnaires qui détiennent les 80 autres % d’Ubisoft sauront en tenir compte.
+Les actionnaires qui détiennent les 80 autres % d’Ubisoft sauront en tenir compte.£
 
 ***
 [narrator]
-Vous incarnez l’avis des actionnaires détenant 80% d’Ubisoft. Vous avez droit de
- vie et de mort sur chaque projet. Que décidez-vous ?
+Vous incarnez l’avis des actionnaires détenant 80% d’Ubisoft.
+
+***
+[narrator]
+Vous avez droit de vie et de mort sur chaque projet.
+
+***
+[narrator]
+Que décidez-vous ?

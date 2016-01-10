@@ -6,7 +6,7 @@ var Couch = require('../layouts/couch');
 
 function layoutsHandler(dayConfig){
   var layouts = [];
-  
+
   layouts.push(new SlideShow());
   layouts.push(new Couch());
   layouts.push(new DialogPannel());

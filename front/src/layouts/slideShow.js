@@ -26,6 +26,8 @@ function SlideShow(){
 	devShadow.animations.play('black', 5, true);
 	devShadow.animations.stop(null, true);
 	devAnim = game.add.tween(devShadow);
+
+
 	this.group.add(devShadow);
 	module.exports.DevShadow = devShadow;
 
@@ -56,6 +58,9 @@ SlideShow.prototype = Object.create(Layout.prototype);
 SlideShow.prototype.constructor = SlideShow;
 SlideShow.prototype.update = function SlideShowUpdate(game){
 	Layout.prototype.update.call(this, game);
+	if(this.shadow != undefined && this.shadow.alpha > 0){
+		this.shadow.alpha -= 0.02;
+	}
 }
 
 
@@ -71,38 +76,21 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
 	doorSound.play();
-	if (presStart == "Black")
-	{
-		devShadow.animations.play('black', 5, true);
-		devShadow.animations.stop(null, true);
-	}
-	else if (presStart == "Breton")
-	{
-		devShadow.animations.play('breton', 5, true);
-		devShadow.animations.stop(null, true);
-	}
-	else if (presStart == "Iwata")
-	{
-		devShadow.animations.play('iwata', 5, true);
-		devShadow.animations.stop(null, true);
-	}
-	else if (presStart == "Kojima")
-	{
-		devShadow.animations.play('kojima', 5, true);
-		devShadow.animations.stop(null, true);
-	}
-	else if (presStart == "Moulard")
-	{
-		devShadow.animations.play('moulard', 5, true);
-		devShadow.animations.stop(null, true);
-	}
-	else if (presStart == "Etudiante")
-	{
-		devShadow.animations.play('étudiante', 5, true);
-		devShadow.animations.stop(null, true);
-	}
+
+	devShadow.animations.play(presStart, 5, true);
+	devShadow.animations.stop(null, true);
+
+	this.shadow = game.add.sprite(-500, 500, presStart);
+  this.shadow.tint = 0x000000;
+  this.shadow.alpha = 1;
+
+	var shadowAnim = game.add.tween(this.shadow);
+	shadowAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.start();
+
 	devAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
+
 	devShadow.z = 1;
 	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
 }

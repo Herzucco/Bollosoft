@@ -111,7 +111,7 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
       return false;
     break;
     case '@@@' :
-      window.game.events.emit('presentator', this.settings.presentator);
+      window.game.events.emit('presentator', this.settings.presentator.toLowerCase());
       return false;
     break;
     default :
@@ -130,8 +130,8 @@ Dialog.prototype.update = function UpdateDialog(){
   }
 }
 
-Dialog.prototype.newBubble = function NextBubbleDialog(){
-  var sentenceComputing;
+Dialog.prototype.newBubble = function NewBubbleDialog(){
+  var sentenceComputing = true;
 
   if(this.currentSentence + 1 < this.sentences.length){
     sentenceComputing = this.computeSentence(this.sentences[this.currentSentence + 1]);
@@ -143,6 +143,10 @@ Dialog.prototype.newBubble = function NextBubbleDialog(){
   }
 
   this.next(1, sentenceComputing);
+
+  if(!sentenceComputing){
+    this.waitInput(true);
+  }
 }
 
 Dialog.prototype.waitInput = function WaitInputDialog(force){
