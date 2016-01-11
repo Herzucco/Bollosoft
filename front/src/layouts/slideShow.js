@@ -141,10 +141,10 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
   this.shadow.alpha = 1;
 
 	shadowAnim = game.add.tween(this.shadow);
-	shadowAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.to({x:40}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
 
-	devAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
+	devAnim.to({x:40}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 
 	devShadow.z = 1;
