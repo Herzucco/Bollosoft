@@ -15,6 +15,8 @@ function SlideShow(){
 	Layout.call(this);
 	this.enable();
 
+	this.presOnStage = false;
+
 	leftBackground = game.add.sprite(0, 0, 'leftBackground');
 	leftBackground.sendToBack();
 	canap = game.add.sprite(0, 800, 'canap');
@@ -44,6 +46,9 @@ function SlideShow(){
 	});
 	window.game.events.on('endDayPre', function(presEnd){
     	that.endPres(presEnd);
+	});
+	window.game.events.on('presLeave', function(){
+    	that.presLeave();
 	});
 
 	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
@@ -130,6 +135,7 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
 	doorSound.play();
+	this.presOnStage = true;
 
 	devShadow.animations.play(presStart, 5, true);
 	setTimeout(function(){
@@ -152,11 +158,18 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
 }
 
-SlideShow.prototype.endPres = function PresentationEnding(presEnd){
+SlideShow.prototype.presLeave = function PresLeave(){
 	shadowAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
 	devAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
+
+	this.presOnStage = false;
+}
+SlideShow.prototype.endPres = function PresentationEnding(presEnd){
+	if(this.presOnStage){
+		this.presLeave();
+	}
 
 	slideBack.width = 0;
 	slideBack.height = 0;

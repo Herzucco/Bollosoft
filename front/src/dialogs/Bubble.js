@@ -221,7 +221,7 @@ Bubble.prototype.fadeMode = function fadeModeDialog(){
   if(this.preFadeTime <= this.preCurrentFadeTime){
     this.currentFadeTime += 1/60;
 
-    if(this.alpha < 0.6){
+    if(this.alpha < 0.8){
       this.labelBubble.alpha += this.fadeSpeed;
       this.labelText.alpha += this.fadeSpeed;
       this.alpha += this.fadeSpeed;
@@ -242,7 +242,7 @@ Bubble.prototype.fadeMode = function fadeModeDialog(){
 
 Bubble.prototype.skip = function SkipBubble(checkCut){
   this.isOver = true;
-  this.alpha = 0.6;
+  this.alpha = 0.8;
   this.currentText = this.sentence[this.language];
 
   this.bmpText.text = this.currentText;

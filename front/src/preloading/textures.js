@@ -5,9 +5,9 @@ function textures(game) {
     game.load.image('PurpleBubble', 'assets/images/proto/PurpleBubble.png');
 
     game.load.image('testFace', 'assets/images/protoGreug/1.png');
-    game.load.image('leftBackground', 'assets/images/prod/écran_gauche/fond.png');
+    game.load.image('leftBackground', 'assets/images/prod/left_screen/fond.png');
     game.load.image('rightBackground', 'assets/images/prod/fond_ecran_droite.png');
-    game.load.image('canap', 'assets/images/prod/écran_gauche/canap.png');
+    game.load.image('canap', 'assets/images/prod/left_screen/canap.png');
     game.load.image('iwataTexture', 'assets/images/prod/iwata.png');
     game.load.image('bollorate', 'assets/images/bollorate.png');
     game.load.image('metacritic', 'assets/images/metacritic.png');
@@ -32,7 +32,7 @@ function textures(game) {
     game.load.image('breton', 'assets/images/prod/breton/breton1.png');
     game.load.image('iwata', 'assets/images/prod/iwata/iwata1.png');
     game.load.image('kojima', 'assets/images/prod/kojima/kojima1.png');
-    game.load.image('etudiante', 'assets/images/prod/étudiante/étudiante1.png');
+    game.load.image('etudiante', 'assets/images/prod/student/student1.png');
     game.load.image('alldevs', 'assets/images/prod/brochette.png');
 
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');

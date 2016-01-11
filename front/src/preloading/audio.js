@@ -11,7 +11,7 @@ function audio(game) {
     game.load.audio('guillemot_voice', ['assets/sounds/voix_guillemot.wav']);
     game.load.audio('iwata_voice', ['assets/sounds/voix_iwata.wav']);
     game.load.audio('kojima_voice', ['assets/sounds/voix_kojima.wav']);
-    game.load.audio('moulard_voice', ['assets/sounds/voix_cawi.wav']);
+    game.load.audio('moulard_voice', ['assets/sounds/voix_moulard.wav']);
     game.load.audio('narrator_voice', ['assets/sounds/voix_narrateur.wav']);
     game.load.audio('enjmin_voice', ['assets/sounds/Voix_enjminienne.wav']);
     game.load.audio('splashScreen', ['assets/sounds/Bolloques.wav']);
