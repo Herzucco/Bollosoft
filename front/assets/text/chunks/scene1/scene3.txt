@@ -112,7 +112,11 @@ Imaginez !£
 ***
 [guillemot]
 {3}
-Un estropié ancien enfant-soldat, sur la scène de l'E3 ?£
+Un estropié ancien enfant-soldat, sur la scène de l'ITRI ?£
+
+***
+[narrator]
+Il voulait dire l'E3.£
 
 ***
 [guillemot]
