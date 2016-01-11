@@ -97,7 +97,7 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
     window.game.events.emit('choiceStart');
   }else{
     this.canInput = false;
-    window.game.events.emit('endDayPre');
+    window.game.events.emit('endDayPre', this.settings.presentator.toLowerCase());
     this.group.forEach(function(item) {
       item.kill();
     }, this);

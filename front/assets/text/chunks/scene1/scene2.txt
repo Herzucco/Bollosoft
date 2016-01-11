@@ -1,4 +1,4 @@
-﻿***
+***
 @@@
 
 ***
@@ -31,7 +31,7 @@ Et les plus vendus selon St-VGChartz.
 
 ***
 [kojima]
-Kojima est venu vous présenter un projet dont le nom est TP.£
+Kojima est venu vous présenter un projet dont le nom est T.P.£
 
 ***
 [kojima]
@@ -39,7 +39,7 @@ C'est un survival-horror à la première personne.£
 
 ***
 [kojima]
-Voici un résumé de son scénario.£
+Voici un bref résumé de son scénario.£
 
 ***
 $$$
@@ -51,7 +51,7 @@ $$$
 
 ***
 [guillemot]
-Vous voulez parler de PT. ?£
+Vous voulez parler de P.T. ?£
 
 ***
 [guillemot]
@@ -75,7 +75,7 @@ Kojima souhaite...£
 
 ***
 [kojima]
-que vous sauviez le projet avorté des mâchoires de ses ravisseurs.£
+Que vous sauviez le projet avorté des mâchoires de ses ravisseurs.£
 
 ***
 [guillemot]
@@ -84,7 +84,7 @@ PARDON ?£
 
 ***
 [guillemot]
-Vous voulez dire rachetez la licence Silent Hill auprès de Konami ?
+Vous voulez dire racheter la licence Silent Hill auprès de Konami ?
 
 ***
 [bollore]
@@ -150,7 +150,7 @@ Quel est votre prix, Kojima-san ?£
 En Hanouna si possible.
 
 ***
-[Kojima]
+[kojima]
 Kojima vaut Kojima.
 
 ***
