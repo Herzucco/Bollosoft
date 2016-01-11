@@ -10,6 +10,7 @@ var doorSound;
 var filter;
 var iwataShader;
 var shadowAnim;
+var screenEffect;
 
 function SlideShow(){
 	Layout.call(this);
@@ -17,6 +18,24 @@ function SlideShow(){
 
 	leftBackground = game.add.sprite(0, 0, 'leftBackground');
 	leftBackground.sendToBack();
+
+	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
+	slideBack.width = 0;
+	slideBack.height = 0;
+
+	slideSound = window.game.add.audio('slide');
+	doorSound = window.game.add.audio('door');
+	projectorSound = window.game.add.audio('projecteur');
+	projectorSound.loop = true;
+
+	this.group.add(slideBack);
+
+	screenEffect = game.add.sprite(44, 50, 'screenSprite');
+	screenEffect.animations.add('screen', Phaser.Animation.generateFrameNames('ecran', 1, 2, '.png', 1), 10, true, false);
+	screenEffect.animations.play('screen', 1, true);
+	this.group.add(screenEffect);
+	this.group.moveDown(screenEffect);
+		
 	canap = game.add.sprite(0, 800, 'canap');
 
 	devShadow = game.add.sprite(-500, 500, 'devsSprite');
@@ -30,8 +49,6 @@ function SlideShow(){
 	devShadow.animations.play('black', 5, true);
 	devShadow.animations.stop(null, true);
 	devAnim = game.add.tween(devShadow);
-
-
 	this.group.add(devShadow);
 	module.exports.DevShadow = devShadow;
 
@@ -45,17 +62,6 @@ function SlideShow(){
 	window.game.events.on('endDayPre', function(presEnd){
     	that.endPres(presEnd);
 	});
-
-	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
-	slideBack.width = 0;
-	slideBack.height = 0;
-
-	slideSound = window.game.add.audio('slide');
-	doorSound = window.game.add.audio('door');
-	projectorSound = window.game.add.audio('projecteur');
-	projectorSound.loop = true;
-
-	this.group.add(slideBack);
 
     //  Shader by Kali (https://www.shadertoy.com/view/4dfGDM)
     //  Image patched by Richard Davey
