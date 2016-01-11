@@ -1,4 +1,4 @@
-***
+﻿***
 [narrator]
 Salon d'Yves Guillemot, cofondateur et PDG d'Ubisoft.
 
@@ -72,7 +72,7 @@ Mais il semble aussi apeuré par la puissance financière de son rival.£
 
 ***
 [narrator]
-Bolloré, malgré tous ses efforts, ne possède en réalité que 11,52% d'Ubisoft.£
+Bolloré, malgré tous ses efforts, ne possède en réalité que 11% d'Ubisoft.£
 
 ***
 [narrator]

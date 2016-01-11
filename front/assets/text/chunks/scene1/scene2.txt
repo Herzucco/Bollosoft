@@ -1,4 +1,4 @@
-***
+﻿***
 @@@
 
 ***
@@ -31,7 +31,7 @@ Et les plus vendus selon St-VGChartz.
 
 ***
 [kojima]
-Kojima est venu vous présenter un projet dont le nom est T.P.£
+Kojima est venu vous présenter un projet dont le nom est TP.£
 
 ***
 [kojima]
@@ -51,7 +51,7 @@ $$$
 
 ***
 [guillemot]
-Vous voulez parler de P.T. ?£
+Vous voulez parler de PT. ?£
 
 ***
 [guillemot]
@@ -67,7 +67,7 @@ Kojima replace ses lunettes sur son nez.
 
 ***
 [kojima]
-Il s'agit d�une demande un peu particulière.£
+Il s'agit d'une demande un peu particulière.£
 
 ***
 [kojima]
