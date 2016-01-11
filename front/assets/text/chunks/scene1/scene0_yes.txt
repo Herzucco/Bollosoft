@@ -1,4 +1,4 @@
-***
+﻿***
 [narrator]
 Bien. Reprenons.£
 
@@ -17,7 +17,7 @@ GUILLEMOT !£
 
 ***
 [bollore]
-Ne m'enervez pas. Sinon !£
+Ne m'énervez pas. Sinon !£
 
 ***
 [bollore]

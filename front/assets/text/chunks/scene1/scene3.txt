@@ -1,4 +1,4 @@
-***
+﻿***
 @@@
 
 ***
@@ -7,7 +7,7 @@ Cawi, auteur du bestseller "The Phantom Pain".
 
 ***
 [narrator]
-Le livre raconte sa propre vie d'enfant-soldat.
+Le livre raconte sa propre vie d'enfant-soldat.£
 
 ***
 [narrator]
@@ -15,7 +15,7 @@ Jusqu'au jour où une mine antipersonnel le priva d'une de ses deux jambes.
 
 ***
 [narrator]
-Puis la chance qu'il a eu d'être adopté par un couple d'occidentaux.
+Puis la chance qu'il a eu d'être adopté par un couple d'occidentaux.£
 
 ***
 [narrator]
@@ -82,7 +82,11 @@ Curieuses méthodes...
 
 ***
 [guillemot]
-On a fait passer la pilule en communiquant sur Soldats Inconnus, Child of Light, Grow Home, etc.£
+Comment croyez-vous qu'on ait réussir à sortir 22 Assassin's Creed en 8 ans ?
+
+***
+[guillemot]
+On a fait passer la pilule en communiquant sur Soldats Inconnus, Child of Light, Grow Home, etc.
 
 ***
 [bollore]
@@ -102,7 +106,7 @@ Voyons Bolloré, notre démarche serait bien trop flagrante !£
 
 ***
 [guillemot]
-Cette année nous nous sommes fait devancés par EA, avec Unravel et son créateur tremblotant et fragile.£
+Cette année nous nous sommes fait devancer par EA, avec Unravel et son créateur tremblotant et fragile.£
 
 ***
 [guillemot]
@@ -129,7 +133,7 @@ On va les ridiculiser !
 
 ***
 [guillemot]
-Bref, laissons maintenant les actionnaires décider.
+Bref, laissons maintenant les actionnaires décider le sort du projet CoD.
 
 ***
 ~~~

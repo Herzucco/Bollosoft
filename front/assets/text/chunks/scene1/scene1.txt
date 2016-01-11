@@ -112,4 +112,12 @@ fleuron indépendant.£
 Les actionnaires qui détiennent les 80 autres % d’Ubisoft sauront en tenir compte.
 
 ***
+[narrator]
+A vous de décider.
+
+***
+[narrator]
+Souhaitez-vous accepter le projet Prince of TV ?
+
+***
 ~~~
