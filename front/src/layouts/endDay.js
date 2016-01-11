@@ -53,7 +53,7 @@ EndDay.prototype.update = function EndDayUpdate(game){
   this.bolloTxt.text = "Actions de Bollobails : " + this.bolloRate;
 
   if(this.waitInputs){
-    if(this.spaceKey.isDown || this.enterKey.isDown){
+    if(this.spaceKey.isDown || this.enterKey.isDown || game.input.mousePointer.isDown || game.input.pointer1.isDown){
       window.game.events.emit('newDay');
       this.currentWaitingTime = 0;
       this.waitInputs = false;
