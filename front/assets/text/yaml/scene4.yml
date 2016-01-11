@@ -40,7 +40,7 @@ characters:
   cawi:
     name: Cawi
     rythm: 0.04
-    font: arial
+    font: frabk
     fontSize: 25
     bubble: bblue
     sound: cawi_voice
