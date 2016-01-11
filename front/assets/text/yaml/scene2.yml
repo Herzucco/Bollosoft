@@ -19,7 +19,7 @@ characters:
   narrator:
     name: Narrateur
     rythm: 0.03
-    font: times
+    font: frabk
     fontSize: 30
     bubble: bbrown
     sound: narrator_voice

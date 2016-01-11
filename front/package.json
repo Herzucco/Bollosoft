@@ -1,0 +1,13 @@
+{
+  "name": "Bolloqués",
+  "main": "index.html",
+  "version": "1.0.0",
+  "window": {
+    "title": "Bolloqués",
+    "width": 1024,
+    "height": 575,
+    "icon": "./favicon.png",
+    "resizable": true,
+    "toolbar": false
+  }
+}
