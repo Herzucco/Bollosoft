@@ -4,6 +4,8 @@ function texts(game) {
       require('json!dialogbundle!../../assets/text/yaml/scene1.yml'),
       require('json!dialogbundle!../../assets/text/yaml/scene2.yml'),
       require('json!dialogbundle!../../assets/text/yaml/scene3.yml'),
+      require('json!dialogbundle!../../assets/text/yaml/scene4.yml'),
+      require('json!dialogbundle!../../assets/text/yaml/scene6.yml'),
     ];
 
     game.texts = texts;

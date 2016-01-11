@@ -35,7 +35,7 @@ Qui êtes-vous ?
 
 ***
 [narrapkmn]
-Un fantôme sauvage apparaît.£
+Fantôme sauvage apparaît.£
 
 ***
 @@@
