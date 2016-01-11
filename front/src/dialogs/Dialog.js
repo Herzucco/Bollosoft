@@ -165,7 +165,7 @@ Dialog.prototype.waitInput = function WaitInputDialog(force){
   var bubble = this.bubbles[this.bubbles.length - 1];
 
   if(bubble !== undefined){
-    if((this.spaceKey.isDown && this.skippable) || bubble.force || force){
+    if(((this.spaceKey.isDown || game.input.mousePointer.isDown || game.input.pointer1.isDown) && this.skippable) || bubble.force || force){
       this.skippable = false;
 
       if(bubble.isOver){

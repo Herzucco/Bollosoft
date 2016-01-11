@@ -18,6 +18,7 @@ function Answer(){
   });
 
   this.choice = true;
+  this.choiceMade = false;
   this.waitInputs = false;
   this.currentWaitingTime = 0;
   this.waitingTime = 0.5;
@@ -41,27 +42,11 @@ Answer.prototype.update = function AnswerUpdate(game){
 
   if(this.waitInputs){
     if(this.leftKey.isDown){
-      this.group.moveDown(this.noTxt);
-      this.group.moveUp(this.yesTxt);
-      this.group.moveUp(this.yesTxt);
-      this.choice = true;
-      this.cursor.play();
+      this.yesChoice();
     }else if(this.rightKey.isDown){
-      this.group.moveDown(this.yesTxt);
-      this.group.moveUp(this.noTxt);
-      this.group.moveUp(this.noTxt);
-      this.choice = false;
-      this.cursor.play();
+      this.noChoice();
     }else if(this.spaceKey.isDown || this.enterKey.isDown){
-      window.game.events.emit('choiceEnd', this.choice);
-      this.currentWaitingTime = 0;
-      this.waitInputs = false;
-      this.disable();
-      if(this.choice){
-        this.yesSound.play();
-      }else{
-        this.noSound.play();
-      }
+      this.doChoice();
     }
   }else{
     this.currentWaitingTime += 1/60;
@@ -69,6 +54,43 @@ Answer.prototype.update = function AnswerUpdate(game){
       this.waitInputs = true;
     }
   }
+}
+Answer.prototype.yesChoice = function AnswerYesChoice(game){
+  if(this.choiceMade && this.choice){
+    this.doChoice();
+  }
+  this.group.moveDown(this.noTxt);
+  this.group.moveUp(this.yesTxt);
+  this.group.moveUp(this.yesTxt);
+  this.choice = true;
+  this.cursor.play();
+  this.choiceMade = true;
+}
+
+Answer.prototype.noChoice = function AnswerNoChoice(game){
+  if(this.choiceMade && !this.choice){
+    this.doChoice();
+  }
+  this.group.moveDown(this.yesTxt);
+  this.group.moveUp(this.noTxt);
+  this.group.moveUp(this.noTxt);
+  this.choice = false;
+  this.cursor.play();
+  this.choiceMade = true;
+}
+
+Answer.prototype.doChoice = function AnswerDoChoice(game){
+  window.game.events.emit('choiceEnd', this.choice);
+  this.currentWaitingTime = 0;
+  this.waitInputs = false;
+  this.disable();
+  if(this.choice){
+    this.yesSound.play();
+  }else{
+    this.noSound.play();
+  }
+
+  this.choiceMade = false;
 }
 
 Answer.prototype.draw = function AnswerDraw(game){
@@ -81,8 +103,16 @@ Answer.prototype.draw = function AnswerDraw(game){
   this.opacityCalq.alpha = 0.7;
   this.opacityCalq.visible = false;
 
-  this.yesTxt = window.game.add.sprite(window.game.world.centerX - centerOffset -319, window.game.world.centerY, 'oui');
-  this.noTxt = window.game.add.sprite(window.game.world.centerX + centerOffset, window.game.world.centerY, 'non');
+  var that = this;
+  this.yesTxt = window.game.add.button(window.game.world.centerX - centerOffset -319, window.game.world.centerY, 'oui', function(){
+    that.yesChoice();
+  }, this);
+  this.yesTxt.input.useHandCursor = true;
+  this.noTxt = window.game.add.button(window.game.world.centerX + centerOffset, window.game.world.centerY, 'non', function(){
+    that.noChoice();
+  }, this);
+  this.yesTxt.input.useHandCursor = true;
+
   this.group.add(this.noTxt);
   this.group.add(this.opacityCalq);
   this.group.add(this.yesTxt);
