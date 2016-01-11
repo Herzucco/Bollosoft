@@ -61,7 +61,7 @@ triggers:
       fontSize: 28
 settings:
   picture: Hanouna
-  presentator: Moulard
+  presentator: allDevs
 values:
   yes:
     metacritic: 0

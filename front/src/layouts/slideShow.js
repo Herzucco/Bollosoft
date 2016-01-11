@@ -26,6 +26,7 @@ function SlideShow(){
 	devShadow.animations.add('kojima', Phaser.Animation.generateFrameNames('kojima', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('moulard', Phaser.Animation.generateFrameNames('moulard', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('étudiante', Phaser.Animation.generateFrameNames('étudiante', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('alldevs', Phaser.Animation.generateFrameNames('allDevs', '.png', 1), 10, true, false);
 	devShadow.animations.play('black', 5, true);
 	devShadow.animations.stop(null, true);
 	devAnim = game.add.tween(devShadow);
@@ -128,8 +129,6 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 }
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
-	console.log('test');
-
 	doorSound.play();
 
 	devShadow.animations.play(presStart, 5, true);
@@ -138,8 +137,8 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 	}, 1/60);
 
 	this.shadow = game.add.sprite(-500, 500, presStart);
-  	this.shadow.tint = 0x000000;
-  	this.shadow.alpha = 1;
+  this.shadow.tint = 0x000000;
+  this.shadow.alpha = 1;
 
 	shadowAnim = game.add.tween(this.shadow);
 	shadowAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
