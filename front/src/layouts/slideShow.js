@@ -9,6 +9,7 @@ var projectorSound;
 var doorSound;
 var filter;
 var iwataShader;
+var shadowAnim;
 
 function SlideShow(){
 	Layout.call(this);
@@ -135,12 +136,12 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 	setTimeout(function(){
 		devShadow.animations.stop(null, true);
 	}, 1/60);
-	
+
 	this.shadow = game.add.sprite(-500, 500, presStart);
   	this.shadow.tint = 0x000000;
   	this.shadow.alpha = 1;
 
-	var shadowAnim = game.add.tween(this.shadow);
+	shadowAnim = game.add.tween(this.shadow);
 	shadowAnim.to({x:50}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
 
