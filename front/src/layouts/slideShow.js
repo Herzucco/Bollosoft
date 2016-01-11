@@ -42,7 +42,7 @@ function SlideShow(){
 	window.game.events.on('presentator', function(presStart){
     	that.startPres(presStart);
 	});
-	window.game.events.on('endDay', function(presEnd){
+	window.game.events.on('endDayPre', function(presEnd){
     	that.endPres(presEnd);
 	});
 
@@ -141,10 +141,10 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
   this.shadow.alpha = 1;
 
 	shadowAnim = game.add.tween(this.shadow);
-	shadowAnim.to({x:40}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.to({x:30}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
 
-	devAnim.to({x:40}, 400, Phaser.Easing.Linear.None);
+	devAnim.to({x:30}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 
 	devShadow.z = 1;
@@ -152,10 +152,11 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 }
 
 SlideShow.prototype.endPres = function PresentationEnding(presEnd){
-	shadowAnim.to({x:-500}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.to({x:-800}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
-	devAnim.to({x:-500}, 400, Phaser.Easing.Linear.None);
+	devAnim.to({x:-800}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
+
 	slideBack.width = 0;
 	slideBack.height = 0;
 
