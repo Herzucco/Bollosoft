@@ -1,0 +1,20 @@
+***
+[narrator]
+Vous êtes bien aimable !£
+
+***
+[narrator]
+Et puis, en tant que joueur, c'est vous qui...
+
+***
+[narrator]
+{5}
+Détenez le discours de vérité !£
+
+***
+[narrator]
+{4}
+*Badumtss*
+
+***
+!~~~

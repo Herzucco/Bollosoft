@@ -1,0 +1,92 @@
+---
+text:
+  - talker: narrator
+    file:
+      fr: ../chunks/scene1/scene6.txt
+      en: ../chunks/scene1/scene6.txt
+choice:
+  yes:
+    - talker: narrator
+      file:
+        fr: ../chunks/scene1/scene6_yes.txt
+        en: ../chunks/scene1/scene6_yes.txt
+  no:
+    - talker: narrator
+      file:
+        fr: ../chunks/scene1/scene6_no.txt
+        en: ../chunks/scene1/scene6_no.txt
+characters:
+  narrator:
+    name: Narrateur
+    rythm: 0.03
+    font: times
+    fontSize: 30
+    bubble: bbrown
+    sound: narrator_voice
+  narrapkmn:
+    name: Narrateur
+    rythm: 0.03
+    font: dtm
+    fontSize: 30
+    bubble: bbrown
+    sound: narrator_voice
+  guillemot:
+    name: Guillemot
+    rythm: 0.03
+    font: comic
+    fontSize: 25
+    bubble: bpurple
+    sound: guillemot_voice
+  bollore:
+    name: Bolloré
+    rythm: 0.03
+    font: smm
+    fontSize: 25
+    bubble: bblue
+    sound: bollore_voice_calm
+  iwatascred:
+    name: ???
+    rythm: 0.05
+    font: itckrist
+    fontSize: 25
+    bubble: bblue
+    sound: iwata_voice
+  iwata:
+    name: Iwata
+    rythm: 0.05
+    font: itckrist
+    fontSize: 25
+    bubble: bblue
+    sound: iwata_voice
+triggers:
+  - id: 1
+    settings:
+      rythm: 1
+      fontSize: 100
+      noAnim: true
+  - id: 2
+    settings:
+      rythm: 0.07
+      fontSize: 24
+  - id: 3
+    settings:
+      rythm: 0.1
+      fontSize: 24
+  - id: 4
+    settings:
+      rythm: 0.01
+      fontSize: 35
+  - id: 5
+    settings:
+      rythm: 0.02
+      fontSize: 36
+settings:
+  picture: MaitenMagic
+  presentator: Iwata
+values:
+  yes:
+    metacritic: 0
+    bolloRate: 0
+  no:
+    metacritic: 0
+    bolloRate: 0

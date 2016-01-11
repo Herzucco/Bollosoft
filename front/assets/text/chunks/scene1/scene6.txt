@@ -1,0 +1,98 @@
+﻿***
+[iwatascred]
+{1}
+...£
+
+***
+[iwatascred]
+{2}
+Guillemot.£
+
+***
+[guillemot]
+?£
+
+***
+[guillemot]
+Il y a quelqu'un ?
+
+***
+[iwatascred]
+{2}
+Guillemot.£
+
+***
+[iwatascred]
+Tu nous as abandonnés...£
+
+***
+[guillemot]
+Pardon ?£
+
+***
+[guillemot]
+Qui êtes-vous ?
+
+***
+[narrapkmn]
+Un fantôme sauvage apparaît.£
+
+***
+@@@
+
+***
+[guillemot]
+{4}
+IWATA-SAN !
+
+***
+[iwata]
+Tu nous as abandonnés.£
+
+***
+[narrapkmn]
+Bolloré est confus.£
+
+***
+[bollore]
+Mais qui est cet homme ?£
+
+***
+[bollore]
+Et que lui avez-vous fait ?
+
+***
+[guillemot]
+La Wii U était un échec commercial dès le début.£
+
+***
+[guillemot]
+Nous ne pouvions rien.
+
+***
+[iwata]
+J'ai été envoyé -£
+
+***
+[guillemot]
+Envoyé ?£
+
+***
+[guillemot]
+Serait-ce notre dieu Metacritic qui vous envoie ?
+
+***
+[iwata]
+Guillemot.£
+
+***
+[iwata]
+Ubisoft doit soutenir la Nintendo NX.£
+
+***
+[narrapkmn]
+A votre tour.£
+
+***
+[narrapkmn]
+Souhaitez-vous soutenir la NX ?£
