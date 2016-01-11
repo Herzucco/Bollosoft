@@ -10,7 +10,7 @@ var doorSound;
 var filter;
 var iwataShader;
 var shadowAnim;
-var screenEffect;
+//var screenEffect;
 
 function SlideShow(){
 	Layout.call(this);
@@ -30,15 +30,15 @@ function SlideShow(){
 
 	this.group.add(slideBack);
 
-	screenEffect = game.add.sprite(44, 50, 'screenSprite');
+	/*screenEffect = game.add.sprite(44, 50, 'screenSprite');
 	screenEffect.animations.add('screen', Phaser.Animation.generateFrameNames('ecran', 1, 2, '.png', 1), 10, true, false);
 	screenEffect.animations.play('screen', 1, true);
 	this.group.add(screenEffect);
-	this.group.moveDown(screenEffect);
+	this.group.moveDown(screenEffect);*/
 		
 	canap = game.add.sprite(0, 800, 'canap');
 
-	devShadow = game.add.sprite(-500, 500, 'devsSprite');
+	devShadow = game.add.sprite(-1000, 500, 'devsSprite');
 	devShadow.animations.add('black', Phaser.Animation.generateFrameNames('black', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('breton', Phaser.Animation.generateFrameNames('breton', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('iwata', Phaser.Animation.generateFrameNames('iwata', 1, 3, '.png', 1), 10, true, false);
@@ -46,7 +46,7 @@ function SlideShow(){
 	devShadow.animations.add('moulard', Phaser.Animation.generateFrameNames('moulard', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('étudiante', Phaser.Animation.generateFrameNames('étudiante', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('alldevs', Phaser.Animation.generateFrameNames('allDevs', '.png', 1), 10, true, false);
-	devShadow.animations.play('black', 5, true);
+	devShadow.animations.play('alldevs', 5, true);
 	devShadow.animations.stop(null, true);
 	devAnim = game.add.tween(devShadow);
 	this.group.add(devShadow);
@@ -142,7 +142,7 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 		devShadow.animations.stop(null, true);
 	}, 1/60);
 
-	this.shadow = game.add.sprite(-500, 500, presStart);
+	this.shadow = game.add.sprite(-1000, 500, presStart);
   this.shadow.tint = 0x000000;
   this.shadow.alpha = 1;
 
