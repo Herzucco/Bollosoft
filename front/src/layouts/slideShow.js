@@ -27,7 +27,7 @@ function SlideShow(){
 	devShadow.animations.add('iwata', Phaser.Animation.generateFrameNames('iwata', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('kojima', Phaser.Animation.generateFrameNames('kojima', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('moulard', Phaser.Animation.generateFrameNames('moulard', 1, 3, '.png', 1), 10, true, false);
-	devShadow.animations.add('étudiante', Phaser.Animation.generateFrameNames('étudiante', 1, 3, '.png', 1), 10, true, false);
+	devShadow.animations.add('étudiante', Phaser.Animation.generateFrameNames('student', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('alldevs', Phaser.Animation.generateFrameNames('allDevs', '.png', 1), 10, true, false);
 	devShadow.animations.play('black', 5, true);
 	devShadow.animations.stop(null, true);
