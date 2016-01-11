@@ -14,7 +14,23 @@ function DialogPannel(){
     that.final(choice);
   });
   window.game.events.on('newDay', function(){
+    if(that.sceneIndex === 0){
+      window.game.events.emit("startSplashScreen");
+    }else{
+      that.next();
+    }
+  });
+
+  window.game.events.on('endSplashScreen', function(){
     that.next();
+  });
+
+  window.game.events.on('endDayPre', function(){
+    if(that.sceneIndex !== 0){
+      window.game.events.emit("endDay");
+    }else{
+      window.game.events.emit("startSplashScreen");
+    }
   });
 
   this.enable();

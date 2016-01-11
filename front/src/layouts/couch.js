@@ -67,7 +67,6 @@ Couch.prototype.update = function CouchUpdate(game){
 }
 
 Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){
-  console.log(peopleTalking);
 	if (!peopleTalking.character.noAnim)
 	{
 		cantStop = false;

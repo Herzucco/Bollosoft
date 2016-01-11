@@ -3,6 +3,7 @@ var EndDay = require('../layouts/endDay');
 var Answer = require('../layouts/answer');
 var SlideShow = require('../layouts/slideShow');
 var Couch = require('../layouts/couch');
+var SplashScreen = require('../layouts/splashScreen');
 
 function layoutsHandler(dayConfig){
   var layouts = [];
@@ -12,6 +13,7 @@ function layoutsHandler(dayConfig){
   layouts.push(new Answer());
   layouts.push(new DialogPannel());
   layouts.push(new EndDay());
+  layouts.push(new SplashScreen());
 
   game.layouts = layouts;
 }

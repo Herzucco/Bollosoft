@@ -22,6 +22,7 @@ function textures(game) {
     game.load.image('opacityCalq', 'assets/images/prod/rectangleblanc.png');
     game.load.image('oui', 'assets/images/ui/ok.png');
     game.load.image('non', 'assets/images/ui/non.png');
+    game.load.image('splashScreen', 'assets/images/splash.png');
 
     game.load.image('moulard', 'assets/images/prod/moulard/moulard1.png');
     game.load.image('black', 'assets/images/prod/black/black1.png');
