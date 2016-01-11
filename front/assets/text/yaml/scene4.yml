@@ -2,24 +2,24 @@
 text:
   - talker: narrator
     file:
-      fr: ../chunks/scene1/scene0.txt
-      en: ../chunks/scene1/scene0.txt
+      fr: ../chunks/scene1/scene4.txt
+      en: ../chunks/scene1/scene4.txt
 choice:
   yes:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene0_yes.txt
-        en: ../chunks/scene1/scene0_yes.txt
+        fr: ../chunks/scene1/scene4_yes.txt
+        en: ../chunks/scene1/scene4_yes.txt
   no:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene0_no.txt
-        en: ../chunks/scene1/scene0_no.txt
+        fr: ../chunks/scene1/scene4_no.txt
+        en: ../chunks/scene1/scene4_no.txt
 characters:
   narrator:
     name: Narrateur
     rythm: 0.03
-    font: frabk
+    font: times
     fontSize: 30
     bubble: bbrown
     sound: narrator_voice
@@ -37,31 +37,38 @@ characters:
     fontSize: 25
     bubble: bblue
     sound: bollore_voice_calm
+  cawi:
+    name: Cawi
+    rythm: 0.04
+    font: arial
+    fontSize: 25
+    bubble: bblue
+    sound: cawi_voice
 triggers:
   - id: 1
     settings:
-      rythm: 0.05
-      fontSize: 20
+      rythm: 1
+      fontSize: 100
+      noAnim: true
   - id: 2
     settings:
-      rythm: 0
-      fontSize: 50
-      sound: bollore_voice_pissed
+      rythm: 0.06
+      fontSize: 24
   - id: 3
     settings:
-      rythm: 0.02
-      fontSize: 30
+      rythm: 0.1
+      fontSize: 16
   - id: 4
     settings:
       rythm: 0.01
       fontSize: 35
   - id: 5
     settings:
-      rythm: 0.025
-      fontSize: 28
+      rythm: 0.02
+      fontSize: 36
 settings:
-  picture: Hanouna
-  presentator: allDevs
+  picture: MaitenMagic
+  presentator: Black
 values:
   yes:
     metacritic: 0

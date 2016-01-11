@@ -2,24 +2,31 @@
 text:
   - talker: narrator
     file:
-      fr: ../chunks/scene1/scene2.txt
-      en: ../chunks/scene1/scene2.txt
+      fr: ../chunks/scene1/scene6.txt
+      en: ../chunks/scene1/scene6.txt
 choice:
   yes:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene2_yes.txt
-        en: ../chunks/scene1/scene2_yes.txt
+        fr: ../chunks/scene1/scene6_yes.txt
+        en: ../chunks/scene1/scene6_yes.txt
   no:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene2_no.txt
-        en: ../chunks/scene1/scene2_no.txt
+        fr: ../chunks/scene1/scene6_no.txt
+        en: ../chunks/scene1/scene6_no.txt
 characters:
   narrator:
     name: Narrateur
     rythm: 0.03
-    font: frabk
+    font: times
+    fontSize: 30
+    bubble: bbrown
+    sound: narrator_voice
+  narrapkmn:
+    name: Narrateur
+    rythm: 0.03
+    font: dtm
     fontSize: 30
     bubble: bbrown
     sound: narrator_voice
@@ -37,13 +44,20 @@ characters:
     fontSize: 25
     bubble: bblue
     sound: bollore_voice_calm
-  kojima:
-    name: Kojima
-    rythm: 0.04
-    font: dekiru
-    fontSize: 35
+  iwatascred:
+    name: ???
+    rythm: 0.05
+    font: itckrist
+    fontSize: 25
     bubble: bblue
-    sound: kojima_voice
+    sound: iwata_voice
+  iwata:
+    name: Iwata
+    rythm: 0.05
+    font: itckrist
+    fontSize: 25
+    bubble: bblue
+    sound: iwata_voice
 triggers:
   - id: 1
     settings:
@@ -52,24 +66,23 @@ triggers:
       noAnim: true
   - id: 2
     settings:
-      rythm: 0
-      fontSize: 50
-      sound: bollore_voice_pissed
+      rythm: 0.07
+      fontSize: 24
   - id: 3
     settings:
-      rythm: 0.02
-      fontSize: 30
+      rythm: 0.1
+      fontSize: 24
   - id: 4
     settings:
       rythm: 0.01
       fontSize: 35
   - id: 5
     settings:
-      rythm: 0.025
-      fontSize: 28
+      rythm: 0.02
+      fontSize: 36
 settings:
-  picture: PT
-  presentator: Kojima
+  picture: MaitenMagic
+  presentator: Iwata
 values:
   yes:
     metacritic: 0
