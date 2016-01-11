@@ -20,6 +20,7 @@ function Answer(){
   this.choice = true;
   this.choiceMade = false;
   this.waitInputs = false;
+  this.canInput = true;
   this.currentWaitingTime = 0;
   this.waitingTime = 0.5;
 
@@ -41,10 +42,16 @@ Answer.prototype.update = function AnswerUpdate(game){
   Layout.prototype.update.call(this, game);
 
   if(this.waitInputs){
-    if(this.leftKey.isDown){
+    if(this.leftKey.isUp && this.rightKey.isUp){
+      this.canInput = true;
+    }
+
+    if(this.leftKey.isDown && this.canInput){
       this.yesChoice();
-    }else if(this.rightKey.isDown){
+      this.canInput = false;
+    }else if(this.rightKey.isDown && this.canInput){
       this.noChoice();
+      this.canInput = false;
     }else if(this.spaceKey.isDown || this.enterKey.isDown){
       this.doChoice();
     }
