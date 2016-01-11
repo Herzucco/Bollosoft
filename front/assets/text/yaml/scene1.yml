@@ -72,8 +72,8 @@ settings:
   presentator: Moulard
 values:
   yes:
-    metacritic: 10
-    bolloRate: 0.5
+    metacritic: -10
+    bolloRate: -2
   no:
-    metacritic: -5
-    bolloRate: -1
+    metacritic: 3
+    bolloRate: 15

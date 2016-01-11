@@ -72,8 +72,8 @@ settings:
   presentator: Black
 values:
   yes:
-    metacritic: 0
-    bolloRate: 0
+    metacritic: 4
+    bolloRate: 4
   no:
-    metacritic: 0
-    bolloRate: 0
+    metacritic: -10
+    bolloRate: -1
