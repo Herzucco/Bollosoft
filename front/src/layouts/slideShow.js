@@ -134,37 +134,50 @@ SlideShow.prototype.slide = function SlideStarting(slideStart){
 }
 
 SlideShow.prototype.startPres = function PresentatorComing(presStart){
-	doorSound.play();
 	this.presOnStage = true;
+	if (presStart != "iwata")
+	{
+		doorSound.play();
 
-	devShadow.animations.play(presStart, 5, true);
-	setTimeout(function(){
-		devShadow.animations.stop(null, true);
-	}, 1/60);
+		devShadow.animations.play(presStart, 5, true);
+		setTimeout(function(){
+			devShadow.animations.stop(null, true);
+		}, 1/60);
 
-	this.shadow = game.add.sprite(-1000, 500, presStart);
-  this.shadow.tint = 0x000000;
-  this.shadow.alpha = 1;
+		this.shadow = game.add.sprite(-1000, 500, presStart);
+	  this.shadow.tint = 0x000000;
+	  this.shadow.alpha = 1;
 
-	shadowAnim = game.add.tween(this.shadow);
-	shadowAnim.to({x:5}, 400, Phaser.Easing.Linear.None);
-	shadowAnim.start();
+		shadowAnim = game.add.tween(this.shadow);
+		shadowAnim.to({x:5}, 400, Phaser.Easing.Linear.None);
+		shadowAnim.start();
 
-	devAnim = game.add.tween(devShadow);
-	devAnim.to({x:5}, 400, Phaser.Easing.Linear.None);
-	devAnim.start();
+		devAnim = game.add.tween(devShadow);
+		devAnim.to({x:5}, 400, Phaser.Easing.Linear.None);
+		devAnim.start();
 
-	devShadow.z = 1;
-	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
+		devShadow.z = 1;
+		this.group.sort('z', Phaser.Group.SORT_ASCENDING);
+	}
+	else
+	{
+		    iwataShader.alpha = 1;
+	}
 }
 
 SlideShow.prototype.presLeave = function PresLeave(){
-	shadowAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
-	shadowAnim.start();
-	devAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
-	devAnim.start();
-
-	this.presOnStage = false;
+	if (iwataShader.alpha == 0)
+	{
+		shadowAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
+		shadowAnim.start();
+		devAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
+		devAnim.start();
+	}
+	else
+	{
+		iwataShader.alpha = 0;
+	}
+		this.presOnStage = false;
 }
 SlideShow.prototype.endPres = function PresentationEnding(presEnd){
 	if(this.presOnStage){
