@@ -40,7 +40,7 @@ characters:
   moulard:
     name: Patrick Décimé
     rythm: 0.03
-    font: arial
+    font: segoemarker
     fontSize: 25
     bubble: bgreen
     sound: moulard_voice
