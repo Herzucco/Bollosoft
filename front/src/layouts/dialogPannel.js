@@ -56,7 +56,7 @@ DialogPannel.prototype.next = function DialogPannelNext(){
     window.game.score = window.game.texts[this.sceneIndex].values;
     this.dialog.load(window.game.texts[this.sceneIndex]);
   }else{
-    console.log('THE END OF ta mère.');
+    window.game.events.emit("credits");
   }
 }
 

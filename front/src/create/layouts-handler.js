@@ -4,6 +4,7 @@ var Answer = require('../layouts/answer');
 var SlideShow = require('../layouts/slideShow');
 var Couch = require('../layouts/couch');
 var SplashScreen = require('../layouts/splashScreen');
+var Credits = require('../layouts/credits');
 
 function layoutsHandler(dayConfig){
   var layouts = [];
@@ -14,6 +15,7 @@ function layoutsHandler(dayConfig){
   layouts.push(new DialogPannel());
   layouts.push(new EndDay());
   layouts.push(new SplashScreen());
+  layouts.push(new Credits());
 
   game.layouts = layouts;
 }
