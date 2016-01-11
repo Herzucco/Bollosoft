@@ -26,15 +26,7 @@ function textures(game) {
     game.load.image('non', 'assets/images/ui/non.png');
     game.load.image('splashScreen', 'assets/images/splash.png');
     game.load.image('credits', 'assets/images/credits.png');
-
-    game.load.image('moulard', 'assets/images/prod/moulard/moulard1.png');
-    game.load.image('black', 'assets/images/prod/black/black1.png');
-    game.load.image('breton', 'assets/images/prod/breton/breton1.png');
-    game.load.image('iwata', 'assets/images/prod/iwata/iwata1.png');
-    game.load.image('kojima', 'assets/images/prod/kojima/kojima1.png');
-    game.load.image('etudiante', 'assets/images/prod/student/student1.png');
-    game.load.image('alldevs', 'assets/images/prod/brochette.png');
-
+    
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
     game.load.image('PT', 'assets/images/slides/slide2.png');
     game.load.image('CoD', 'assets/images/slides/slide3.png');

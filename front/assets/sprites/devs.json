@@ -11,7 +11,7 @@
 },
 "black1.png":
 {
-	"frame": {"x":0,"y":816,"w":430,"h":809},
+	"frame": {"x":935,"y":0,"w":430,"h":809},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":430,"h":809},
@@ -20,7 +20,7 @@
 },
 "black2.png":
 {
-	"frame": {"x":430,"y":816,"w":430,"h":809},
+	"frame": {"x":1365,"y":0,"w":430,"h":809},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":430,"h":809},
@@ -29,7 +29,7 @@
 },
 "black3.png":
 {
-	"frame": {"x":0,"y":1625,"w":430,"h":809},
+	"frame": {"x":1795,"y":0,"w":430,"h":809},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":430,"h":809},
@@ -38,7 +38,7 @@
 },
 "breton1.png":
 {
-	"frame": {"x":430,"y":1625,"w":449,"h":782},
+	"frame": {"x":2225,"y":0,"w":449,"h":782},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":449,"h":782},
@@ -47,7 +47,7 @@
 },
 "breton2.png":
 {
-	"frame": {"x":0,"y":2434,"w":449,"h":782},
+	"frame": {"x":2674,"y":0,"w":449,"h":782},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":449,"h":782},
@@ -56,43 +56,16 @@
 },
 "breton3.png":
 {
-	"frame": {"x":449,"y":2434,"w":449,"h":782},
+	"frame": {"x":0,"y":816,"w":449,"h":782},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":449,"h":782},
 	"sourceSize": {"w":449,"h":782},
 	"pivot": {"x":0.5,"y":0.5}
 },
-"iwata1.png":
-{
-	"frame": {"x":0,"y":3216,"w":268,"h":652},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":268,"h":652},
-	"sourceSize": {"w":268,"h":652},
-	"pivot": {"x":0.5,"y":0.5}
-},
-"iwata2.png":
-{
-	"frame": {"x":268,"y":3216,"w":268,"h":652},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":268,"h":652},
-	"sourceSize": {"w":268,"h":652},
-	"pivot": {"x":0.5,"y":0.5}
-},
-"iwata3.png":
-{
-	"frame": {"x":536,"y":3216,"w":268,"h":652},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":268,"h":652},
-	"sourceSize": {"w":268,"h":652},
-	"pivot": {"x":0.5,"y":0.5}
-},
 "kojima1.png":
 {
-	"frame": {"x":0,"y":3868,"w":220,"h":779},
+	"frame": {"x":449,"y":816,"w":220,"h":779},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":779},
@@ -101,7 +74,7 @@
 },
 "kojima2.png":
 {
-	"frame": {"x":220,"y":3868,"w":220,"h":779},
+	"frame": {"x":669,"y":816,"w":220,"h":779},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":779},
@@ -110,7 +83,7 @@
 },
 "kojima3.png":
 {
-	"frame": {"x":440,"y":3868,"w":220,"h":779},
+	"frame": {"x":889,"y":816,"w":220,"h":779},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":779},
@@ -119,7 +92,7 @@
 },
 "moulard1.png":
 {
-	"frame": {"x":660,"y":3868,"w":323,"h":756},
+	"frame": {"x":1109,"y":816,"w":323,"h":756},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":323,"h":756},
@@ -128,7 +101,7 @@
 },
 "moulard2.png":
 {
-	"frame": {"x":0,"y":4647,"w":323,"h":756},
+	"frame": {"x":1432,"y":816,"w":323,"h":756},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":323,"h":756},
@@ -137,34 +110,34 @@
 },
 "moulard3.png":
 {
-	"frame": {"x":323,"y":4647,"w":323,"h":756},
+	"frame": {"x":1755,"y":816,"w":323,"h":756},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":323,"h":756},
 	"sourceSize": {"w":323,"h":756},
 	"pivot": {"x":0.5,"y":0.5}
 },
-"étudiante1.png":
+"student1.png":
 {
-	"frame": {"x":646,"y":4647,"w":341,"h":735},
+	"frame": {"x":2078,"y":816,"w":341,"h":735},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":341,"h":735},
 	"sourceSize": {"w":341,"h":735},
 	"pivot": {"x":0.5,"y":0.5}
 },
-"étudiante2.png":
+"student2.png":
 {
-	"frame": {"x":0,"y":5403,"w":341,"h":735},
+	"frame": {"x":2419,"y":816,"w":341,"h":735},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":341,"h":735},
 	"sourceSize": {"w":341,"h":735},
 	"pivot": {"x":0.5,"y":0.5}
 },
-"étudiante3.png":
+"student3.png":
 {
-	"frame": {"x":341,"y":5403,"w":341,"h":735},
+	"frame": {"x":2760,"y":816,"w":341,"h":735},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":341,"h":735},
@@ -176,8 +149,8 @@
 	"version": "1.0",
 	"image": "devs.png",
 	"format": "RGBA8888",
-	"size": {"w":987,"h":6138},
+	"size": {"w":3123,"h":1598},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:31312b1ba49efb5b41a54764e4632291:ccfec7c74d7557139e9eeae22acf85b1:8f3afd5e86f505b4531b0b3a6b6ece6a$"
+	"smartupdate": "$TexturePacker:SmartUpdate:c70cf62b7244f125fab07e1ac5b45b47:63792530b921dec2a09b8d4b4987b488:8f3afd5e86f505b4531b0b3a6b6ece6a$"
 }
 }
