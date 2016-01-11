@@ -19,7 +19,7 @@ function SlideShow(){
 	leftBackground.sendToBack();
 	canap = game.add.sprite(0, 800, 'canap');
 
-	devShadow = game.add.sprite(-500, 500, 'devsSprite');
+	devShadow = game.add.sprite(-1000, 500, 'devsSprite');
 	devShadow.animations.add('black', Phaser.Animation.generateFrameNames('black', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('breton', Phaser.Animation.generateFrameNames('breton', 1, 3, '.png', 1), 10, true, false);
 	devShadow.animations.add('iwata', Phaser.Animation.generateFrameNames('iwata', 1, 3, '.png', 1), 10, true, false);
@@ -136,7 +136,7 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 		devShadow.animations.stop(null, true);
 	}, 1/60);
 
-	this.shadow = game.add.sprite(-500, 500, presStart);
+	this.shadow = game.add.sprite(-1000, 500, presStart);
   this.shadow.tint = 0x000000;
   this.shadow.alpha = 1;
 
