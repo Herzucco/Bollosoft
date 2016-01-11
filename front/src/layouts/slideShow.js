@@ -141,10 +141,11 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
   this.shadow.alpha = 1;
 
 	shadowAnim = game.add.tween(this.shadow);
-	shadowAnim.to({x:30}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.to({x:5}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
 
-	devAnim.to({x:30}, 400, Phaser.Easing.Linear.None);
+	devAnim = game.add.tween(devShadow);
+	devAnim.to({x:5}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 
 	devShadow.z = 1;
@@ -152,9 +153,9 @@ SlideShow.prototype.startPres = function PresentatorComing(presStart){
 }
 
 SlideShow.prototype.endPres = function PresentationEnding(presEnd){
-	shadowAnim.to({x:-800}, 400, Phaser.Easing.Linear.None);
+	shadowAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
 	shadowAnim.start();
-	devAnim.to({x:-800}, 400, Phaser.Easing.Linear.None);
+	devAnim.to({x:-1000}, 400, Phaser.Easing.Linear.None);
 	devAnim.start();
 
 	slideBack.width = 0;
