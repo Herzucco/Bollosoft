@@ -16,4 +16,4 @@ Cette remarque est super efficace.
 
 ***
 [narrapkmn]
-Le fantôme sauvage est KO.
+Fantôme sauvage est KO.

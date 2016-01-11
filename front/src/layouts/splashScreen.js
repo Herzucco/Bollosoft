@@ -49,7 +49,8 @@ SplashScreen.prototype.update = function SplashScreenUpdate(game){
     if(this.currentTitleDuration >= this.titleDuration){
       this.currentTitleDuration = 0;
       this.currentIdleDuration = 0;
-      this.idle = false;
+      this.idle = true;
+      this.sprite.visible = false;
 
       this.disable();
       window.game.events.emit('endSplashScreen');
