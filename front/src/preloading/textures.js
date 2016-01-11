@@ -31,7 +31,7 @@ function textures(game) {
     game.load.image('iwata', 'assets/images/prod/iwata/iwata1.png');
     game.load.image('kojima', 'assets/images/prod/kojima/kojima1.png');
     game.load.image('etudiante', 'assets/images/prod/étudiante/étudiante1.png');
-    game.load.image('alldevs', 'assets/images/prod/brochette/brochette.png');
+    game.load.image('alldevs', 'assets/images/prod/brochette.png');
 
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
     game.load.image('PT', 'assets/images/slides/slide2.png');
