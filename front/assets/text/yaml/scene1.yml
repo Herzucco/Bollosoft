@@ -41,7 +41,7 @@ characters:
     name: Patrick Décimé
     rythm: 0.03
     font: segoemarker
-    fontSize: 25
+    fontSize: 30
     bubble: bgreen
     sound: moulard_voice
 triggers:
