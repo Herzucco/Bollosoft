@@ -8,6 +8,7 @@ function textures(game) {
     game.load.image('leftBackground', 'assets/images/prod/left_screen/fond.png');
     game.load.image('rightBackground', 'assets/images/prod/fond_ecran_droite.png');
     game.load.image('canap', 'assets/images/prod/left_screen/canap.png');
+    game.load.image('bolloDos', 'assets/images/prod/left_screen/bolodos.png');
     game.load.image('iwataTexture', 'assets/images/prod/iwata.png');
     game.load.image('metacritic', 'assets/images/metacritic.png');
 
