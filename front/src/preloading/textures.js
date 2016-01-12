@@ -26,10 +26,11 @@ function textures(game) {
     game.load.image('non', 'assets/images/ui/non.png');
     game.load.image('splashScreen', 'assets/images/splash.png');
     game.load.image('credits', 'assets/images/credits.png');
-    
+
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
     game.load.image('PT', 'assets/images/slides/slide2.png');
     game.load.image('CoD', 'assets/images/slides/slide3.png');
+    game.load.image('MaitenMagic', 'assets/images/slides/slide4.png');
 }
 
 module.exports = textures;
