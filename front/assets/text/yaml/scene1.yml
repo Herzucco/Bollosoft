@@ -70,6 +70,7 @@ triggers:
 settings:
   picture: Hanouna
   presentator: Moulard
+  music: Generic
 values:
   yes:
     metacritic: -10

@@ -6,12 +6,8 @@ function EndDay(){
   this.metacritic = 80;
   this.bolloRate = 10;
 
-  this.metaTxt = window.game.add.text(50, 200, "Metacritic : " + this.metacritic, { font: "65px Arial", fill: "#ffffff", align: "center" });
-  this.bolloTxt = window.game.add.text(50, 400, "Actions de Bollobails : " + this.bolloRate, { font: "65px Arial", fill: "#ffffff", align: "center" });
-  this.group.add(this.metaTxt);
-  this.group.add(this.bolloTxt);
-
-  this.metaImage = window.game.add.sprite(500, 185, 'metacritic');
+  this.metaImage = window.game.add.sprite(358, 185, 'metacritic');
+  this.metaImage.tint = 0x66cc33;
   this.bolloImage = window.game.add.sprite(780, 385, 'bollorate');
   this.metaImage.width = 100;
   this.metaImage.height = 100;
@@ -19,6 +15,11 @@ function EndDay(){
   this.bolloImage.height = 100;
   this.group.add(this.metaImage);
   this.group.add(this.bolloImage);
+
+  this.metaTxt = window.game.add.text(50, 200, "Metascore " + this.metacritic, { font: "65px Arial", fill: "#ffffff", align: "center" });
+  this.bolloTxt = window.game.add.text(50, 400, "Actions de Bollobails : " + this.bolloRate, { font: "65px Arial", fill: "#ffffff", align: "center" });
+  this.group.add(this.metaTxt);
+  this.group.add(this.bolloTxt);
 
   this.waitInputs = false;
   this.currentWaitingTime = 0;
@@ -49,7 +50,19 @@ EndDay.prototype.constructor = EndDay;
 EndDay.prototype.update = function EndDayUpdate(game){
   Layout.prototype.update.call(this, game);
 
-  this.metaTxt.text = "Metacritic : " + this.metacritic;
+  if (this.metacritic >= 75)
+  {
+    this.metaImage.tint = 0x66cc33;
+  }
+  else if ((this.metacritic < 75)&&(this.metacritic > 50))
+  {
+    this.metaImage.tint = 0xffcc33;
+  }
+  else if (this.metacritic <= 50)
+  {
+    this.metaImage.tint = 0xff0000;
+  }
+  this.metaTxt.text = "Metascore " + this.metacritic;
   this.bolloTxt.text = "Actions de Bollobails : " + this.bolloRate;
 
   if(this.waitInputs){

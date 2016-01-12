@@ -70,6 +70,7 @@ triggers:
 settings:
   picture: CoD
   presentator: Black
+  music: Generic
 values:
   yes:
     metacritic: 4

@@ -70,6 +70,7 @@ triggers:
 settings:
   picture: PT
   presentator: Kojima
+  music: Generic
 values:
   yes:
     metacritic: 3

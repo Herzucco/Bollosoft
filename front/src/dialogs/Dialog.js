@@ -29,6 +29,10 @@ Dialog.prototype.load = function LoadDialog(source){
 
   this.computeDialog(source.text, source.characters, source.settings);
 
+  this.music = window.game.add.audio(this.settings.music);
+  this.music.loop = true;
+  this.music.play();
+
   this.newBubble();
 }
 
@@ -94,6 +98,7 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
 
   }else if(!this.choiceMode){
     this.canInput = false;
+    this.music.stop();
     window.game.events.emit('choiceStart');
   }else{
     this.canInput = false;
@@ -128,6 +133,19 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
     break;
     case '###' :
       window.game.events.emit('presLeave');
+      return false;
+    break;
+    case '???' :
+      window.game.events.emit('pixel');
+      return false;
+    break;
+    case '!???' :
+      window.game.events.emit('stopPixel');
+      return false;
+    break;
+    case '^^^' :
+      var badum = window.game.add.audio('badum');
+      badum.play();
       return false;
     break;
     default :

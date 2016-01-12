@@ -62,6 +62,7 @@ triggers:
 settings:
   picture: Hanouna
   presentator: allDevs
+  music: Intro
 values:
   yes:
     metacritic: 0
