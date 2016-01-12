@@ -1,0 +1,33 @@
+***
+[guillemot]
+...£
+
+***
+[bollore]
+Les actionnaires ont fait leur choix, Guillemot.£
+
+***
+[bollore]
+Pour vous, l'aventure s'arrête ici.£
+
+***
+[bollore]
+Il faut rentrer chez vous, maintenant.£
+
+***
+[bollore]
+{6}
+MOUAHAHA
+
+***
+[narrator]
+...£
+
+***
+[narrator]
+Un froid s'est installé entre Bolloré et Guillemot...£
+
+***
+[narrator]
+{6}
+:(  

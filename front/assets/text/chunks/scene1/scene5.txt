@@ -1,0 +1,126 @@
+﻿***
+@@@
+
+***
+[narrator]
+Gaël Le Goarnig est un des premiers développeurs à avoir travaillé pour Ubisoft.£
+
+***
+[narrator]
+A l'époque où la société se trouvait en Bretagne.£
+
+***
+[goarnig]
+Bonjour messieurs !£
+
+***
+[guillemot]
+Bonjour Gaël ! Comment va l'équipe DLC ?
+
+***
+[goarnig]
+Ravi de me retrouver face à mes 2 patrons, tous 2 bretons.£
+
+***
+[goarnig]
+A cette occasion, l'équipe DLC a imaginé une création... particulière.£
+
+***
+[goarnig]
+Vous connaissez sans doute déjà For Honor, notre jeu de bataille médiévale.£
+
+***
+[goarnig]
+En votre honneur, nous avons décidé de consacrer son 1er DLC...£
+
+***
+[goargnig]
+Aux guerres des clans bretons !
+
+***
+[bollore]
+{3}
+Mettre en avant la culture de notre région !£
+
+***
+[guillemot]
+{4}
+Il nous suffira de créer de nouveaux skins !£
+
+***
+{bollore]
+{5}
+Quelle merveilleuse idée !£
+
+***
+[guillemot]
+{6}
+Le patrimoine breton !£
+
+***
+[bollore]
+{3}
+Démontrer la supériorité du Finistère sur le Morbihan !£
+
+***
+[guillemot]
+{4}
+Avec du beurre sa-£
+
+***
+[guillemot]
+Pardon ?
+
+***
+[guillemot]
+Bolloré, vous êtes du Finistère ?£
+
+***
+[bollore]
+{1}
+...
+
+***
+[bollore]
+Guillemot, ne me dites pas que vous êtes morbihanais ?£
+
+***
+[bollore]
+Laissez-moi vous donner une preuve simple de la supériorité finistérienne :£
+
+***
+[bollore]
+Moi, finistérien, je possède une plus grande part de votre entreprise que vous, morbihanais.£
+
+***
+[bollore]
+{4}
+MOUAHAHAHA
+
+***
+[guillemot]
+{6}
+GRRRR£
+
+***
+[guillemot]
+{4}
+Assez, Bolloré !£
+
+***
+[guillemot]
+{3}
+Vous entrez dans ma société,£
+
+***
+[guillemot]
+{3}
+puis dans ma propre demeure, sans prévenir,£
+
+***
+[guillemot]
+Il est temps que vous compreniez qui est le chef ici !£
+
+***
+[guillemot]
+Actionnaires ! Les morbihanais sont-ils supérieurs aux finistériens ?
