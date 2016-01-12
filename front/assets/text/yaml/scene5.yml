@@ -1,0 +1,83 @@
+---
+text:
+  - talker: narrator
+    file:
+      fr: ../chunks/scene1/scene5.txt
+      en: ../chunks/scene1/scene5.txt
+choice:
+  yes:
+    - talker: narrator
+      file:
+        fr: ../chunks/scene1/scene5_yes.txt
+        en: ../chunks/scene1/scene5_yes.txt
+  no:
+    - talker: narrator
+      file:
+        fr: ../chunks/scene1/scene5_no.txt
+        en: ../chunks/scene1/scene5_no.txt
+characters:
+  narrator:
+    name: Narrateur
+    rythm: 0.03
+    font: frabk
+    fontSize: 30
+    bubble: bbrown
+    sound: narrator_voice
+  guillemot:
+    name: Guillemot
+    rythm: 0.03
+    font: comic
+    fontSize: 25
+    bubble: bpurple
+    sound: guillemot_voice
+  bollore:
+    name: Bolloré
+    rythm: 0.03
+    font: smm
+    fontSize: 25
+    bubble: bblue
+    sound: bollore_voice_calm
+  goarnig
+    name: Le Goarnig
+    rythm: 0.03
+    font: FTLTLT
+    fontSize: 30
+    bubble: bgreen
+    sound: moulard_voice
+triggers:
+  - id: 1
+    settings:
+      rythm: 1
+      fontSize: 100
+      noAnim: true
+  - id: 2
+    settings:
+      rythm: 0
+      fontSize: 50
+      sound: bollore_voice_pissed
+  - id: 3
+    settings:
+      rythm: 0.025
+      fontSize: 28
+  - id: 4
+    settings:
+      rythm: 0.02
+      fontSize: 30
+  - id: 5
+    settings:
+      rythm: 0.01
+      fontSize: 35
+  - id: 6
+    settings:
+      rythm: 0.005
+      fontSize: 40
+settings:
+  picture: ForBollor
+  presentator: LeGoarnig
+values:
+  yes:
+    metacritic: 5
+    bolloRate: 100
+  no:
+    metacritic: -2
+    bolloRate: -5
