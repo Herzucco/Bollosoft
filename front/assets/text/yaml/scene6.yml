@@ -29,7 +29,7 @@ characters:
     font: dtm
     fontSize: 30
     bubble: bbrown
-    sound: narrator_voice
+    sound: narrateur_8bit
   guillemot:
     name: Guillemot
     rythm: 0.03

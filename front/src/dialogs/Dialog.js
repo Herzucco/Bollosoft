@@ -135,6 +135,19 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
       window.game.events.emit('presLeave');
       return false;
     break;
+    case '???' :
+      window.game.events.emit('pixel');
+      return false;
+    break;
+    case '!???' :
+      window.game.events.emit('stopPixel');
+      return false;
+    break;
+    case '^^^' :
+      var badum = window.game.add.audio('badum');
+      badum.play();
+      return false;
+    break;
     default :
       return true;
     break;
