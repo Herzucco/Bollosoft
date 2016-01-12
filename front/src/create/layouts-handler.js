@@ -10,13 +10,13 @@ var Demoscene = require('../layouts/demoscene');
 function layoutsHandler(dayConfig){
   var layouts = [];
 
-  layouts.push(new Demoscene());
   layouts.push(new SlideShow());
   layouts.push(new Couch());
   layouts.push(new Answer());
   layouts.push(new DialogPannel());
   layouts.push(new EndDay());
   layouts.push(new SplashScreen());
+  layouts.push(new Demoscene());
   layouts.push(new Credits());
 
   game.layouts = layouts;
