@@ -1,6 +1,9 @@
 var Layout = require('./layout');
 var Pixelate = require('../filters/pixelate');
-
+var graal = {
+  'die': false
+}
+var music;
 
 function Demoscene(){
   Layout.call(this);
@@ -14,6 +17,14 @@ function Demoscene(){
   ];
   var tween;
   var rezTween;
+  music = game.add.audio('Generic');
+
+  this.demoImages = [
+    'test',
+  ];
+
+  this.currentSpawnCount = 2 * 1000;
+  this.spawnCount = 0.5;
 
   this.backGround = window.game.add.sprite(0, 0, 'bgDemo');
   this.backGround.scale.set(10, 10);
@@ -66,6 +77,8 @@ function Demoscene(){
     rezTween.start();
     sprite.visible = true;
 
+    music.play();
+
     that.enable();
   });
 
@@ -77,9 +90,25 @@ Demoscene.prototype.update = function DemosceneUpdate(game){
   Layout.prototype.update.call(this, game);
 
   if(this.rezMode){
+    this.currentSpawnCount += 1/60;
     // this.planeFilter.dirty = true;
     // this.customUniforms.alpha.value += 1/60 * this.alphaSpeed;
     this.planeFilter.update();
+    this.spawnCount -= 1/60 / 30;
+    if(this.currentSpawnCount >= this.spawnCount){
+      var t = new DemoSprite(getRandomArbitrary(300, 1600), getRandomArbitrary(400, 600), this.demoImages[getRandomInt(0, this.demoImages.length-1)], graal);
+      t.anchor.set(0.5, 0.5);
+      window.game.world.add(t);
+      this.currentSpawnCount = 0;
+      //this.group.sort('z', Phaser.Group.SORT_DESCENDING);
+    }
+
+    if(this.spawnCount <= 0.01){
+        graal.die = true;
+        this.disable();
+        music.stop();
+        window.game.events.emit("credits");
+    }
   }
 }
 
@@ -116,5 +145,44 @@ var planeFragment = [
 
     "}"
 ];
+
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function DemoSprite(x, y, image, graal){
+  this.graal = graal;
+
+  Phaser.Sprite.call(this, window.game, x, y, image);
+
+  this.scale.set(0.01, 0.01);
+  this.moveSpeed = getRandomArbitrary(5, 10);
+  this.scaleSpeed = getRandomArbitrary(1.01, 1.05);
+  this.direction = getRandomInt(-1, 1);
+  if(this.direction === 0){
+    this.direction = 1;
+  }
+}
+
+DemoSprite.prototype = Object.create(Phaser.Sprite.prototype);
+DemoSprite.prototype.constructor = DemoSprite;
+
+DemoSprite.prototype.update = function UpdateDemoSprite() {
+  this.x += this.moveSpeed * this.direction;
+  this.scale.set(this.scale.x * this.scaleSpeed, this.scale.y * this.scaleSpeed);
+
+  if(this.x > 2000 || this.x < 100 || this.scale.x > 10){
+    this.alpha -= 0.05;
+  }
+
+  if(this.x > 3000 || this.x < -500 || this.scale.x > 100 || this.graal.die){
+    this.destroy();
+  }
+}
+
 
 module.exports = Demoscene;
