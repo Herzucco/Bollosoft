@@ -5,10 +5,12 @@ var SlideShow = require('../layouts/slideShow');
 var Couch = require('../layouts/couch');
 var SplashScreen = require('../layouts/splashScreen');
 var Credits = require('../layouts/credits');
+var Demoscene = require('../layouts/demoscene');
 
 function layoutsHandler(dayConfig){
   var layouts = [];
 
+  layouts.push(new Demoscene());
   layouts.push(new SlideShow());
   layouts.push(new Couch());
   layouts.push(new Answer());

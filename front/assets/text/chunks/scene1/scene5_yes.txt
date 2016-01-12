@@ -1,0 +1,31 @@
+***
+[guillemot]
+{6}
+MOUAHAHA£
+
+***
+[guillemot]
+{3}
+Vous voyez, Bolloré, vous n'êtes pas le bienvenue ici !£
+
+***
+[bollore]
+{3}
+CA SUFFIT, GUILLEMOT !£
+
+***
+[bollore]
+Puisque c'est ainsi, je vais racheter tout, votre société, cet endroit, votre vie !
+
+***
+[narrator]
+...£
+
+***
+[narrator]
+Un froid s'est installé entre Bolloré et Guillemot...£
+
+***
+[narrator]
+{6}
+:(  
