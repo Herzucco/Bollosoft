@@ -69,6 +69,7 @@ triggers:
 settings:
   picture: MaitenMagic
   presentator: Black
+  music: Generic
 values:
   yes:
     metacritic: 2

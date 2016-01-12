@@ -83,6 +83,7 @@ triggers:
 settings:
   picture: MaitenMagic
   presentator: Iwata
+  music: Generic
 values:
   yes:
     metacritic: -5

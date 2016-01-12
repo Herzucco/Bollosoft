@@ -29,6 +29,10 @@ Dialog.prototype.load = function LoadDialog(source){
 
   this.computeDialog(source.text, source.characters, source.settings);
 
+  this.music = window.game.add.audio(this.settings.music);
+  this.music.loop = true;
+  this.music.play();
+
   this.newBubble();
 }
 
@@ -94,6 +98,7 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
 
   }else if(!this.choiceMode){
     this.canInput = false;
+    this.music.stop();
     window.game.events.emit('choiceStart');
   }else{
     this.canInput = false;

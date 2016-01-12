@@ -15,6 +15,7 @@ function Bubble (group, x, y, sentence, characters, language, label) {
   }
 
   this.character['phaserSound'] = window.game.add.audio(this.character.sound);
+  this.character['phaserSound'].volume = 0.3;
   this.label = label;
 
   this.language = language || 'fr';

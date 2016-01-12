@@ -15,6 +15,9 @@ function audio(game) {
     game.load.audio('narrator_voice', ['assets/sounds/voix_narrateur.wav']);
     game.load.audio('enjmin_voice', ['assets/sounds/Voix_enjminienne.wav']);
     game.load.audio('splashScreen', ['assets/sounds/Bolloques.wav']);
+
+    game.load.audio('Intro', ['assets/sounds/intro.wav']);
+    game.load.audio('Generic', ['assets/sounds/music.wav']);
 }
 
 module.exports = audio;
