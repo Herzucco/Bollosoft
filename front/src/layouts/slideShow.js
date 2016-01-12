@@ -1,5 +1,6 @@
 var Layout = require('./layout');
 var leftBackground;
+var bolloDos;
 var canap;
 var devShadow;
 var devAnim;
@@ -19,7 +20,8 @@ function SlideShow(){
 
 	leftBackground = game.add.sprite(0, 0, 'leftBackground');
 	leftBackground.sendToBack();
-	canap = game.add.sprite(0, 800, 'canap');
+	bolloDos = game.add.sprite(600, 860, 'bolloDos');
+	canap = game.add.sprite(0, 956, 'canap');
 
 	devShadow = game.add.sprite(-1000, 500, 'devsSprite');
 	devShadow.animations.add('black', Phaser.Animation.generateFrameNames('black', 1, 3, '.png', 1), 10, true, false);
