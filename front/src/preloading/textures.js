@@ -31,6 +31,10 @@ function textures(game) {
     game.load.image('PT', 'assets/images/slides/slide2.png');
     game.load.image('CoD', 'assets/images/slides/slide3.png');
     game.load.image('MaitenMagic', 'assets/images/slides/slide4.png');
+
+    game.load.image('bgDemo', 'assets/images/prod/bgDemo.png');
+    game.load.image('factory', 'assets/images/factory.png');
+    game.load.image('test', 'assets/images/test.png');
 }
 
 module.exports = textures;

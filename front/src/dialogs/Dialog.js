@@ -148,6 +148,10 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
       badum.play();
       return false;
     break;
+    case '§§§' :
+      window.game.events.emit('love');
+      return false;
+    break;
     default :
       return true;
     break;
