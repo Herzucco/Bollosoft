@@ -1,5 +1,5 @@
 function prepreloading(game) {
-    //les bails pour le loader
+    game.load.atlasJSONHash('loading', 'assets/sprites/loading.png', 'assets/sprites/loading.json');
 }
 
 module.exports = prepreloading;
