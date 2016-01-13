@@ -2,19 +2,19 @@
 text:
   - talker: narrator
     file:
-      fr: ../chunks/scene1/scene5.txt
-      en: ../chunks/scene1/scene5.txt
+      fr: ../chunks/scene1/scene7.txt
+      en: ../chunks/scene1/scene7.txt
 choice:
   yes:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene5_yes.txt
-        en: ../chunks/scene1/scene5_yes.txt
+        fr: ../chunks/scene1/scene7_yes.txt
+        en: ../chunks/scene1/scene7_yes.txt
   no:
     - talker: narrator
       file:
-        fr: ../chunks/scene1/scene5_no.txt
-        en: ../chunks/scene1/scene5_no.txt
+        fr: ../chunks/scene1/scene7_no.txt
+        en: ../chunks/scene1/scene7_no.txt
 characters:
   narrator:
     name: Narrateur
@@ -37,13 +37,13 @@ characters:
     fontSize: 25
     bubble: bblue
     sound: bollore_voice_calm
-  goarnig:
-    name: Le Goarnig
-    rythm: 0.03
-    font: FTLTLT
-    fontSize: 30
+  enjmin:
+    name: L'Etudiante
+    rythm: 0.02
+    font: MTCORSVA
+    fontSize: 25
     bubble: bgreen
-    sound: moulard_voice
+    sound: enjminienne_voice
 triggers:
   - id: 1
     settings:
@@ -72,12 +72,12 @@ triggers:
       rythm: 0.005
       fontSize: 40
 settings:
-  picture: ForBollor
-  presentator: LeGoarnig
+  picture: Bolloques
+  presentator: Enjminienne
 values:
   yes:
-    metacritic: 5
-    bolloRate: 100
+    metacritic: 0
+    bolloRate: 0
   no:
-    metacritic: -2
-    bolloRate: -5
+    metacritic: 0
+    bolloRate: 0

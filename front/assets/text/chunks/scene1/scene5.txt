@@ -34,8 +34,11 @@ Vous connaissez sans doute déjà For Honor, notre jeu de bataille médiévale.�
 En votre honneur, nous avons décidé de consacrer son 1er DLC...£
 
 ***
-[goargnig]
+[goarnig]
 Aux guerres des clans bretons !
+
+***
+$$$
 
 ***
 [bollore]
