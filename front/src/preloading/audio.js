@@ -18,6 +18,7 @@ function audio(game) {
     game.load.audio('narrateur_8bit', ['assets/sounds/narrateur_8bit.wav']);
     game.load.audio('badum', ['assets/sounds/Badum_tss.wav']);
 
+    game.load.audio('splashScreen', ['assets/sounds/Bolloques.wav']);
     game.load.audio('Intro', ['assets/sounds/intro.wav']);
     game.load.audio('Generic', ['assets/sounds/music.wav']);
 }
