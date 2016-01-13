@@ -14,7 +14,6 @@ function audio(game) {
     game.load.audio('moulard_voice', ['assets/sounds/voix_moulard.wav']);
     game.load.audio('narrator_voice', ['assets/sounds/voix_narrateur.wav']);
     game.load.audio('enjmin_voice', ['assets/sounds/Voix_enjminienne.wav']);
-    game.load.audio('enjmin_voice', ['assets/sounds/Voix_enjminienne.wav']);
     game.load.audio('narrateur_8bit', ['assets/sounds/narrateur_8bit.wav']);
     game.load.audio('badum', ['assets/sounds/Badum_tss.wav']);
 

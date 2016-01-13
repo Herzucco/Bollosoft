@@ -1,7 +1,4 @@
 ***
-??? 
-
-***
 [narrator]
 {6}
 PARDON ? :@£
@@ -15,6 +12,9 @@ Vous voulez m'énerver, c'est ça ? £
 [narrator]
 {3}
 Je vais vous montrer, à qui vous avez affaire !£
+
+***
+???
 
 ***
 [narrator]
@@ -35,15 +35,51 @@ OOOOOOOOOOOO KKKKKKKKKKKKKK LLLLLLLLLLLLL MMMMMMMMMMMMMM £
 BOUM ! On tiraille depuis Le Nil, ancien Bollofief, OKLM ! £
 
 ***
+???
+
+***
 [narrator]
 {3}
 Un jeu par, vous savez qui ? Stéphane Natkin !£
 
 ***
 [narrator]
-
 Bon allez, fini les conneries, qui pour un Rocket League now ?!£
 
 ***
+???
+
+***
 [narrator]
-Bon en fait il faudrait d'abord se coucher, demain y'a présentation d'outils :(£
+Je déteste cette vie, à répéter et répéter les mêmes choses aux gens ! £
+
+***
+[narrator]
+JE VEUX SORTIR.£
+
+***
+!???
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.

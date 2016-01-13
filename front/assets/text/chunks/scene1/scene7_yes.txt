@@ -1,7 +1,4 @@
 ***
-??? 
-
-***
 [narrator]
 {6}
 =D WOUHOU =D£
@@ -15,6 +12,9 @@ Tellement bien !£
 [narrator]
 {3}
 Bolloqués, c'est reparti !£
+
+***
+???
 
 ***
 [narrator]
@@ -32,6 +32,9 @@ A quand le tapis rouge ? Je suis prêt !£
 OOOOOOOOOOOO KKKKKKKKKKKKKK LLLLLLLLLLLLL MMMMMMMMMMMMMM £
 
 ***
+???
+
+***
 [narrator]
 {3}
 BOUM ! On tiraille depuis Le Nil, ancien Bollofief, OKLM ! £
@@ -43,9 +46,45 @@ Un jeu par, vous savez qui ? Stéphane Natkin !£
 
 ***
 [narrator]
-
 Bon allez, fini les conneries, qui pour un Rocket League now ?!£
+
+***
+???
 
 ***
 [narrator]
 Bon en fait il faudrait d'abord se coucher, demain y'a présentation d'outils :(£
+
+***
+[narrator]
+HAHAHAHA£
+
+[narrator]
+Les écrans de Canal+ :3£
+
+***
+!???
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.
+
+***
+[narrator]
+La fin.

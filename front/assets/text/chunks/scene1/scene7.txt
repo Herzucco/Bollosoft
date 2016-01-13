@@ -17,7 +17,7 @@ Bonjour messieurs !£
 
 ***
 [narrator]
-Guillemot et Bolloré sont toujours fâchés :'( 
+Guillemot et Bolloré sont toujours fâchés :'(
 
 ***
 [enjmin]
@@ -48,7 +48,7 @@ Avec un côté engagé, satirique.£
 Un peu comme les Guignols, mais en drôle comme au début.£
 
 ***
-{enjmin]
+[enjmin]
 Je voudrais monter mon studio à Paris.
 
 ***
@@ -74,7 +74,7 @@ Hm, Guillemot et Bolloré n'ont rien écouté !
 
 ***
 [guillemot]
-Vous avez parler de travailler en France.£
+Vous avez parlé de travailler en France.£
 
 ***
 [guillemot]
@@ -164,12 +164,12 @@ Ca veut dire que nous allons pouvoir...£
 ***
 [narrator]
 {2}
-continuer Bolloqués !
+Continuer Bolloqués !
 
 ***
 [narrator]
 {2}
-Avec plus d'invités ! \o/£
+Avec plus d'invités ! ~.~£
 
 ***
 [narrator]

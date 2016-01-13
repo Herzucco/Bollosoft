@@ -51,7 +51,7 @@ Mettre en avant la culture de notre région !£
 Il nous suffira de créer de nouveaux skins !£
 
 ***
-{bollore]
+[bollore]
 {5}
 Quelle merveilleuse idée !£
 

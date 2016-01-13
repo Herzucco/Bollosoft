@@ -9,6 +9,11 @@ function Credits(){
 
   this.door = window.game.add.audio('door');
 
+  this.idleS = game.add.sprite(window.game.world.centerX, window.game.world.centerY, 'opacityCalq');
+  this.idleS.anchor.set(0.5, 0.5);
+  this.idleS.scale.set(30, 30);
+  this.idleS.tint = 0x000000;
+
   this.saison = game.add.sprite(window.game.world.centerX, window.game.world.centerY, 'saison');
   this.saison.anchor.set(0.5, 0.5);
 
@@ -21,6 +26,7 @@ function Credits(){
   this.group.add(this.cinqyou);
   this.group.add(this.credits);
   this.group.add(this.saison);
+  this.group.add(this.idleS);
 
   var that = this;
   window.game.events.on('credits', function(){
@@ -36,6 +42,9 @@ Credits.prototype.update = function CreditsUpdate(game){
   Layout.prototype.update.call(this, game);
 
   this.currentCount += 1/60;
+  if(this.currentCount >= 1){
+    this.idleS.visible = false;
+  }
   if(this.currentCount >= this.count){
     this.currentCount = 0;
     if(this.mode === 'saison'){

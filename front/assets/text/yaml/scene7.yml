@@ -40,10 +40,10 @@ characters:
   enjmin:
     name: L'Etudiante
     rythm: 0.02
-    font: MTCORSVA
-    fontSize: 25
+    font: mtcorsiva
+    fontSize: 35
     bubble: bgreen
-    sound: enjminienne_voice
+    sound: enjmin_voice
 triggers:
   - id: 1
     settings:
@@ -73,7 +73,8 @@ triggers:
       fontSize: 40
 settings:
   picture: Bolloques
-  presentator: Enjminienne
+  presentator: etudiante
+  music: Generic
 values:
   yes:
     metacritic: 0

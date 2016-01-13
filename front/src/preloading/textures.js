@@ -29,10 +29,19 @@ function textures(game) {
     game.load.image('saison', 'assets/images/saison1.png');
     game.load.image('cinqyou', 'assets/images/Cinqyou.png');
 
+    game.load.image('black', 'assets/images/prod/black/black1.png');
+    game.load.image('moulard', 'assets/images/prod/moulard/moulard1.png');
+    game.load.image('breton', 'assets/images/prod/breton/breton1.png');
+    game.load.image('etudiante', 'assets/images/prod/student/student1.png');
+    game.load.image('iwata', 'assets/images/prod/iwata/iwata1.png');
+    game.load.image('kojima', 'assets/images/prod/kojima/kojima1.png');
+
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
     game.load.image('PT', 'assets/images/slides/slide2.png');
     game.load.image('CoD', 'assets/images/slides/slide3.png');
     game.load.image('MaitenMagic', 'assets/images/slides/slide4.png');
+    game.load.image('ForBollor', 'assets/images/slides/slide5.png');
+    game.load.image('Bolloques', 'assets/images/slides/slide7.png');
 
     game.load.image('bgDemo', 'assets/images/prod/bgDemo.png');
     game.load.image('factory', 'assets/images/factory.png');
