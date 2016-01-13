@@ -21,6 +21,7 @@ function Demoscene(){
 
   this.demoImages = [
     'bollotete',
+    'ubi'
   ];
 
   this.currentSpawnCount = 2 * 1000;

@@ -37,6 +37,7 @@ function textures(game) {
     game.load.image('bgDemo', 'assets/images/prod/bgDemo.png');
     game.load.image('factory', 'assets/images/factory.png');
     game.load.image('bollotete', 'assets/images/bollotete.png');
+    game.load.image('ubi', 'assets/images/ubi.png');
 }
 
 module.exports = textures;
