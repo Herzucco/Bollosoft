@@ -1,5 +1,6 @@
 var Layout = require('./layout');
 var leftBackground;
+var bolloDos;
 var canap;
 var devShadow;
 var devAnim;
@@ -10,6 +11,7 @@ var doorSound;
 var filter;
 var iwataShader;
 var shadowAnim;
+var bolloMove;
 
 function SlideShow(){
 	Layout.call(this);
@@ -19,7 +21,10 @@ function SlideShow(){
 
 	leftBackground = game.add.sprite(0, 0, 'leftBackground');
 	leftBackground.sendToBack();
-	canap = game.add.sprite(0, 800, 'canap');
+	bolloDos = game.add.sprite(600, 1360, 'bolloDos');
+	bolloMove = game.add.tween(bolloDos);
+
+	canap = game.add.sprite(0, 956, 'canap');
 
 	devShadow = game.add.sprite(-1000, 500, 'devsSprite');
 	devShadow.animations.add('black', Phaser.Animation.generateFrameNames('black', 1, 3, '.png', 1), 10, true, false);
@@ -50,6 +55,10 @@ function SlideShow(){
 	window.game.events.on('presLeave', function(){
     	that.presLeave();
 	});
+	window.game.events.on('bolloFall', function(peopleStop){
+    bolloMove.to({y:860}, 9500, Phaser.Easing.Linear.None);
+    bolloMove.start();
+	});
 
 	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
 	slideBack.width = 0;
@@ -58,7 +67,7 @@ function SlideShow(){
 	slideSound = window.game.add.audio('slide');
 	doorSound = window.game.add.audio('door');
 	doorSound.volume = 0.5;
-	
+
 	projectorSound = window.game.add.audio('projecteur');
 	projectorSound.loop = true;
 

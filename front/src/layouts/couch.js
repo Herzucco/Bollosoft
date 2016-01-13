@@ -10,6 +10,8 @@ var peopleStoping;
 var currentAnimName;
 var animRhythm = 0;
 var cantStop = false;
+var loving = false;
+var loveSpeed = 0.1;
 
 function Couch(){
   Layout.call(this);
@@ -46,6 +48,9 @@ function Couch(){
     bolloMove.to({y:600}, 9500, Phaser.Easing.Linear.None);
     bolloMove.start();
 	});
+  window.game.events.on('love', function(peopleStop){
+    loving = true;
+  });
 }
 
 var mapRange = function(from, to, s) {
@@ -64,6 +69,13 @@ Couch.prototype.update = function CouchUpdate(game){
 			peopleStoping.animations.play(currentAnimName, mapRange([0, 1], [10, 4], animRhythm), true);
 		}
 	}
+  if(loving){
+    guigui.x -= loveSpeed;
+    bollo.x += loveSpeed;
+    if(bollo.x >= 1250){
+      loving = false;
+    }
+  }
 }
 
 Couch.prototype.startTalk = function StartTalkAnim(peopleTalking){

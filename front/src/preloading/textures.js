@@ -8,8 +8,8 @@ function textures(game) {
     game.load.image('leftBackground', 'assets/images/prod/left_screen/fond.png');
     game.load.image('rightBackground', 'assets/images/prod/fond_ecran_droite.png');
     game.load.image('canap', 'assets/images/prod/left_screen/canap.png');
+    game.load.image('bolloDos', 'assets/images/prod/left_screen/bolodos.png');
     game.load.image('iwataTexture', 'assets/images/prod/iwata.png');
-    game.load.image('bollorate', 'assets/images/bollorate.png');
     game.load.image('metacritic', 'assets/images/metacritic.png');
 
     game.load.atlasJSONHash('bolloSprite', 'assets/sprites/bollo.png', 'assets/sprites/bollo.json');
@@ -31,6 +31,10 @@ function textures(game) {
     game.load.image('PT', 'assets/images/slides/slide2.png');
     game.load.image('CoD', 'assets/images/slides/slide3.png');
     game.load.image('MaitenMagic', 'assets/images/slides/slide4.png');
+
+    game.load.image('bgDemo', 'assets/images/prod/bgDemo.png');
+    game.load.image('factory', 'assets/images/factory.png');
+    game.load.image('test', 'assets/images/test.png');
 }
 
 module.exports = textures;

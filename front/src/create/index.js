@@ -10,7 +10,7 @@ function create(){
 	//game.scale.offset = 0;
 	//game.debug.inputInfo(16,16);
 
-	loadEmitter();
+	//loadEmitter();
 	loadLayouts();
 }
 

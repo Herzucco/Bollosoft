@@ -4,6 +4,7 @@ var Dialog = require('../dialogs/Dialog');
 function DialogPannel(){
   Layout.call(this);
   this.sceneIndex = 0;
+  this.demoscene = 0;
 
   this.dialog = new Dialog(this.group);
   window.game.score = window.game.texts[this.sceneIndex].values;
@@ -29,6 +30,10 @@ function DialogPannel(){
     }
   });
 
+  window.game.events.on('stopPixel', function(){
+    that.demoScene = true;
+  });
+
   this.enable();
 }
 
@@ -38,7 +43,9 @@ DialogPannel.prototype.constructor = DialogPannel;
 DialogPannel.prototype.update = function DialogPannelUpdate(game){
   Layout.prototype.update.call(this, game);
 
-  this.dialog.update();
+  if(!this.demoScene){
+    this.dialog.update();
+  }
 }
 
 DialogPannel.prototype.final = function DialogPannelFinal(choice){
