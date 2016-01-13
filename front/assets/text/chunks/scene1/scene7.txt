@@ -1,0 +1,197 @@
+﻿***
+@@@
+
+***
+[enjmin]
+Bonjour messieurs !£
+
+***
+[bollore]
+{1}
+.£
+
+***
+[guillemot]
+{1}
+.£
+
+***
+[narrator]
+Guillemot et Bolloré sont toujours fâchés :'( 
+
+***
+[enjmin]
+Je suis étudiante, dans une école française de jeux vidéo.£
+
+***
+[enjmin]
+Je suis venu vous présenter mon projet de fin d'études,£
+
+***
+[enjmin]
+afin de le voir édité par Ubisoft.£
+
+***
+[enjmin]
+Il s'agit d'un jeu au format épisodique.£
+
+***
+[enjmin]
+Dans lequel plusieurs personnages discutent de l'actu dans le monde vidéoludique.
+
+***
+[enjmin]
+Avec un côté engagé, satirique.£
+
+***
+[enjmin]
+Un peu comme les Guignols, mais en drôle comme au début.£
+
+***
+{enjmin]
+Je voudrais monter mon studio à Paris.
+
+***
+[bollore]
+{1}
+.£
+
+***
+[guillemot]
+{1}
+.£
+
+***
+[enjmin]
+Voilà voilà.£
+
+***
+$$$
+
+***
+[narrator]
+Hm, Guillemot et Bolloré n'ont rien écouté !
+
+***
+[guillemot]
+Vous avez parler de travailler en France.£
+
+***
+[guillemot]
+Pourquoi ne pas venir plutôt au Canada ?
+
+***
+[enjmin]
+Pardon ?£
+
+***
+[enjmin]
+Au Canada ? Pourquoi faire ?
+
+***
+[bollore]
+Voyons, on ne va pas employer quelqu'un en France en 2016 !£
+
+***
+[guillemot]
+Alors que ça nous coûte bien moins cher au Canada ou en Chine.£
+
+***
+[bollore]
+Vous devriez comprendre, mademoiselle,£
+
+***
+[guillemot]
+qu'un bon talent français est un-£
+
+***
+[bollore]
+- talent exporté.
+
+***
+[guillemot]
+{1}
+!£
+
+***
+[bollore]
+{1}
+!£
+
+***
+§§§
+
+***
+[bollore]
+Guillemot, vous connaissez ce proverbe ?£
+
+***
+[guillemot]
+Bien sûr, Vincent, je l'applique tous les jours !
+
+***
+[bollore]
+Au fond je n'en doutais pas.£
+
+***
+[bollore]
+J'ai toujours su que vous étiez un bon PDG.
+
+***
+[guillemot]
+Arrêtez, flatteur !£
+
+***
+[guillemot]
+Moi aussi, vous savez,£
+
+***
+[guillemot]
+j'ai toujours admiré votre sens des affaires.
+
+***
+[narrator]
+Wouhou =D£
+
+***
+[narrator]
+Bolloré et Guillemot se sont réconciliés sur l'autel de l'escroquerie.£
+
+***
+[narrator]
+Ca veut dire que nous allons pouvoir...£
+
+***
+[narrator]
+{2}
+continuer Bolloqués !
+
+***
+[narrator]
+{2}
+Avec plus d'invités ! \o/£
+
+***
+[narrator]
+{2}
+Plus de budget ! :$£
+
+***
+[narrator]
+{2}
+Plus de projets douteux ! :o£
+
+***
+[narrator]
+{2}
+Plus d'effets spéciaux ! B|£
+
+***
+[narrator]
+{2}
+Plus de mauvaises blagues ! ^^£
+
+***
+[narrator]
+{4}
+Êtes-vous prêt pour ça ?!£
