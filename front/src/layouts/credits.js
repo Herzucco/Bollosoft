@@ -7,6 +7,8 @@ function Credits(){
   this.count = 5;
   this.currentCount = 0;
 
+  this.door = window.game.add.audio('door');
+
   this.saison = game.add.sprite(window.game.world.centerX, window.game.world.centerY, 'saison');
   this.saison.anchor.set(0.5, 0.5);
 
@@ -23,6 +25,8 @@ function Credits(){
   var that = this;
   window.game.events.on('credits', function(){
     that.enable();
+
+    that.door.play();
   });
 }
 

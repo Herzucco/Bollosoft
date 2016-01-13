@@ -17,6 +17,8 @@ function Demoscene(){
   ];
   var tween;
   var rezTween;
+  var rezTween2;
+
   music = game.add.audio('Generic');
 
   this.demoImages = [
@@ -31,7 +33,7 @@ function Demoscene(){
   this.backGround.scale.set(10, 10);
   this.backGround.visible = false;
 
-  var sprite = window.game.add.sprite(0, 0, 'test');
+  var sprite = window.game.add.sprite(0, 0, 'rez');
   sprite.width = 1920;
   sprite.height = 1080;
   sprite.visible = false;
@@ -40,7 +42,8 @@ function Demoscene(){
   this.alphaSpeed = 5;
   this.customUniforms = {
      iChannel0: { type: 'sampler2D', value: sprite.texture, textureData: { repeat: true } },
-     alpha: { type: '1f', value: 0 }
+     alpha: { type: '1f', value: 0 },
+     speed: { type: '1f', value: 1.0 }
   };
 
   this.planeFilter = new Phaser.Filter(window.game, this.customUniforms, planeFragment);
@@ -76,6 +79,10 @@ function Demoscene(){
     rezTween = game.add.tween(that.customUniforms.alpha);
     rezTween.to( { value: 1.0 }, that.alphaSpeed * 1000, Phaser.Easing.Linear.None);
     rezTween.start();
+    rezTween2 = game.add.tween(that.customUniforms.speed);
+    rezTween2.to( { value: 4.0 }, 20 * 1000, Phaser.Easing.Linear.None);
+    rezTween2.start();
+
     sprite.visible = true;
 
     music.play();
@@ -97,7 +104,7 @@ Demoscene.prototype.update = function DemosceneUpdate(game){
     this.planeFilter.update();
     this.spawnCount -= 1/60 / 30;
     if(this.currentSpawnCount >= this.spawnCount){
-      var t = new DemoSprite(getRandomArbitrary(300, 1600), getRandomArbitrary(400, 600), this.demoImages[getRandomInt(0, this.demoImages.length-1)], graal);
+      var t = new DemoSprite(getRandomArbitrary(300, 1600), getRandomArbitrary(400, 600), this.demoImages[getRandomInt(0, this.demoImages.length)], graal);
       t.anchor.set(0.5, 0.5);
       window.game.world.add(t);
       this.currentSpawnCount = 0;
@@ -120,6 +127,7 @@ var planeFragment = [
     "uniform vec2      resolution;",
     "uniform sampler2D iChannel0;",
     "uniform float alpha;",
+    "uniform float speed;",
 
     "void main( void ) {",
 
@@ -128,7 +136,7 @@ var planeFragment = [
         "vec2 uv = gl_FragCoord.xy / resolution.xy;",
         "vec2 texcoord = gl_FragCoord.xy / vec2(resolution.y);",
 
-        "texcoord.y -= t*5.0;",
+        "texcoord.y -= t*speed;",
 
         "float zz = 1.0/(1.0-uv.y*1.7);",
         "texcoord.y -= zz * sign(zz);",
@@ -162,7 +170,7 @@ function DemoSprite(x, y, image, graal){
 
   this.scale.set(0.01, 0.01);
   this.moveSpeed = getRandomArbitrary(5, 10);
-  this.scaleSpeed = getRandomArbitrary(1.01, 1.05);
+  this.scaleSpeed = getRandomArbitrary(1.02, 1.04);
   this.direction = getRandomInt(-1, 1);
   if(this.direction === 0){
     this.direction = 1;

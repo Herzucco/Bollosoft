@@ -38,6 +38,7 @@ function textures(game) {
     game.load.image('factory', 'assets/images/factory.png');
     game.load.image('bollotete', 'assets/images/bollotete.png');
     game.load.image('ubi', 'assets/images/ubi.png');
+    game.load.image('rez', 'assets/images/fonddelaphase1.png');
 }
 
 module.exports = textures;
