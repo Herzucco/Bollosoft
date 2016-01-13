@@ -26,6 +26,8 @@ function textures(game) {
     game.load.image('non', 'assets/images/ui/non.png');
     game.load.image('splashScreen', 'assets/images/splash.png');
     game.load.image('credits', 'assets/images/credits.png');
+    game.load.image('saison', 'assets/images/saison1.png');
+    game.load.image('cinqyou', 'assets/images/Cinqyou.png');
 
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
     game.load.image('PT', 'assets/images/slides/slide2.png');
@@ -34,7 +36,7 @@ function textures(game) {
 
     game.load.image('bgDemo', 'assets/images/prod/bgDemo.png');
     game.load.image('factory', 'assets/images/factory.png');
-    game.load.image('test', 'assets/images/test.png');
+    game.load.image('bollotete', 'assets/images/bollotete.png');
 }
 
 module.exports = textures;

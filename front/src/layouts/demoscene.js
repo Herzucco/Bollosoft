@@ -20,7 +20,7 @@ function Demoscene(){
   music = game.add.audio('Generic');
 
   this.demoImages = [
-    'test',
+    'bollotete',
   ];
 
   this.currentSpawnCount = 2 * 1000;

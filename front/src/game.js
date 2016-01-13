@@ -1,7 +1,7 @@
 var EventEmitter = require('micro-events'); // require it
 
 function game(preload, create, loop){
-  var g = new window.Phaser.Game(1920, 1080, Phaser.AUTO, 'Bolloqués', { preload: preload.preload, create: function(){
+  var g = new window.Phaser.Game(1920, 1080, Phaser.AUTO, 'Bolloqués', { preload: preload.preload, create: function create(){
     preload.load();
     loadEmitter();
 
