@@ -5,7 +5,13 @@ function game(preload, create, loop){
     preload.load();
     loadEmitter();
 
+	this.loadImg = g.add.sprite(400, 400, 'loading');
+	this.loadImg.animations.add('loading', Phaser.Animation.generateFrameNames('chargement', 1, 4, '.png', 1), 10, true, false);
+	this.loadImg.animations.play('loading', 1, true);
+	//game.load.onLoadComplete.add(loadComplete, this);
+
     window.game.events.on('endLoading', function endLoading(){
+      console.log("wesh");
       create();
     });
   }, render: loop });
