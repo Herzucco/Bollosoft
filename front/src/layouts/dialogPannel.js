@@ -30,6 +30,10 @@ function DialogPannel(){
     }
   });
 
+  window.game.events.on('demoscene', function(){
+    that.dialog.autoMode = true;
+  });
+
   window.game.events.on('stopPixel', function(){
     that.demoScene = true;
   });

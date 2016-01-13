@@ -18,6 +18,7 @@ function Dialog(group, language, position, maxSentences, spacing){
 
   this.skippable = true;
   this.canInput = true;
+  this.autoMode = false;
   this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 }
 
@@ -152,6 +153,10 @@ Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
       window.game.events.emit('love');
       return false;
     break;
+    case '___' :
+      window.game.events.emit('demoscene');
+      return false;
+    break;
     default :
       return true;
     break;
@@ -191,7 +196,7 @@ Dialog.prototype.waitInput = function WaitInputDialog(force){
   var bubble = this.bubbles[this.bubbles.length - 1];
 
   if(bubble !== undefined){
-    if(((this.spaceKey.isDown || game.input.mousePointer.isDown || game.input.pointer1.isDown) && this.skippable) || bubble.force || force){
+    if((((this.spaceKey.isDown || game.input.mousePointer.isDown || game.input.pointer1.isDown) && !this.autoMode) && this.skippable) || bubble.force || force){
       this.skippable = false;
 
       if(bubble.isOver){

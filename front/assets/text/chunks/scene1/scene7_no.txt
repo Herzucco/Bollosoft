@@ -1,12 +1,15 @@
 ***
+___
+
+***
 [narrator]
 {6}
-PARDON ? :@£
+PARDON ?£
 
 ***
 [narrator]
 {3}
-Vous voulez m'énerver, c'est ça ? £
+Vous voulez m'énerver, c'est ça ?£
 
 ***
 [narrator]

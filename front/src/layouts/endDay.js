@@ -57,6 +57,10 @@ function EndDay(){
     that.bolloRate += values.bolloRate;
   });
   window.game.events.on('endDay', function(){
+    that.bolloGraphics.beginFill(0x554d92);
+    that.bolloGraphics.arc(0, 0, 100, game.math.degToRad(mapRange([0, 100], [0, 360], that.bolloRate)), game.math.degToRad(-7), true);
+    that.bolloGraphics.endFill();
+
     that.enable();
   });
 
@@ -87,9 +91,6 @@ EndDay.prototype.update = function EndDayUpdate(game){
   }
   this.metaTxt.text = this.metacritic;
   this.bolloTxt.text = "Bolloré "+this.bolloRate+"%";
-  this.bolloGraphics.beginFill(0x554d92);
-  this.bolloGraphics.arc(0, 0, 100, game.math.degToRad(mapRange([0, 100], [0, 360], this.bolloRate)), game.math.degToRad(-7), true);
-  this.bolloGraphics.endFill();
 
   if(this.waitInputs){
     if(this.spaceKey.isDown || this.enterKey.isDown || game.input.mousePointer.isDown || game.input.pointer1.isDown){

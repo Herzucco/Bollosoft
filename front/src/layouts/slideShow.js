@@ -59,6 +59,9 @@ function SlideShow(){
     bolloMove.to({y:860}, 9500, Phaser.Easing.Linear.None);
     bolloMove.start();
 	});
+	window.game.events.on('demoscene', function(){
+    projectorSound.stop();
+	});
 
 	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
 	slideBack.width = 0;

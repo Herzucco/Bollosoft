@@ -19,7 +19,7 @@ function Demoscene(){
   var rezTween;
   var rezTween2;
 
-  music = game.add.audio('Generic');
+  music = game.add.audio('Demoscene');
 
   this.demoImages = [
     'bollotete',
@@ -43,7 +43,7 @@ function Demoscene(){
   this.customUniforms = {
      iChannel0: { type: 'sampler2D', value: sprite.texture, textureData: { repeat: true } },
      alpha: { type: '1f', value: 0 },
-     speed: { type: '1f', value: 1.0 }
+     speed: { type: '1f', value: 0.1 }
   };
 
   this.planeFilter = new Phaser.Filter(window.game, this.customUniforms, planeFragment);
@@ -52,6 +52,10 @@ function Demoscene(){
   sprite.filters = [this.planeFilter];
 
   var that = this;
+  window.game.events.on('demoscene', function(){
+    music.play();
+  });
+
   window.game.events.on('pixel', function(){
     window.game.world.filters = [filter];
 
@@ -80,12 +84,10 @@ function Demoscene(){
     rezTween.to( { value: 1.0 }, that.alphaSpeed * 1000, Phaser.Easing.Linear.None);
     rezTween.start();
     rezTween2 = game.add.tween(that.customUniforms.speed);
-    rezTween2.to( { value: 4.0 }, 20 * 1000, Phaser.Easing.Linear.None);
+    rezTween2.to( { value: 1.0 }, 20 * 1000, Phaser.Easing.Linear.None);
     rezTween2.start();
 
     sprite.visible = true;
-
-    music.play();
 
     that.enable();
   });
@@ -102,7 +104,7 @@ Demoscene.prototype.update = function DemosceneUpdate(game){
     // this.planeFilter.dirty = true;
     // this.customUniforms.alpha.value += 1/60 * this.alphaSpeed;
     this.planeFilter.update();
-    this.spawnCount -= 1/60 / 30;
+    this.spawnCount -= 1/60 / 40;
     if(this.currentSpawnCount >= this.spawnCount){
       var t = new DemoSprite(getRandomArbitrary(300, 1600), getRandomArbitrary(400, 600), this.demoImages[getRandomInt(0, this.demoImages.length)], graal);
       t.anchor.set(0.5, 0.5);

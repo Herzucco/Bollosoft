@@ -8,6 +8,8 @@ function Credits(){
   this.currentCount = 0;
 
   this.door = window.game.add.audio('door');
+  this.music = window.game.add.audio('end');
+  //this.music.loop = true;
 
   this.idleS = game.add.sprite(window.game.world.centerX, window.game.world.centerY, 'opacityCalq');
   this.idleS.anchor.set(0.5, 0.5);
@@ -43,6 +45,10 @@ Credits.prototype.update = function CreditsUpdate(game){
 
   this.currentCount += 1/60;
   if(this.currentCount >= 1){
+    if(this.idleS.visible){
+      this.music.play();
+    }
+
     this.idleS.visible = false;
   }
   if(this.currentCount >= this.count){

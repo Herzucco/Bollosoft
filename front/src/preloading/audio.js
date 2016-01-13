@@ -20,6 +20,8 @@ function audio(game) {
     game.load.audio('splashScreen', ['assets/sounds/Bolloques.wav']);
     game.load.audio('Intro', ['assets/sounds/intro.wav']);
     game.load.audio('Generic', ['assets/sounds/music.wav']);
+    game.load.audio('end', ['assets/sounds/end.wav']);
+    game.load.audio('Demoscene', ['assets/sounds/Demoscene.wav']);
 }
 
 module.exports = audio;
