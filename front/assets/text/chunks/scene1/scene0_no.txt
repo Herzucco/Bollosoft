@@ -6,7 +6,7 @@
 ***
 [narrator]
 {3}
-Très bien, vous n'avez qu'à quitter le jeu.£
+AH.£
 
 ***
 [narrator]
