@@ -8,86 +8,91 @@ ___
 
 ***
 [narrator]
-{3}
-Tellement bien !£
+{6}
+Là je suis rassuré !£
 
 ***
 [narrator]
-{3}
-Bolloqués, c'est reparti !£
+{6}
+Vous êtes vraiment quelqu'un de bien !£
+
+***
+[narrator]
+Je vais pleurer de joie...£
 
 ***
 ???
 
 ***
 [narrator]
-{3}
-Comment dire ? Je me sens pluuuus !£
+{7}
+Je suis BEAUCOUP TROP content !£
 
 ***
 [narrator]
-{3}
-A quand le tapis rouge ? Je suis prêt !£
+{7}
+C'est peut-être le plus beau jour de ma vie !£
 
 ***
 [narrator]
-{3}
-OOOOOOOOOOOO KKKKKKKKKKKKKK LLLLLLLLLLLLL MMMMMMMMMMMMMM £
+{7}
+Je vous aime.£
 
 ***
 ???
 
 ***
 [narrator]
-{3}
-BOUM ! On tiraille depuis Le Nil, ancien Bollofief, OKLM ! £
+{8}
+JE VOUS AIME ! £
 
 ***
 [narrator]
-{3}
-Un jeu par, vous savez qui ? Stéphane Natkin !£
+{8}
+Je voudrais vous rencontrer !£
 
 ***
 [narrator]
-Bon allez, fini les conneries, qui pour un Rocket League now ?!£
+{8}
+Vous voir !£
 
 ***
 ???
 
 ***
 [narrator]
-Bon en fait il faudrait d'abord se coucher, demain y'a présentation d'outils :(£
+{9}
+Je suis bien. Bien. Bien. Bien. Bien. Bien. Bien...£
 
 ***
 [narrator]
+{9}
 HAHAHAHA£
 
+***
 [narrator]
-Les écrans de Canal+ :3£
+{9}
+HAHAHAHA£
 
 ***
 !???
 
 ***
 [narrator]
-La fin.
+HAHAHAHA
 
 ***
 [narrator]
-La fin.
+HAHAHAHA
 
 ***
 [narrator]
-La fin.
+HAHAHAHA
 
 ***
 [narrator]
-La fin.
+HAHAHAHA
 
 ***
 [narrator]
-La fin.
-
-***
-[narrator]
-La fin.
+HAHAHAHA

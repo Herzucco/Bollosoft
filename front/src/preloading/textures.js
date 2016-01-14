@@ -48,6 +48,7 @@ function textures(game) {
     game.load.image('bollotete', 'assets/images/bollotete.png');
     game.load.image('ubi', 'assets/images/ubi.png');
     game.load.image('rez', 'assets/images/fonddelaphase1.png');
+    game.load.image('ligneblanche', 'assets/images/ligneblanche.png');
 }
 
 module.exports = textures;

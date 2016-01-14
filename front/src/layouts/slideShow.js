@@ -136,14 +136,15 @@ SlideShow.prototype.update = function SlideShowUpdate(game){
 	filter.update();
 }
 
-
 SlideShow.prototype.slide = function SlideStarting(slideStart){
 	slideSound.play();
 	projectorSound.play();
+
 	slideBack.loadTexture(slideStart, 0);
 	slideBack.width = 833;
 	slideBack.height = 624;
 	slideBack.z = 0;
+	slideBack.alpha = 0.7;
 	this.group.sort('z', Phaser.Group.SORT_ASCENDING);
 }
 

@@ -214,6 +214,10 @@ Bubble.prototype.waitAnimation = function WaitAnimationBubble(){
 
 Bubble.prototype.up = function UpBubble(){
   this.mode = 'up';
+  if(this.y <= -200){
+    this.destroy();
+    this.kill();
+  }
 }
 
 Bubble.prototype.fadeMode = function fadeModeDialog(){

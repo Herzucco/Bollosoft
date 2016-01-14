@@ -180,7 +180,9 @@ Dialog.prototype.newBubble = function NewBubbleDialog(){
     sentenceComputing = this.computeSentence(this.sentences[this.currentSentence + 1]);
     if(sentenceComputing){
       for(var i = 0; i < this.bubbles.length; i++){
-        this.bubbles[i].up();
+        if(this.bubbles[i] !== undefined && this.bubbles[i] !== null){
+          this.bubbles[i].up();
+        }
       }
     }
   }
