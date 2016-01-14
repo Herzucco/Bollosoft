@@ -54,7 +54,6 @@ triggers:
     settings:
       rythm: 0
       fontSize: 50
-      sound: bollore_voice_pissed
   - id: 3
     settings:
       rythm: 0.025

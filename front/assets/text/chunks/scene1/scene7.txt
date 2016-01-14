@@ -127,7 +127,7 @@ Guillemot, vous connaissez ce proverbe ?£
 
 ***
 [guillemot]
-Bien sûr, Vincent, je l'applique tous les jours !
+Bien sûr, Vincent, je l'applique tous les jours !£
 
 ***
 [bollore]
@@ -135,7 +135,7 @@ Au fond je n'en doutais pas.£
 
 ***
 [bollore]
-J'ai toujours su que vous étiez un bon PDG.
+J'ai toujours su que vous étiez un bon PDG.£
 
 ***
 [guillemot]
