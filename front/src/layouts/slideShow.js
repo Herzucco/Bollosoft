@@ -121,7 +121,7 @@ function SlideShow(){
     };
 
     filter = new Phaser.Filter(game, customUniforms, fragmentSrc);
-    filter.setResolution(1024, 1024);
+    filter.setResolution(1024, 924);
 
     iwataShader.filters = [ filter ];
 }
