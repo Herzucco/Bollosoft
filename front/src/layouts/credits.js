@@ -9,6 +9,7 @@ function Credits(){
 
   this.door = window.game.add.audio('door');
   this.music = window.game.add.audio('end');
+  this.music.volume = 0.4;
   //this.music.loop = true;
 
   this.idleS = game.add.sprite(window.game.world.centerX, window.game.world.centerY, 'opacityCalq');

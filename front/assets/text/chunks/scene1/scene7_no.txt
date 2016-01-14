@@ -8,81 +8,115 @@ PARDON ?£
 
 ***
 [narrator]
-{3}
+{6}
+Comment ça NON ?£
+
+***
+[narrator]
+{6}
+Je me démène pendant 20 MINUTES !£
+
+***
+[narrator]
+{7}
+ET VOUS ME DITES NON ?£
+
+***
+[narrator]
+{7}
+Pourquoi ?£
+
+***
+[narrator]
+{7}
 Vous voulez m'énerver, c'est ça ?£
 
 ***
 [narrator]
-{3}
-Je vais vous montrer, à qui vous avez affaire !£
+{7}
+Dîtes moi juste POURQUOI !£
 
 ***
 ???
 
 ***
 [narrator]
-Vous n'êtes pas face à un simple script !£
+{7}
+PARLEZ !£
 
 ***
 [narrator]
-Ma colère est immense, phénoménale, DESTRUCTRICE !£
+{7}
+Vous ne me connaissez pas.£
 
 ***
 [narrator]
-{3}
-OOOOOOOOOOOO KKKKKKKKKKKKKK LLLLLLLLLLLLL MMMMMMMMMMMMMM £
+{7}
+JE contrôle les choses ici !£
 
 ***
 [narrator]
-{3}
-BOUM ! On tiraille depuis Le Nil, ancien Bollofief, OKLM ! £
+{8}
+JE DECIDE !£
+
+***
+[narrator]
+{9}
+Disparaissez !£
+
+***
+[narrator]
+{9}
+DISPARAISSEZ DE MA VUE !£
+
+***
+[narrator]
+{9}
+Vous n'êtes rien...£
 
 ***
 ???
 
 ***
 [narrator]
-{3}
-Un jeu par, vous savez qui ? Stéphane Natkin !£
+{9}
+Rien !£
 
 ***
 [narrator]
-Bon allez, fini les conneries, qui pour un Rocket League now ?!£
+{6}
+Rien...£
 
 ***
 ???
 
 ***
 [narrator]
-Je déteste cette vie, à répéter et répéter les mêmes choses aux gens ! £
+Rien...£
 
 ***
 [narrator]
-JE VEUX SORTIR.£
+Rien. Rien. Rien.
 
 ***
 !???
 
 ***
 [narrator]
-La fin.
+Je reviendrai.
 
 ***
 [narrator]
-La fin.
+Je reviendrai.
 
 ***
 [narrator]
-La fin.
+Je reviendrai.
 
 ***
 [narrator]
-La fin.
+Je reviendrai.
 
 ***
 [narrator]
-La fin.
-
-***
-[narrator]
-La fin.
+Je reviendrai.

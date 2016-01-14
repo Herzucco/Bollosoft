@@ -1,6 +1,7 @@
 var Layout = require('./layout');
 var slideShow = require('./slideShow');
 var rightBackground;
+var separation;
 var bollo;
 var bolloMove;
 var guigui;
@@ -20,6 +21,11 @@ function Couch(){
  	rightBackground = game.add.sprite(960, 0, 'rightBackground');
  	rightBackground.sendToBack();
 
+  separation = game.add.sprite(960, 0, 'ligneblanche');
+  separation.anchor.set(0.5, 0.5);
+ 	separation.x = window.game.world.centerX - 13;
+  separation.y = window.game.world.centerY;
+
   bollo = game.add.sprite(1200, 1100, 'bolloSprite');
 	bollo.animations.add('idleAnim', Phaser.Animation.generateFrameNames('idle', 1, 4, '.png', 1), 10, true, false);
 	bollo.animations.add('talkingAnim', Phaser.Animation.generateFrameNames('talking', 1, 4, '.png', 1), 10, true, false);
@@ -32,6 +38,7 @@ function Couch(){
 	guigui.animations.add('talkingAnim', Phaser.Animation.generateFrameNames('talking', 1, 4, '.png', 1), 10, true, false);
 	guigui.animations.play('idleAnim', 5, true);
 	this.group.add(guigui);
+  this.group.add(separation);
 
 	var that = this;
 	window.game.events.on('startTalking', function(peopleTalking){

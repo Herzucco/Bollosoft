@@ -70,6 +70,18 @@ triggers:
     settings:
       rythm: 0.005
       fontSize: 40
+  - id: 7
+    settings:
+      rythm: 0.004
+      fontSize: 45
+  - id: 8
+    settings:
+      rythm: 0.003
+      fontSize: 50
+  - id: 9
+    settings:
+      rythm: 0.002
+      fontSize: 60
 settings:
   picture: Bolloques
   presentator: etudiante

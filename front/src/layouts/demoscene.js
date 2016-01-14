@@ -19,7 +19,7 @@ function Demoscene(){
   var rezTween;
   var rezTween2;
 
-  music = game.add.audio('Demoscene');
+  music = game.add.audio('Demoscene2');
 
   this.demoImages = [
     'bollotete',
