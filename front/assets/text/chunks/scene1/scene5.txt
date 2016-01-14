@@ -81,11 +81,23 @@ Bolloré, vous êtes du Finistère ?£
 ***
 [bollore]
 {1}
-...
+?
 
 ***
 [bollore]
 Guillemot, ne me dites pas que vous êtes morbihanais ?£
+
+***
+[guillemot]
+Oui je le suis et alors ?£
+
+***
+[bollore]
+Hahaha, ça explique bien des choses...£
+
+***
+[bollore]
+Comment ça ? Venez en au fait Bolloré !£
 
 ***
 [bollore]
@@ -93,7 +105,7 @@ Laissez-moi vous donner une preuve simple de la supériorité finistérienne :£
 
 ***
 [bollore]
-Moi, finistérien, je possède une plus grande part de votre entreprise que vous, morbihanais.£
+Moi, finistérien, je possède aujourd'hui une plus grande part de votre entreprise que vous, morbihanais.£
 
 ***
 [bollore]
@@ -108,7 +120,7 @@ GRRRR£
 ***
 [guillemot]
 {4}
-Assez, Bolloré !£
+Assez, Bolloré, c'est insupportable !£
 
 ***
 [guillemot]
@@ -118,7 +130,12 @@ Vous entrez dans ma société,£
 ***
 [guillemot]
 {3}
-puis dans ma propre demeure, sans prévenir,£
+PUIS dans ma demeure !£
+
+***
+[guillemot]
+{3}
+SANS LE MOINDRE PRÉAMBULE !£
 
 ***
 [guillemot]

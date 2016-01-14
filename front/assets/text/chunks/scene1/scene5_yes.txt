@@ -15,7 +15,19 @@ CA SUFFIT, GUILLEMOT !£
 
 ***
 [bollore]
-Puisque c'est ainsi, je vais racheter tout, votre société, cet endroit, votre vie !
+Puisque c'est ainsi, je vais tout racheter.£
+
+***
+[bollore]
+Votre société !£
+
+***
+[bollore]
+Cet endroit minable !£
+
+***
+[bollore]
+Votre vie !£
 
 ***
 [narrator]
@@ -28,4 +40,4 @@ Un froid s'est installé entre Bolloré et Guillemot...£
 ***
 [narrator]
 {6}
-:(  
+:(

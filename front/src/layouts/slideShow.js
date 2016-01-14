@@ -72,6 +72,7 @@ function SlideShow(){
 	doorSound.volume = 0.5;
 
 	projectorSound = window.game.add.audio('projecteur');
+	projectorSound.volume = 0.6;
 	projectorSound.loop = true;
 
 	this.group.add(slideBack);

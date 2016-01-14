@@ -21,6 +21,8 @@ function SplashScreen(){
 
   this.door = window.game.add.audio('door');
   this.sound = window.game.add.audio('splashScreen');
+  this.sound.volume = 0.6;
+  this.door.volume = 0.6;
 
   this.group.add(this.idleS);
   this.group.add(this.sprite);

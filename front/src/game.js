@@ -12,6 +12,10 @@ function game(preload, create, loop){
 
     g.load.onLoadComplete.add(loadComplete, this);
 
+    g.scale.maxWidth = 1920;
+    g.scale.maxHeight = 1080;
+    g.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+
     g.events.on('endLoading', function endLoading(){
       create();
     });
