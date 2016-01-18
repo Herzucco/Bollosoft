@@ -63,7 +63,7 @@ function SlideShow(){
     projectorSound.stop();
 	});
 
-	slideBack = game.add.sprite(44, 50, 'proto', 'protoGreug/1.png');
+	slideBack = game.add.sprite(44, 50, 'devsSprite');
 	slideBack.width = 0;
 	slideBack.height = 0;
 
