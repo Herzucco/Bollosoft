@@ -21,8 +21,7 @@ function audio(game) {
     game.load.audio('Intro', ['assets/sounds/intro.wav']);
     game.load.audio('Generic', ['assets/sounds/music.wav']);
     game.load.audio('end', ['assets/sounds/end.wav']);
-    game.load.audio('Demoscene', ['assets/sounds/Demoscene.wav']);
-    game.load.audio('Demoscene2', ['assets/sounds/Demoscene_v2.wav']);
+    game.load.audio('Demoscene', ['assets/sounds/Demoscene_v2.wav']);
 }
 
 module.exports = audio;
