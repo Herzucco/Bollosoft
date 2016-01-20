@@ -14,7 +14,7 @@ AH.£
 Nous continuons sans vous.£
 
 ***
-!~~~
+(endOpacityCalq)
 
 ***
 [guillemot]

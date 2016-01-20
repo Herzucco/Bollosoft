@@ -1,5 +1,5 @@
 ***
-___
+(demoscene)
 
 ***
 [narrator]
@@ -21,7 +21,7 @@ Vous êtes vraiment quelqu'un de bien !£
 Je vais pleurer de joie...£
 
 ***
-???
+(pixel)
 
 ***
 [narrator]
@@ -39,7 +39,7 @@ C'est peut-être le plus beau jour de ma vie !£
 Je vous aime.£
 
 ***
-???
+(pixel)
 
 ***
 [narrator]
@@ -57,7 +57,7 @@ Je voudrais vous rencontrer !£
 Vous voir !£
 
 ***
-???
+(pixel)
 
 ***
 [narrator]
@@ -75,7 +75,7 @@ HAHAHAHA£
 HAHAHAHA£
 
 ***
-!???
+(stopPixel)
 
 ***
 [narrator]

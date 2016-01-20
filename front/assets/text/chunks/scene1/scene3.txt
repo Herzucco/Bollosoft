@@ -1,5 +1,5 @@
-﻿***
-@@@
+***
+(presentator, black)
 
 ***
 [narrator]
@@ -42,7 +42,7 @@ Pour sensibiliser aux réalités de notre monde.£
 Je crois que l'équipe d'Ubisoft a préparé une image de présentation pour moi.£
 
 ***
-$$$
+(slide, CoD)
 
 ***
 [narrator]
@@ -136,4 +136,4 @@ On va les ridiculiser !
 Bref, laissons maintenant les actionnaires décider le sort du projet CoD.
 
 ***
-~~~
+(startOpacityCalq)

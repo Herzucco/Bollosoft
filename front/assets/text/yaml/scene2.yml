@@ -68,8 +68,6 @@ triggers:
       rythm: 0.025
       fontSize: 28
 settings:
-  picture: PT
-  presentator: Kojima
   music: Generic
 values:
   yes:

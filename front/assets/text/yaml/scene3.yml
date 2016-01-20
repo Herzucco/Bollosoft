@@ -69,7 +69,8 @@ triggers:
       fontSize: 28
 settings:
   picture: CoD
-  presentator: Black
+  presentator:
+    - Black
   music: Generic
 values:
   yes:

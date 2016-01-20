@@ -60,8 +60,6 @@ triggers:
       rythm: 0.025
       fontSize: 28
 settings:
-  picture: Hanouna
-  presentator: allDevs
   music: Intro
 values:
   yes:

@@ -68,8 +68,6 @@ triggers:
       rythm: 0.025
       fontSize: 28
 settings:
-  picture: Hanouna
-  presentator: Moulard
   music: Generic
 values:
   yes:

@@ -1,5 +1,5 @@
 ﻿***
-@@@
+(presentator, breton)
 
 ***
 [narrator]
@@ -38,7 +38,7 @@ En votre honneur, nous avons décidé de consacrer son 1er DLC...£
 Aux guerres des clans bretons !
 
 ***
-$$$
+(slide, ForBollor)
 
 ***
 [bollore]

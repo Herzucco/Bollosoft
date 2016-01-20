@@ -72,8 +72,6 @@ triggers:
       rythm: 0.005
       fontSize: 40
 settings:
-  picture: ForBollor
-  presentator: Breton
   music: Generic
 values:
   yes:

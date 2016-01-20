@@ -16,10 +16,26 @@ function Dialog(group, language, position, maxSentences, spacing){
 
   this.bubbles = [];
 
+  this.presentatorIndex = 0;
+
   this.skippable = true;
   this.canInput = true;
   this.autoMode = false;
   this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+
+  var that = this;
+  window.game.events.on('badum', function(command){
+    var badum = window.game.add.audio('badum');
+    badum.play();
+  });
+
+  window.game.events.on('checkSave', function(command){
+    var isInSave = window.game.save.check(command[1], command[2]);
+
+    if(!isInSave){
+      that.currentSentence += parseInt(command[3]);
+    }
+  });
 }
 
 Dialog.prototype.load = function LoadDialog(source){
@@ -83,6 +99,7 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
       var offset = 162;
 
       if(talker === undefined){
+        console.error("Error on this sentence : " + this.sentences[this.currentSentence][this.language]);
         console.error("Error this talker is not defined : " + this.sentences[this.currentSentence].talker);
       }
 
@@ -103,64 +120,27 @@ Dialog.prototype.next = function ForwardDialog(delta, sentenceComputing){
     window.game.events.emit('choiceStart');
   }else{
     this.canInput = false;
-    window.game.events.emit('endDayPre', this.settings.presentator.toLowerCase());
+    window.game.events.emit('endDayPre');
     this.group.forEach(function(item) {
       item.kill();
     }, this);
   }
 }
 
-Dialog.prototype.computeSentence = function ComputeSentenceDialog(sentence){
-  switch(sentence[this.language]){
-    case '$$$' :
-      window.game.events.emit('slide', this.settings.picture);
-      return false;
-    break;
-    case '@@@' :
-      window.game.events.emit('presentator', this.settings.presentator.toLowerCase());
-      return false;
-    break;
-    case '~~~' :
-      window.game.events.emit('startOpacityCalq');
-      return false;
-    break;
-    case '!~~~' :
-      window.game.events.emit('endOpacityCalq');
-      return false;
-    break;
-    case '¡¡¡' :
-      window.game.events.emit('bolloFall');
-      return false;
-    break;
-    case '###' :
-      window.game.events.emit('presLeave');
-      return false;
-    break;
-    case '???' :
-      window.game.events.emit('pixel');
-      return false;
-    break;
-    case '!???' :
-      window.game.events.emit('stopPixel');
-      return false;
-    break;
-    case '^^^' :
-      var badum = window.game.add.audio('badum');
-      badum.play();
-      return false;
-    break;
-    case '§§§' :
-      window.game.events.emit('love');
-      return false;
-    break;
-    case '___' :
-      window.game.events.emit('demoscene');
-      return false;
-    break;
-    default :
-      return true;
-    break;
+Dialog.prototype.computeSentence = function ComputeSentenceDialog(s){
+  var sentence = s[this.language];
+
+  if(sentence[0] === '(' && sentence[sentence.length - 1] === ')'){
+    sentence = sentence.slice(0, -1);
+    sentence = sentence.slice(1);
+    sentence = sentence.replace(/ /g,'');
+
+    var command = sentence.split(',');
+    window.game.events.emit(command[0], command);
+    return false;
   }
+
+  return true;
 }
 
 Dialog.prototype.getSentence = function GetSentenceDialog(){

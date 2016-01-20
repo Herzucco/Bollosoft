@@ -1,5 +1,5 @@
-﻿***
-~~~
+***
+(startOpacityCalq)
 
 ***
 [narrator]
@@ -54,6 +54,3 @@ $$$
 ***
 [narrator]
 Allez, avouez qu'elle vous a fait rire !£
-
-
-

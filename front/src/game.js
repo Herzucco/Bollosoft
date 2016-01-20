@@ -1,10 +1,12 @@
 var EventEmitter = require('micro-events'); // require it
+var SaveManager = require('./dialogs/Save');
 var loadImg;
 var g;
 function game(preload, create, loop){
     g = new window.Phaser.Game(1920, 1080, Phaser.AUTO, 'Bolloqués', { preload: preload.preload, create: function c(){
       preload.load();
       loadEmitter(g);
+      loadSaveManager(g);
 
     loadImg = g.add.sprite(400, 400, 'loading');
     loadImg.animations.add('loading', Phaser.Animation.generateFrameNames('chargement', 1, 4, '.png', 1), 10, true, false);
@@ -24,6 +26,11 @@ function game(preload, create, loop){
   return g;
 }
 
+function loadSaveManager(g){
+  var saveManager = new SaveManager();
+
+  g.save = saveManager;
+}
 
 function loadEmitter(g){
   var emitter = new EventEmitter();

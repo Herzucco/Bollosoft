@@ -7,7 +7,7 @@ Salon d'Yves Guillemot, cofondateur et PDG d'Ubisoft.
 Celui-ci reçoit chez lui les équipes sélectionnées pour un développement de jeu en 2016.
 
 ***
-@@@
+(presentator, alldevs)
 
 ***
 [guillemot]
@@ -22,7 +22,7 @@ Vous allez passer chacun votre tour pour présenter votre concept de jeu,£
  et je déciderai si votre projet mérite d'être développé au sein de nos studios.£
 
 ***
-¡¡¡
+(bolloFall)
 
 ***
 [guillemot]
@@ -60,7 +60,7 @@ Afin de m'assurer que les petits soldats d'Ubisoft suivent les directives de Viv
 ... d'accord.
 
 ***
-~~~
+(startOpacityCalq)
 
 ***
 [narrator]

@@ -44,13 +44,13 @@ function SlideShow(){
 
 	var that = this;
 	window.game.events.on('slide', function(slideStart){
-    	that.slide(slideStart);
+    	that.slide(slideStart[1]);
 	});
 	window.game.events.on('presentator', function(presStart){
-    	that.startPres(presStart);
+    	that.startPres(presStart[1]);
 	});
-	window.game.events.on('endDayPre', function(presEnd){
-    	that.endPres(presEnd);
+	window.game.events.on('endDayPre', function(){
+    	that.endPres();
 	});
 	window.game.events.on('presLeave', function(){
     	that.presLeave();
@@ -195,7 +195,7 @@ SlideShow.prototype.presLeave = function PresLeave(){
 	}
 		this.presOnStage = false;
 }
-SlideShow.prototype.endPres = function PresentationEnding(presEnd){
+SlideShow.prototype.endPres = function PresentationEnding(){
 	if(this.presOnStage){
 		this.presLeave();
 	}

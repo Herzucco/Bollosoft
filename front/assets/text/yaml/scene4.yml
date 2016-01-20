@@ -68,7 +68,8 @@ triggers:
       fontSize: 36
 settings:
   picture: MaitenMagic
-  presentator: Black
+  presentator:
+    - Black
   music: Generic
 values:
   yes:

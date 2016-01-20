@@ -81,8 +81,6 @@ triggers:
       rythm: 0.02
       fontSize: 36
 settings:
-  picture: MaitenMagic
-  presentator: Iwata
   music: Generic
 values:
   yes:

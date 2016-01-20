@@ -1,5 +1,5 @@
 ***
-___
+(demoscene)
 
 ***
 [narrator]
@@ -37,7 +37,7 @@ Vous voulez m'énerver, c'est ça ?£
 Dîtes moi juste POURQUOI !£
 
 ***
-???
+(pixel)
 
 ***
 [narrator]
@@ -75,7 +75,7 @@ DISPARAISSEZ DE MA VUE !£
 Vous n'êtes rien...£
 
 ***
-???
+(pixel)
 
 ***
 [narrator]
@@ -88,7 +88,7 @@ Rien !£
 Rien...£
 
 ***
-???
+(pixel)
 
 ***
 [narrator]
@@ -99,7 +99,7 @@ Rien...£
 Rien. Rien. Rien.£
 
 ***
-!???
+(stopPixel)
 
 ***
 [narrator]

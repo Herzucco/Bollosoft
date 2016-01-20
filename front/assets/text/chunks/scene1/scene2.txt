@@ -1,5 +1,5 @@
 ﻿***
-@@@
+(presentator, kojima)
 
 ***
 [kojima]
@@ -42,7 +42,7 @@ C'est un survival-horror à la première personne.£
 Voici un bref résumé de son scénario.£
 
 ***
-$$$
+(slide, PT)
 
 ***
 [guillemot]
@@ -162,4 +162,4 @@ Assez discuté, ce sont aux actionnaires de décider de toute façon.£
 Actionnaires, doit-on se payer Kojima au prix de 2 Hanouna ?
 
 ***
-~~~
+(startOpacityCalq)
