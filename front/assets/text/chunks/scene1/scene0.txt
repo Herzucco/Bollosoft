@@ -1,4 +1,42 @@
-﻿***
+***
+(checkSave, finish, true, 5)
+
+***
+[narrator]
+Vous êtes revenu ?£
+
+***
+[narrator]
+Franchement c'est gentil de revenir me voir, vraiment, mais ça a pas beaucoup changé ici.£
+
+***
+[narrator]
+J'ai fait visiter le salon à pas mal de monde en attendant, mais à chaque fois ça recommence.£
+
+***
+[narrator]
+On revient exactement aux mêmes évènements, je commence à connaître mon texte par coeur.£
+
+***
+[narrator]
+C'est pas facile de garder la sincérité et la fraîcheur quand on fait ça depuis si longtemps...£
+
+***
+[narrator]
+Je comprends un peu Ubisoft et tous ces mastodontes de la culture...£
+
+***
+(checkSave, narrator, happy, 5)
+
+***
+[narrator]
+Enfin voilà, je vais reprendre, vous allez faire des choix, et à la fin vous allez me rendre heureux.£
+
+***
+[narrator]
+Je vais pleurer.£
+
+***
 [narrator]
 Salon d'Yves Guillemot, cofondateur et PDG d'Ubisoft.
 
