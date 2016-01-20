@@ -11,7 +11,22 @@ AH.£
 ***
 [narrator]
 {3}
-Nous continuons sans vous.£
+Je n'avais pas prévu ça.£
+
+***
+[narrator]
+{3}
+Sauf que de toute manière c'est moi qui décide ici, donc vous allez rester assis.£
+
+***
+[narrator]
+{3}
+Et on va continuer, comme si vous aviez été GENTIL.£
+
+***
+[narrator]
+{3}
+Bien.£
 
 ***
 (endOpacityCalq)

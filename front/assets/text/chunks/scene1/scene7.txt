@@ -25,7 +25,7 @@ Je suis étudiante, dans une école française de jeux vidéo.£
 
 ***
 [enjmin]
-Je suis venu vous présenter mon projet de fin d'études,£
+Je suis venue vous présenter mon projet de fin d'études,£
 
 ***
 [enjmin]
@@ -86,7 +86,7 @@ Pardon ?£
 
 ***
 [enjmin]
-Au Canada ? Pourquoi faire ?
+Au Canada ? Pour quoi faire ?
 
 ***
 [bollore]

@@ -1,10 +1,4 @@
 function textures(game) {
-    game.load.atlasJSONHash('proto', 'assets/sprites/proto.png', 'assets/sprites/proto.json');
-
-    game.load.image('BlueBubble', 'assets/images/proto/BlueBubble.png');
-    game.load.image('PurpleBubble', 'assets/images/proto/PurpleBubble.png');
-
-    game.load.image('testFace', 'assets/images/protoGreug/1.png');
     game.load.image('leftBackground', 'assets/images/prod/left_screen/fond.png');
     game.load.image('rightBackground', 'assets/images/prod/fond_ecran_droite.png');
     game.load.image('canap', 'assets/images/prod/left_screen/canap.png');
@@ -35,6 +29,8 @@ function textures(game) {
     game.load.image('etudiante', 'assets/images/prod/student/student1.png');
     game.load.image('iwata', 'assets/images/prod/iwata/iwata1.png');
     game.load.image('kojima', 'assets/images/prod/kojima/kojima1.png');
+    game.load.image('alldevs', 'assets/images/prod/allDevs.png');
+
 
     game.load.image('Hanouna', 'assets/images/slides/slide1.png');
     game.load.image('PT', 'assets/images/slides/slide2.png');
@@ -44,7 +40,6 @@ function textures(game) {
     game.load.image('Bolloques', 'assets/images/slides/slide7.png');
 
     game.load.image('bgDemo', 'assets/images/prod/bgDemo.png');
-    game.load.image('factory', 'assets/images/factory.png');
     game.load.image('bollotete', 'assets/images/bollotete.png');
     game.load.image('ubi', 'assets/images/ubi.png');
     game.load.image('rez', 'assets/images/fonddelaphase1.png');
