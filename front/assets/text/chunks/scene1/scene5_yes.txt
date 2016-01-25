@@ -1,4 +1,7 @@
 ***
+(save, maiten, yes)
+
+***
 [guillemot]
 {6}
 MOUAHAHA£

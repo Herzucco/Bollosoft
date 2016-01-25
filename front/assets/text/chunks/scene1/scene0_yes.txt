@@ -1,4 +1,7 @@
 ﻿***
+(save, start, yes)
+
+***
 [narrator]
 Bien. Reprenons.£
 

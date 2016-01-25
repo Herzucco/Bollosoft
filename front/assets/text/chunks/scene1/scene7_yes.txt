@@ -2,6 +2,12 @@
 (demoscene)
 
 ***
+(save, finish, true)
+
+***
+(save, narrator, happy)
+
+***
 [narrator]
 {6}
 =D WOUHOU =D£

@@ -1,4 +1,7 @@
 ***
+(save, maiten, yes)
+
+***
 [narrator]
 Vous êtes bien aimable !£
 
@@ -12,7 +15,7 @@ Et puis, en tant que joueur, c'est vous qui...
 Détenez le discours de vérité !£
 
 ***
-(badum)
+(sound, badum)
 
 ***
 (endOpacityCalq)

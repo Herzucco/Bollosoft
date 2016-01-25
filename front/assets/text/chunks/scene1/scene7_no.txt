@@ -2,6 +2,12 @@
 (demoscene)
 
 ***
+(save, finish, true)
+
+***
+(save, narrator, angry)
+
+***
 [narrator]
 {6}
 PARDON ?£
@@ -88,7 +94,7 @@ Rien !£
 Rien...£
 
 ***
-(pixel)
+???
 
 ***
 [narrator]

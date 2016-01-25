@@ -8,7 +8,6 @@ function DialogPannel(){
 
   this.dialog = new Dialog(this.group);
   window.game.score = window.game.texts[this.sceneIndex].values;
-  this.dialog.load(window.game.texts[this.sceneIndex]);
 
   var that = this;
   window.game.events.on('choiceEnd', function(choice){
@@ -38,6 +37,7 @@ function DialogPannel(){
     that.demoScene = true;
   });
 
+  this.dialog.load(window.game.texts[this.getLastUnlocked(window.game.texts)]);
   this.enable();
 }
 
@@ -50,6 +50,19 @@ DialogPannel.prototype.update = function DialogPannelUpdate(game){
   if(!this.demoScene){
     this.dialog.update();
   }
+}
+
+DialogPannel.prototype.getLastUnlocked = function DialogPannelGetLastUnlocked(texts){
+  var i;
+
+  for(i = 0; i < texts.length-1; i++){
+   var key = 'scene_' + texts[i].settings.unlockKey;
+   if(!window.game.save.check(key, 'true')){
+     return i;
+   }
+ }
+
+  return i;
 }
 
 DialogPannel.prototype.final = function DialogPannelFinal(choice){

@@ -68,9 +68,7 @@ triggers:
       rythm: 0.025
       fontSize: 28
 settings:
-  picture: CoD
-  presentator:
-    - Black
+  unlockKey: 3
   music: Generic
 values:
   yes:

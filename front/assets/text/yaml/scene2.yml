@@ -68,6 +68,7 @@ triggers:
       rythm: 0.025
       fontSize: 28
 settings:
+  unlockKey: 2
   music: Generic
 values:
   yes:

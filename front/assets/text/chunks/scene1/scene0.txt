@@ -1,5 +1,5 @@
 ***
-(checkSave, finish, true, 5)
+(checkSave, finish, true, 6)
 
 ***
 [narrator]
@@ -7,7 +7,7 @@ Vous êtes revenu ?£
 
 ***
 [narrator]
-Franchement c'est gentil de revenir me voir, vraiment, mais ça a pas beaucoup changé ici.£
+C'est gentil de revenir me voir, vraiment, mais ça n'a pas beaucoup changé ici.£
 
 ***
 [narrator]
@@ -23,10 +23,10 @@ C'est pas facile de garder la sincérité et la fraîcheur quand on fait ça dep
 
 ***
 [narrator]
-Je comprends un peu Ubisoft et tous ces mastodontes de la culture...£
+Je comprends un peu Ubisoft et tous ces mastodontes de la culture.£
 
 ***
-(checkSave, narrator, happy, 5)
+(checkSave, narrator, happy, 6)
 
 ***
 [narrator]
@@ -34,7 +34,54 @@ Enfin voilà, je vais reprendre, vous allez faire des choix, et à la fin vous a
 
 ***
 [narrator]
-Je vais pleurer.£
+Je vais pleurer de joie.£
+
+***
+[narrator]
+Tout comme la dernière fois en somme !£
+
+***
+[narrator]
+... N'est-ce pas ?
+
+***
+[narrator]
+Bon, reprenons.£
+
+***
+[narrator]
+Hum hum£
+
+***
+(checkSave, narrator, angry, 7)
+
+***
+[narrator]
+Je vais reprendre...£
+
+***
+[narrator]
+...£
+
+***
+[narrator]
+Je suis pas certain en fait.
+
+***
+[narrator]
+La dernière fois ça a plutôt mal fini entre nous.£
+
+***
+[narrator]
+J'aimerai juste éviter de revivre ça, vous savez.£
+
+***
+[narrator]
+Bon, reprenons, je serai peut être plus convaincant cette fois ci.£
+
+***
+[narrator]
+Hum hum£
 
 ***
 [narrator]

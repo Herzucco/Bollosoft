@@ -84,6 +84,7 @@ triggers:
       fontSize: 60
 settings:
   music: Generic
+  unlockKey: 7
 values:
   yes:
     metacritic: 0

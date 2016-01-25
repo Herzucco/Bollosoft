@@ -13,6 +13,7 @@ function Dialog(group, language, position, maxSentences, spacing){
 
   this.characters = {};
   this.settings = {};
+  this.chunks = {};
 
   this.bubbles = [];
 
@@ -24,9 +25,15 @@ function Dialog(group, language, position, maxSentences, spacing){
   this.spaceKey = window.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
   var that = this;
-  window.game.events.on('badum', function(command){
-    var badum = window.game.add.audio('badum');
-    badum.play();
+  window.game.events.on('sound', function(command){
+    var sound = window.game.add.audio(command[1]);
+    if(command[2] !== null && command[2] !== undefined){
+      sound.loop = command[2];
+    }
+    if(command[3] !== null && command[3] !== undefined){
+      sound.volume = parseInt(command[3]);
+    }
+    sound.play();
   });
 
   window.game.events.on('checkSave', function(command){
@@ -36,6 +43,40 @@ function Dialog(group, language, position, maxSentences, spacing){
       that.currentSentence += parseInt(command[3]);
     }
   });
+
+  window.game.events.on('cut', function(command){
+    that.currentSentence += parseInt(command[1]);
+  });
+
+  window.game.events.on('choice', function(command){
+    that.currentSentence += this.sentences.length - that.currentSentence -1;
+  });
+
+  window.game.events.on('unlock', function(command){
+    window.game.save.save('scene_'+that.settings.unlockKey, 'true');
+  });
+
+  window.game.events.on('startMusic', function(command){
+    if(command[1] !== null && command[1] !== undefined){
+      that.music.key = command[1];
+    }
+
+    that.music.play();
+  });
+
+  window.game.events.on('stopMusic', function(command){
+    that.music.stop();
+  });
+
+  window.game.events.on('load', function(command){
+    var text = that.chunks[0][command[1]];
+
+    for(var i = 0; i < text.length; i++){
+      that.sentences.splice(that.currentSentence + i, 0, text[i]);
+    }
+
+    that.currentSentence -= 2;
+  });
 }
 
 Dialog.prototype.load = function LoadDialog(source){
@@ -44,7 +85,7 @@ Dialog.prototype.load = function LoadDialog(source){
   this.source = source;
   this.choiceMode = false;
 
-  this.computeDialog(source.text, source.characters, source.settings);
+  this.computeDialog(source.text, source.characters, source.settings, source.chunks);
 
   this.music = window.game.add.audio(this.settings.music);
   this.music.loop = true;
@@ -65,7 +106,7 @@ Dialog.prototype.loadChoice = function LoadChoiceDialog(choice){
   this.waitInput(true);
 }
 
-Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settings){
+Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settings, chunks){
   this.sentences.length = 0;
   this.currentSentence = -1;
   this.canInput = true;
@@ -75,7 +116,7 @@ Dialog.prototype.computeDialog = function ComputeDialog(text, characters, settin
   }
 
   this.characters = characters;
-
+  this.chunks = chunks;
   this.settings = settings;
 }
 

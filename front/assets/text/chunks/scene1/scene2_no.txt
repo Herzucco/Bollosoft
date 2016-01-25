@@ -2,6 +2,9 @@
 (endOpacityCalq)
 
 ***
+(save, kojima, no)
+
+***
 [bollore]
 {2}
 Je le savais !

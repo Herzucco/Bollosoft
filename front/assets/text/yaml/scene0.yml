@@ -61,6 +61,7 @@ triggers:
       fontSize: 28
 settings:
   music: Intro
+  unlockKey: 0
 values:
   yes:
     metacritic: 0
