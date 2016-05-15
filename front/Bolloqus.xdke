@@ -1,0 +1,14 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "WebApp",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "build-tab": {
+    "selectedTargets": [
+      "CORDOVA_ANDROID"
+    ]
+  }
+}
